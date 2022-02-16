@@ -28,14 +28,12 @@ domain: kit-data-manager.github.io       # if you want to force HTTPS, specify t
 url: https://kit-data-manager.github.io  # the base hostname and protocol for your site, e.g. http://example.com
 baseurl: /webpage
 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
 #remote_theme: pages-themes/leap-day@v0.2.0
-theme: jekyll-theme-leap-day
+theme: minima
 plugins:
   - jekyll-feed
  # - jekyll-remote-theme
