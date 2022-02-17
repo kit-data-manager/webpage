@@ -9,4 +9,4 @@
 
 This is a simple test.
 
-[base-repo]{/sub-page.html}
+[base-repo](/sub-page.html)
