@@ -8,3 +8,5 @@
 # Test
 
 This is a simple test.
+
+[base-repo]{/sub-page.html}
