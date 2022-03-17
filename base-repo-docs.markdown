@@ -1,4 +1,5 @@
 ---
+title: The base-repo Service
 layout: default_nav
 repository_url: https://github.com/kit-data-manager/base-repo
 repository_name: kit-data-manager/base-repo
