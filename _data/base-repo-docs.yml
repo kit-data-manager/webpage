@@ -16,7 +16,7 @@ toc:
           url: /webpage/base-repo-docs/get-resource.html
         - page: Update a Data Resource
           url: /webpage/base-repo-docs/update-resource.html
-        - page: Deleta a Data Resource
+        - page: Delete a Data Resource
           url: /webpage/base-repo-docs/deleting-resource.html  
       - title: Data Handling
         subfolderitems:
