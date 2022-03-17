@@ -1,0 +1,56 @@
+toc:
+  
+  - title: Documentation
+    subfolderitems:
+      - title: API Docs
+        subfolderitems:
+        - page: RESTful API 
+          url: /webpage/base-repo-docs/api-docs.html
+      - title: Metadata Handling
+        subfolderitems:
+        - page: Introduction
+          url: /webpage/base-repo-docs/resource-handling-introduction.html
+        - page: Create a Data Resource
+          url: /webpage/base-repo-docs/create-resource.html
+        - page: Get a Data Resource
+          url: /webpage/base-repo-docs/get-resource.html
+        - page: Update a Data Resource
+          url: /webpage/base-repo-docs/update-resource.html
+        - page: Deleta a Data Resource
+          url: /webpage/base-repo-docs/deleting-resource.html  
+      - title: Data Handling
+        subfolderitems:
+        - page: Upload Data
+          url: /webpage/base-repo-docs/uploading-data-for-resource.html
+        - page: Content Listing
+          url: /webpage/base-repo-docs/listing-content-information.html
+        - page: Download Data
+          url: /webpage/base-repo-docs/downloading-data-from-resource.html
+  - title: Appendix
+    subfolderitems:
+      - title: General
+        subfolderitems:
+        - page: Configuration
+          url: /webpage/base-repo-docs/general-configuration.html
+      - title: Messaging
+        subfolderitems:
+        - page: Introduction
+          url: /webpage/base-repo-docs/messaging-introduction.html
+        - page: Types and Formats
+          url: /webpage/base-repo-docs/messaging-types-formats.html
+        - page: Configuration
+          url: /webpage/base-repo-docs/messaging-configuration.html
+        - page: Custom Handler
+          url: /webpage/base-repo-docs/messaging-handler.html 
+      - title: Audit Information
+        subfolderitems:
+        - page: Introduction
+          url:  /webpage/base-repo-docs/audit-introduction.html
+        - page: Configuration
+          url:  /webpage/base-repo-docs/audit-configuration.html
+        - page: Working with Versions
+          url:  /webpage/base-repo-docs/audit-access.html
+        - page: Remarks
+          url:  /webpage/base-repo-docs/audit-remarks.html
+     
+     

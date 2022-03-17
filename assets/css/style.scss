@@ -1,0 +1,49 @@
+---
+---
+
+@import "{{ site.theme }}";
+.wrapper {
+  width:650px;
+  margin:0 auto;
+  position:relative;
+}
+
+section {
+  width:640px;
+  padding: 30px 30px 50px 30px;
+  margin: 20px 0;
+  margin-top: 190px;
+  position:relative;
+  background: #fbfbfb;
+  border-radius: 3px;
+  border: 1px solid #cbcbcb;
+  box-shadow: 0px 1px 2px rgba(0,0,0,.09), inset 0px 0px 2px 2px rgba(255,255,255,.5), inset 0 0 5px 5px rgba(255,255,255,.4);
+}
+
+footer {
+    width: 100%;
+    position: relative;
+    left: 5%;
+    margin-left: 0px;
+	top: 10px;
+    bottom: 20px;
+    text-align: center;
+    line-height: 16px;
+}
+
+nav{
+	max-height:450px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+	padding-right: 20px;
+}
+
+//table {
+ //   table-layout: fixed;
+//    width: 100%;
+//}
+
+//table td {
+//    word-wrap: break-word;         /* All browsers since IE 5.5+ */
+//    overflow-wrap: break-word;     /* Renamed property in CSS3 draft spec */
+//}
