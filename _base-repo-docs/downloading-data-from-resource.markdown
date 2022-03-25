@@ -86,6 +86,6 @@ indicates that all content within the addressed folder is downloaded in a single
 |Content Type|Format|Availability
 |---|---|---
 |application/zip|File with zip compression|Part of default KIT DM 2.0 instance
-|application/vnd.datamanager.bagit+zip|BagIt file following the recommendations of the RDA Research Data Repository Interoperability Working Group with zip compression|Available via plugin (see https://github.com/kit-data-manager/bagit-provider-plugin[bagit-provider-plugin])
+|application/vnd.datamanager.bagit+zip|BagIt file following the recommendations of the RDA Research Data Repository Interoperability Working Group with zip compression|Available via plugin (see [bagit-provider-plugin](https://github.com/kit-data-manager/bagit-provider-plugin))
  
  
