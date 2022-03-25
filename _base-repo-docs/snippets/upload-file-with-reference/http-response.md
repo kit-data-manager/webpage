@@ -1,6 +1,6 @@
 ```http
 HTTP/1.1 201 Created
-Location: http://localhost:8080/api/v1/dataresources/c9ddc646-e317-4d87-9ab8-a6be290e000d/data/referencedContent?version=1
+Location: http://localhost:8080/api/v1/dataresources/edbf964c-f215-4fc6-9ef1-2ff1ea5a811e/data/referencedContent?version=1
 Resource-Version: 1
 
 ```

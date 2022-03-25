@@ -1,6 +1,6 @@
 ```bash
 $ echo '{
-  "id" : "c9ddc646-e317-4d87-9ab8-a6be290e000d",
+  "id" : "edbf964c-f215-4fc6-9ef1-2ff1ea5a811e",
   "identifier" : {
     "id" : 1,
     "value" : "(:tba)",
@@ -29,7 +29,7 @@ $ echo '{
   "contributors" : [ ],
   "dates" : [ {
     "id" : 1,
-    "value" : "2022-02-24T08:45:20Z",
+    "value" : "2022-03-25T12:47:06Z",
     "type" : "CREATED"
   } ],
   "relatedIdentifiers" : [ ],
@@ -38,7 +38,7 @@ $ echo '{
   "language" : null,
   "alternateIdentifiers" : [ {
     "id" : 1,
-    "value" : "c9ddc646-e317-4d87-9ab8-a6be290e000d",
+    "value" : "edbf964c-f215-4fc6-9ef1-2ff1ea5a811e",
     "identifierType" : "INTERNAL"
   }, {
     "id" : 2,
@@ -50,7 +50,7 @@ $ echo '{
   "version" : null,
   "rights" : [ ],
   "fundingReferences" : [ ],
-  "lastUpdate" : "2022-02-24T08:45:21.516Z",
+  "lastUpdate" : "2022-03-25T12:47:07.152Z",
   "state" : "VOLATILE",
   "embargoDate" : null,
   "acls" : [ {
@@ -58,7 +58,7 @@ $ echo '{
     "sid" : "SELF",
     "permission" : "ADMINISTRATE"
   } ]
-}' | http PUT 'http://localhost:8080/api/v1/dataresources/c9ddc646-e317-4d87-9ab8-a6be290e000d' \
+}' | http PUT 'http://localhost:8080/api/v1/dataresources/edbf964c-f215-4fc6-9ef1-2ff1ea5a811e' \
     'Content-Type:application/json' \
-    'If-Match:"-1620739826"'
+    'If-Match:"495739650"'
 ```

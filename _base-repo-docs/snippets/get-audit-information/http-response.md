@@ -8,13 +8,13 @@ Content-Length: 10815
   "changeType" : "ValueChange",
   "globalId" : {
     "entity" : "edu.kit.datamanager.repo.domain.DataResource",
-    "cdoId" : "c9ddc646-e317-4d87-9ab8-a6be290e000d"
+    "cdoId" : "edbf964c-f215-4fc6-9ef1-2ff1ea5a811e"
   },
   "commitMetadata" : {
     "author" : "SELF",
     "properties" : [ ],
-    "commitDate" : "2022-02-24T09:45:21.645",
-    "commitDateInstant" : "2022-02-24T08:45:21.645534100Z",
+    "commitDate" : "2022-03-25T13:47:07.296",
+    "commitDateInstant" : "2022-03-25T12:47:07.296496500Z",
     "id" : 4.0
   },
   "property" : "publisher",
@@ -25,30 +25,30 @@ Content-Length: 10815
   "changeType" : "ValueChange",
   "globalId" : {
     "entity" : "edu.kit.datamanager.repo.domain.DataResource",
-    "cdoId" : "c9ddc646-e317-4d87-9ab8-a6be290e000d"
+    "cdoId" : "edbf964c-f215-4fc6-9ef1-2ff1ea5a811e"
   },
   "commitMetadata" : {
     "author" : "SELF",
     "properties" : [ ],
-    "commitDate" : "2022-02-24T09:45:21.645",
-    "commitDateInstant" : "2022-02-24T08:45:21.645534100Z",
+    "commitDate" : "2022-03-25T13:47:07.296",
+    "commitDateInstant" : "2022-03-25T12:47:07.296496500Z",
     "id" : 4.0
   },
   "property" : "lastUpdate",
   "propertyChangeType" : "PROPERTY_VALUE_CHANGED",
-  "left" : "2022-02-24T08:45:21.516Z",
-  "right" : "2022-02-24T08:45:21.640Z"
+  "left" : "2022-03-25T12:47:07.152Z",
+  "right" : "2022-03-25T12:47:07.289Z"
 }, {
   "changeType" : "SetChange",
   "globalId" : {
     "entity" : "edu.kit.datamanager.repo.domain.DataResource",
-    "cdoId" : "c9ddc646-e317-4d87-9ab8-a6be290e000d"
+    "cdoId" : "edbf964c-f215-4fc6-9ef1-2ff1ea5a811e"
   },
   "commitMetadata" : {
     "author" : "SELF",
     "properties" : [ ],
-    "commitDate" : "2022-02-24T09:45:21.522",
-    "commitDateInstant" : "2022-02-24T08:45:21.522533300Z",
+    "commitDate" : "2022-03-25T13:47:07.159",
+    "commitDateInstant" : "2022-03-25T12:47:07.159494500Z",
     "id" : 3.0
   },
   "property" : "alternateIdentifiers",
@@ -65,30 +65,30 @@ Content-Length: 10815
   "changeType" : "ValueChange",
   "globalId" : {
     "entity" : "edu.kit.datamanager.repo.domain.DataResource",
-    "cdoId" : "c9ddc646-e317-4d87-9ab8-a6be290e000d"
+    "cdoId" : "edbf964c-f215-4fc6-9ef1-2ff1ea5a811e"
   },
   "commitMetadata" : {
     "author" : "SELF",
     "properties" : [ ],
-    "commitDate" : "2022-02-24T09:45:21.522",
-    "commitDateInstant" : "2022-02-24T08:45:21.522533300Z",
+    "commitDate" : "2022-03-25T13:47:07.159",
+    "commitDateInstant" : "2022-03-25T12:47:07.159494500Z",
     "id" : 3.0
   },
   "property" : "lastUpdate",
   "propertyChangeType" : "PROPERTY_VALUE_CHANGED",
-  "left" : "2022-02-24T08:45:21.361Z",
-  "right" : "2022-02-24T08:45:21.516Z"
+  "left" : "2022-03-25T12:47:06.992Z",
+  "right" : "2022-03-25T12:47:07.152Z"
 }, {
   "changeType" : "ValueChange",
   "globalId" : {
     "entity" : "edu.kit.datamanager.repo.domain.DataResource",
-    "cdoId" : "c9ddc646-e317-4d87-9ab8-a6be290e000d"
+    "cdoId" : "edbf964c-f215-4fc6-9ef1-2ff1ea5a811e"
   },
   "commitMetadata" : {
     "author" : "SELF",
     "properties" : [ ],
-    "commitDate" : "2022-02-24T09:45:21.366",
-    "commitDateInstant" : "2022-02-24T08:45:21.366532100Z",
+    "commitDate" : "2022-03-25T13:47:06.996",
+    "commitDateInstant" : "2022-03-25T12:47:06.996498700Z",
     "id" : 2.0
   },
   "property" : "publicationYear",
@@ -99,60 +99,60 @@ Content-Length: 10815
   "changeType" : "ValueChange",
   "globalId" : {
     "entity" : "edu.kit.datamanager.repo.domain.DataResource",
-    "cdoId" : "c9ddc646-e317-4d87-9ab8-a6be290e000d"
+    "cdoId" : "edbf964c-f215-4fc6-9ef1-2ff1ea5a811e"
   },
   "commitMetadata" : {
     "author" : "SELF",
     "properties" : [ ],
-    "commitDate" : "2022-02-24T09:45:21.366",
-    "commitDateInstant" : "2022-02-24T08:45:21.366532100Z",
+    "commitDate" : "2022-03-25T13:47:06.996",
+    "commitDateInstant" : "2022-03-25T12:47:06.996498700Z",
     "id" : 2.0
   },
   "property" : "lastUpdate",
   "propertyChangeType" : "PROPERTY_VALUE_CHANGED",
-  "left" : "2022-02-24T08:45:20.576Z",
-  "right" : "2022-02-24T08:45:21.361Z"
+  "left" : "2022-03-25T12:47:06.093Z",
+  "right" : "2022-03-25T12:47:06.992Z"
 }, {
   "changeType" : "NewObject",
   "globalId" : {
     "entity" : "edu.kit.datamanager.repo.domain.DataResource",
-    "cdoId" : "c9ddc646-e317-4d87-9ab8-a6be290e000d"
+    "cdoId" : "edbf964c-f215-4fc6-9ef1-2ff1ea5a811e"
   },
   "commitMetadata" : {
     "author" : "SELF",
     "properties" : [ ],
-    "commitDate" : "2022-02-24T09:45:20.792",
-    "commitDateInstant" : "2022-02-24T08:45:20.792498600Z",
+    "commitDate" : "2022-03-25T13:47:06.329",
+    "commitDateInstant" : "2022-03-25T12:47:06.329725300Z",
     "id" : 1.0
   }
 }, {
   "changeType" : "InitialValueChange",
   "globalId" : {
     "entity" : "edu.kit.datamanager.repo.domain.DataResource",
-    "cdoId" : "c9ddc646-e317-4d87-9ab8-a6be290e000d"
+    "cdoId" : "edbf964c-f215-4fc6-9ef1-2ff1ea5a811e"
   },
   "commitMetadata" : {
     "author" : "SELF",
     "properties" : [ ],
-    "commitDate" : "2022-02-24T09:45:20.792",
-    "commitDateInstant" : "2022-02-24T08:45:20.792498600Z",
+    "commitDate" : "2022-03-25T13:47:06.329",
+    "commitDateInstant" : "2022-03-25T12:47:06.329725300Z",
     "id" : 1.0
   },
   "property" : "id",
   "propertyChangeType" : "PROPERTY_VALUE_CHANGED",
   "left" : null,
-  "right" : "c9ddc646-e317-4d87-9ab8-a6be290e000d"
+  "right" : "edbf964c-f215-4fc6-9ef1-2ff1ea5a811e"
 }, {
   "changeType" : "ReferenceChange",
   "globalId" : {
     "entity" : "edu.kit.datamanager.repo.domain.DataResource",
-    "cdoId" : "c9ddc646-e317-4d87-9ab8-a6be290e000d"
+    "cdoId" : "edbf964c-f215-4fc6-9ef1-2ff1ea5a811e"
   },
   "commitMetadata" : {
     "author" : "SELF",
     "properties" : [ ],
-    "commitDate" : "2022-02-24T09:45:20.792",
-    "commitDateInstant" : "2022-02-24T08:45:20.792498600Z",
+    "commitDate" : "2022-03-25T13:47:06.329",
+    "commitDateInstant" : "2022-03-25T12:47:06.329725300Z",
     "id" : 1.0
   },
   "property" : "identifier",
@@ -166,13 +166,13 @@ Content-Length: 10815
   "changeType" : "SetChange",
   "globalId" : {
     "entity" : "edu.kit.datamanager.repo.domain.DataResource",
-    "cdoId" : "c9ddc646-e317-4d87-9ab8-a6be290e000d"
+    "cdoId" : "edbf964c-f215-4fc6-9ef1-2ff1ea5a811e"
   },
   "commitMetadata" : {
     "author" : "SELF",
     "properties" : [ ],
-    "commitDate" : "2022-02-24T09:45:20.792",
-    "commitDateInstant" : "2022-02-24T08:45:20.792498600Z",
+    "commitDate" : "2022-03-25T13:47:06.329",
+    "commitDateInstant" : "2022-03-25T12:47:06.329725300Z",
     "id" : 1.0
   },
   "property" : "creators",
@@ -189,13 +189,13 @@ Content-Length: 10815
   "changeType" : "SetChange",
   "globalId" : {
     "entity" : "edu.kit.datamanager.repo.domain.DataResource",
-    "cdoId" : "c9ddc646-e317-4d87-9ab8-a6be290e000d"
+    "cdoId" : "edbf964c-f215-4fc6-9ef1-2ff1ea5a811e"
   },
   "commitMetadata" : {
     "author" : "SELF",
     "properties" : [ ],
-    "commitDate" : "2022-02-24T09:45:20.792",
-    "commitDateInstant" : "2022-02-24T08:45:20.792498600Z",
+    "commitDate" : "2022-03-25T13:47:06.329",
+    "commitDateInstant" : "2022-03-25T12:47:06.329725300Z",
     "id" : 1.0
   },
   "property" : "titles",
@@ -212,13 +212,13 @@ Content-Length: 10815
   "changeType" : "InitialValueChange",
   "globalId" : {
     "entity" : "edu.kit.datamanager.repo.domain.DataResource",
-    "cdoId" : "c9ddc646-e317-4d87-9ab8-a6be290e000d"
+    "cdoId" : "edbf964c-f215-4fc6-9ef1-2ff1ea5a811e"
   },
   "commitMetadata" : {
     "author" : "SELF",
     "properties" : [ ],
-    "commitDate" : "2022-02-24T09:45:20.792",
-    "commitDateInstant" : "2022-02-24T08:45:20.792498600Z",
+    "commitDate" : "2022-03-25T13:47:06.329",
+    "commitDateInstant" : "2022-03-25T12:47:06.329725300Z",
     "id" : 1.0
   },
   "property" : "publisher",
@@ -229,13 +229,13 @@ Content-Length: 10815
   "changeType" : "InitialValueChange",
   "globalId" : {
     "entity" : "edu.kit.datamanager.repo.domain.DataResource",
-    "cdoId" : "c9ddc646-e317-4d87-9ab8-a6be290e000d"
+    "cdoId" : "edbf964c-f215-4fc6-9ef1-2ff1ea5a811e"
   },
   "commitMetadata" : {
     "author" : "SELF",
     "properties" : [ ],
-    "commitDate" : "2022-02-24T09:45:20.792",
-    "commitDateInstant" : "2022-02-24T08:45:20.792498600Z",
+    "commitDate" : "2022-03-25T13:47:06.329",
+    "commitDateInstant" : "2022-03-25T12:47:06.329725300Z",
     "id" : 1.0
   },
   "property" : "publicationYear",
@@ -246,13 +246,13 @@ Content-Length: 10815
   "changeType" : "ReferenceChange",
   "globalId" : {
     "entity" : "edu.kit.datamanager.repo.domain.DataResource",
-    "cdoId" : "c9ddc646-e317-4d87-9ab8-a6be290e000d"
+    "cdoId" : "edbf964c-f215-4fc6-9ef1-2ff1ea5a811e"
   },
   "commitMetadata" : {
     "author" : "SELF",
     "properties" : [ ],
-    "commitDate" : "2022-02-24T09:45:20.792",
-    "commitDateInstant" : "2022-02-24T08:45:20.792498600Z",
+    "commitDate" : "2022-03-25T13:47:06.329",
+    "commitDateInstant" : "2022-03-25T12:47:06.329725300Z",
     "id" : 1.0
   },
   "property" : "resourceType",
@@ -266,13 +266,13 @@ Content-Length: 10815
   "changeType" : "SetChange",
   "globalId" : {
     "entity" : "edu.kit.datamanager.repo.domain.DataResource",
-    "cdoId" : "c9ddc646-e317-4d87-9ab8-a6be290e000d"
+    "cdoId" : "edbf964c-f215-4fc6-9ef1-2ff1ea5a811e"
   },
   "commitMetadata" : {
     "author" : "SELF",
     "properties" : [ ],
-    "commitDate" : "2022-02-24T09:45:20.792",
-    "commitDateInstant" : "2022-02-24T08:45:20.792498600Z",
+    "commitDate" : "2022-03-25T13:47:06.329",
+    "commitDateInstant" : "2022-03-25T12:47:06.329725300Z",
     "id" : 1.0
   },
   "property" : "dates",
@@ -289,13 +289,13 @@ Content-Length: 10815
   "changeType" : "SetChange",
   "globalId" : {
     "entity" : "edu.kit.datamanager.repo.domain.DataResource",
-    "cdoId" : "c9ddc646-e317-4d87-9ab8-a6be290e000d"
+    "cdoId" : "edbf964c-f215-4fc6-9ef1-2ff1ea5a811e"
   },
   "commitMetadata" : {
     "author" : "SELF",
     "properties" : [ ],
-    "commitDate" : "2022-02-24T09:45:20.792",
-    "commitDateInstant" : "2022-02-24T08:45:20.792498600Z",
+    "commitDate" : "2022-03-25T13:47:06.329",
+    "commitDateInstant" : "2022-03-25T12:47:06.329725300Z",
     "id" : 1.0
   },
   "property" : "alternateIdentifiers",
@@ -312,30 +312,30 @@ Content-Length: 10815
   "changeType" : "InitialValueChange",
   "globalId" : {
     "entity" : "edu.kit.datamanager.repo.domain.DataResource",
-    "cdoId" : "c9ddc646-e317-4d87-9ab8-a6be290e000d"
+    "cdoId" : "edbf964c-f215-4fc6-9ef1-2ff1ea5a811e"
   },
   "commitMetadata" : {
     "author" : "SELF",
     "properties" : [ ],
-    "commitDate" : "2022-02-24T09:45:20.792",
-    "commitDateInstant" : "2022-02-24T08:45:20.792498600Z",
+    "commitDate" : "2022-03-25T13:47:06.329",
+    "commitDateInstant" : "2022-03-25T12:47:06.329725300Z",
     "id" : 1.0
   },
   "property" : "lastUpdate",
   "propertyChangeType" : "PROPERTY_VALUE_CHANGED",
   "left" : null,
-  "right" : "2022-02-24T08:45:20.576Z"
+  "right" : "2022-03-25T12:47:06.093Z"
 }, {
   "changeType" : "InitialValueChange",
   "globalId" : {
     "entity" : "edu.kit.datamanager.repo.domain.DataResource",
-    "cdoId" : "c9ddc646-e317-4d87-9ab8-a6be290e000d"
+    "cdoId" : "edbf964c-f215-4fc6-9ef1-2ff1ea5a811e"
   },
   "commitMetadata" : {
     "author" : "SELF",
     "properties" : [ ],
-    "commitDate" : "2022-02-24T09:45:20.792",
-    "commitDateInstant" : "2022-02-24T08:45:20.792498600Z",
+    "commitDate" : "2022-03-25T13:47:06.329",
+    "commitDateInstant" : "2022-03-25T12:47:06.329725300Z",
     "id" : 1.0
   },
   "property" : "state",
@@ -346,13 +346,13 @@ Content-Length: 10815
   "changeType" : "SetChange",
   "globalId" : {
     "entity" : "edu.kit.datamanager.repo.domain.DataResource",
-    "cdoId" : "c9ddc646-e317-4d87-9ab8-a6be290e000d"
+    "cdoId" : "edbf964c-f215-4fc6-9ef1-2ff1ea5a811e"
   },
   "commitMetadata" : {
     "author" : "SELF",
     "properties" : [ ],
-    "commitDate" : "2022-02-24T09:45:20.792",
-    "commitDateInstant" : "2022-02-24T08:45:20.792498600Z",
+    "commitDate" : "2022-03-25T13:47:06.329",
+    "commitDateInstant" : "2022-03-25T12:47:06.329725300Z",
     "id" : 1.0
   },
   "property" : "acls",

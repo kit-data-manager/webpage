@@ -1,9 +1,9 @@
 ```bash
-$ curl 'http://localhost:8080/api/v1/dataresources/c9ddc646-e317-4d87-9ab8-a6be290e000d' -i -X PUT \
+$ curl 'http://localhost:8080/api/v1/dataresources/edbf964c-f215-4fc6-9ef1-2ff1ea5a811e' -i -X PUT \
     -H 'Content-Type: application/json' \
-    -H 'If-Match: "-1620739826"' \
+    -H 'If-Match: "495739650"' \
     -d '{
-  "id" : "c9ddc646-e317-4d87-9ab8-a6be290e000d",
+  "id" : "edbf964c-f215-4fc6-9ef1-2ff1ea5a811e",
   "identifier" : {
     "id" : 1,
     "value" : "(:tba)",
@@ -32,7 +32,7 @@ $ curl 'http://localhost:8080/api/v1/dataresources/c9ddc646-e317-4d87-9ab8-a6be2
   "contributors" : [ ],
   "dates" : [ {
     "id" : 1,
-    "value" : "2022-02-24T08:45:20Z",
+    "value" : "2022-03-25T12:47:06Z",
     "type" : "CREATED"
   } ],
   "relatedIdentifiers" : [ ],
@@ -41,7 +41,7 @@ $ curl 'http://localhost:8080/api/v1/dataresources/c9ddc646-e317-4d87-9ab8-a6be2
   "language" : null,
   "alternateIdentifiers" : [ {
     "id" : 1,
-    "value" : "c9ddc646-e317-4d87-9ab8-a6be290e000d",
+    "value" : "edbf964c-f215-4fc6-9ef1-2ff1ea5a811e",
     "identifierType" : "INTERNAL"
   }, {
     "id" : 2,
@@ -53,7 +53,7 @@ $ curl 'http://localhost:8080/api/v1/dataresources/c9ddc646-e317-4d87-9ab8-a6be2
   "version" : null,
   "rights" : [ ],
   "fundingReferences" : [ ],
-  "lastUpdate" : "2022-02-24T08:45:21.516Z",
+  "lastUpdate" : "2022-03-25T12:47:07.152Z",
   "state" : "VOLATILE",
   "embargoDate" : null,
   "acls" : [ {

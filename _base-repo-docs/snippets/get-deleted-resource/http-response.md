@@ -1,12 +1,12 @@
 ```http
 HTTP/1.1 200 OK
-ETag: "1345746102"
+ETag: "-943498966"
 Resource-Version: 5
 Content-Type: application/json
 Content-Length: 1104
 
 {
-  "id" : "c9ddc646-e317-4d87-9ab8-a6be290e000d",
+  "id" : "edbf964c-f215-4fc6-9ef1-2ff1ea5a811e",
   "identifier" : {
     "id" : 1,
     "value" : "(:tba)",
@@ -32,19 +32,19 @@ Content-Length: 1104
   },
   "dates" : [ {
     "id" : 1,
-    "value" : "2022-02-24T08:45:20Z",
+    "value" : "2022-03-25T12:47:06Z",
     "type" : "CREATED"
   } ],
   "alternateIdentifiers" : [ {
     "id" : 1,
-    "value" : "c9ddc646-e317-4d87-9ab8-a6be290e000d",
+    "value" : "edbf964c-f215-4fc6-9ef1-2ff1ea5a811e",
     "identifierType" : "INTERNAL"
   }, {
     "id" : 2,
     "value" : "resource-1-231118",
     "identifierType" : "OTHER"
   } ],
-  "lastUpdate" : "2022-02-24T08:45:22.708Z",
+  "lastUpdate" : "2022-03-25T12:47:08.422Z",
   "state" : "REVOKED",
   "acls" : [ {
     "id" : 1,

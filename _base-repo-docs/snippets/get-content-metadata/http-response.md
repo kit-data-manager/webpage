@@ -1,20 +1,20 @@
 ```http
 HTTP/1.1 200 OK
-ETag: "-1245072069"
+ETag: "-2010363665"
 Resource-Version: 1
 Content-Type: application/vnd.datamanager.content-information+json
-Content-Length: 780
+Content-Length: 776
 
 {
   "id" : 1,
   "parentResource" : {
-    "id" : "c9ddc646-e317-4d87-9ab8-a6be290e000d",
+    "id" : "edbf964c-f215-4fc6-9ef1-2ff1ea5a811e",
     "identifier" : {
       "value" : "(:tba)",
       "identifierType" : "DOI"
     },
     "alternateIdentifiers" : [ {
-      "value" : "c9ddc646-e317-4d87-9ab8-a6be290e000d",
+      "value" : "edbf964c-f215-4fc6-9ef1-2ff1ea5a811e",
       "identifierType" : "INTERNAL"
     } ]
   },
@@ -23,10 +23,10 @@ Content-Length: 780
   "fileVersion" : "1",
   "versioningService" : "simple",
   "depth" : 1,
-  "contentUri" : "file:/tmp/repo-basepath/2022/1/24/c9ddc646-e317-4d87-9ab8-a6be290e000d/randomFile.txt_1645692321917",
+  "contentUri" : "file:/tmp/repo-basepath/2022/2/25/edbf964cf2154fc69ef12ff1ea5a811e/randomFile.txt_1648212427612",
   "uploader" : "SELF",
   "mediaType" : "text/plain",
-  "hash" : "sha1:1a87ac39e8f8dd4cb264d9864ce32c6adf963d61",
+  "hash" : "sha1:4c29d7ed12eb7e0308a595ddaaf2b79a5a14bf2c",
   "size" : 64,
   "metadata" : { },
   "tags" : [ ],

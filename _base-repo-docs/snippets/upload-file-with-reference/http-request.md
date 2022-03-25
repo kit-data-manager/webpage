@@ -1,5 +1,5 @@
 ```http
-POST /api/v1/dataresources/c9ddc646-e317-4d87-9ab8-a6be290e000d/data/referencedContent HTTP/1.1
+POST /api/v1/dataresources/edbf964c-f215-4fc6-9ef1-2ff1ea5a811e/data/referencedContent HTTP/1.1
 Content-Type: multipart/form-data; boundary=6o2knFse3p53ty9dmcQvWAIx1zInP11uCfbm
 Host: localhost:8080
 
