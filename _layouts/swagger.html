@@ -35,22 +35,8 @@
 <div id="banner">
     <span id="logo"></span>
 
-    <div id="breadcrumbs" class="breadcrumb-container">
-        <ol class="breadcrumb" id="breadcrumb">
-            {% assign crumbs = page.breadcrumbs | remove:'/index.html' | split: '/' %}
-            <li><a href="/webpage/">home</a></li>
-            {% for crumb in crumbs offset: 1 %}
-            {% if forloop.last %}
-            / <li>{{ page.title }}</li>
-            {% else %}
-            /
-            <li><a
-                    href="/webpage{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'without-plugin/','without-plugins/' }}{% endfor %}">{{
-                crumb | replace:'-',' ' | remove:'.html' }}</a></li>
-            {% endif %}
-            {% endfor %}
-        </ol>
-    </div>
+    {% include breadcrumbs.html %}
+
     <div class="downloads">
         <span>Downloads:</span>
         <ul>
@@ -66,7 +52,7 @@
     {% include nav.html %}
 
     <rapi-doc-mini
-            spec-url="https://kit-data-manager.github.io/webpage/base-repo-docs/swagger.json"
+            spec-url="https://kit-data-manager.github.io/webpage/base-repo/documentation/swagger.json"
             style="width:700px; border-radius: 4px; border: 1px solid #cbcbcb; box-shadow: 0px 1px 2px rgb(0 0 0 / 9%), inset 0px 0px 2px 2px rgb(255 255 255 / 50%), inset 0 0 5px 5px rgb(255 255 255 / 40%); background:#FFFFFF;color:#0d0d0d;"
             paths-expanded="false"
             id="thedoc"
