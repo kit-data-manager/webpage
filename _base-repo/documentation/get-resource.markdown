@@ -1,13 +1,13 @@
 ---
 title:  "Getting a Data Resource"
-layout: default_nav
+breadcrumbs: /base-repo/documentation/get-resource
+layout: default
 categories: base-repo general
 repository_url: https://github.com/kit-data-manager/base-repo
 repository_name: kit-data-manager/base-repo
-back: /webpage/base-repo.html
 ---
 
-#### {{ page.title }}
+### {{ page.title }}
 
 For obtaining accessible data resources you have multiple options: list all resources, access a single resource using a known identifier or search by example. The following example shows how to obtain a 
 single resource.

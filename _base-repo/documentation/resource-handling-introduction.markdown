@@ -1,13 +1,13 @@
 ---
 title:  "Introduction"
-layout: default_nav
+breadcrumbs: /base-repo/documentation/resource-handling-introduction
+layout: default
 categories: base-repo general
 repository_url: https://github.com/kit-data-manager/base-repo
 repository_name: kit-data-manager/base-repo
-back: /webpage/base-repo.html
 ---
 
-#### {{ page.title }}
+### {{ page.title }}
 
 In this first section, the handling of data resources on the metadata level is explained. It all starts with creating your first data resource. The resource model of 
 KIT Data Manager is based on the DataCite standard. Thus, also the mandatory elements defined by this standard are mandatory at creation time. The following elements

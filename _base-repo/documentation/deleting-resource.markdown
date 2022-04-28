@@ -1,13 +1,13 @@
 ---
 title:  "Deleting Data Resources"
-layout: default_nav
+breadcrumbs: /base-repo/documentation/deleting-resource
+layout: default
 categories: base-repo general
 repository_url: https://github.com/kit-data-manager/base-repo
 repository_name: kit-data-manager/base-repo
-back: /webpage/base-repo.html
 ---
 
-#### {{ page.title }}
+### {{ page.title }}
 
 Finally, after presenting several creation and access scenarios, let's briefly cover the removal of resources. First things first, it is NOT possible to permanently remove resources via the RESTful API. The DELETE operation
 is implemented in a way of revoking resources to make them invisible to users, but as they might be references internally or externally, they are never removed from the system unless using additional tools. The following request

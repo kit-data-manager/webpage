@@ -1,13 +1,13 @@
 ---
 title:  "General Configuration"
-layout: default_nav
+breadcrumbs: /base-repo/documentation/general-configuration
+layout: default
 categories: base-repo general
 repository_url: https://github.com/kit-data-manager/base-repo
 repository_name: kit-data-manager/base-repo
-back: /webpage/base-repo.html
 ---
 
-#### {{ page.title }}
+### {{ page.title }}
 
 For the base-repo, there are a couple of configuration options which are described here. All configuration is done in the file 'application.properties'. Spring Boot offers different ways of providing the configuration to a service. For base-repo, three options are relevant, whereas the current directory is the directory, where base-repo.jar is located:
 

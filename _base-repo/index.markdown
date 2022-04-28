@@ -1,9 +1,11 @@
 ---
+title: base-repo
+breadcrumbs: /base-repo/
 layout: default
+no_nav: true
 repository_url: https://github.com/kit-data-manager/base-repo
 repository_name: kit-data-manager/base-repo
 documentation_url: https://kit-data-manager.github.io/
-back: /webpage/
 description: A Generic, General Purpose Research Data Repository Service.
 ---
 
@@ -24,11 +26,11 @@ The base-repo is a generic, general purpose research data repository service off
 
 ## Additional Resources
 
-<div class="downloads">
+<div>
      <ul>
 	 <span><li><a href="{{ page.repository_url }}"><img src="assets/images/github-brands.svg" style="height:20px; width:20px"/> Source Code</a></li></span>
 	 <span><li><a href="{{ page.repository_url }}/issues"><img src="assets/images/bug-solid.svg" style="height:20px; width:20px"/> Issue Tracker</a></li></span>
-	 <span><li><a href="base-repo-docs.html"><img src="assets/images/book-solid.svg" style="height:20px; width:20px"/> Documentation</a></li></span>
+	 <span><li><a href="documentation/index.html"><img src="assets/images/book-solid.svg" style="height:20px; width:20px"/> Documentation</a></li></span>
 	 </ul>
 </div>
 

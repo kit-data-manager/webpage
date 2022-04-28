@@ -1,13 +1,13 @@
 ---
 title:  "Creating a Data Resource"
-layout: default_nav
+breadcrumbs: /base-repo/documentation/create_resource
+layout: default
 categories: base-repo general
 repository_url: https://github.com/kit-data-manager/base-repo
 repository_name: kit-data-manager/base-repo
-back: /webpage/base-repo.html
 ---
 
-#### {{ page.title }}
+### {{ page.title }}
 
 The following example shows the creation of the first resource only providing mandatory fields:
 

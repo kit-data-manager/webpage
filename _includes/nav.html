@@ -1,0 +1,13 @@
+<div class="nav">
+        {% for item in site.data.base-repo-docs.toc %}
+        <h2>{{ item.title }}</h2>
+        {% for entry in item.subfolderitems %}
+        <h3>{{ entry.title }}</h3>
+        <ul>
+            {% for entry2 in entry.subfolderitems %}
+            <li><a href="{{ entry2.url }}">{{ entry2.page }}</a></li>
+            {% endfor %}
+        </ul>
+        {% endfor %}
+        {% endfor %}
+</div>

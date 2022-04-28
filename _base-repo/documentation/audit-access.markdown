@@ -1,13 +1,14 @@
 ---
 title:  "Working with Versions"
-layout: default_nav
+breadcrumbs: /base-repo/documentation/audit-access
+layout: default
 categories: base-repo general
 repository_url: https://github.com/kit-data-manager/base-repo
 repository_name: kit-data-manager/base-repo
 back: /webpage/base-repo.html
 ---
 
-#### {{ page.title }}
+### {{ page.title }}
 
 Audit and versioning support are seamlessly integrated into the internal workflows and you can benefit from it easily. If you go back to the example of how to <<ChapterGetResource,get a Data Resource>> you'll find in the response
 header the property 'Resource-Version' with a value of 1. If you scroll down to the second GET operation performed after updating the resource, you'll see that 'Resource-Version' has been increased to 2. Additionally, a version number

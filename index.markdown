@@ -1,5 +1,6 @@
 ---
 layout: home
+breadcrumbs: /
 ---
 
 <div id="myBtnContainer">
@@ -22,7 +23,7 @@ layout: home
         <div class="mb-4 text-grey-darker text-sm flex-1">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
         </div>
-        <a href="base-repo.html" class="border-t border-grey-light pt-2 text-xs text-grey hover:text-red uppercase no-underline tracking-wide" style="">more...</a>
+        <a href="base-repo/index.html" class="border-t border-grey-light pt-2 text-xs text-grey hover:text-red uppercase no-underline tracking-wide" style="">more...</a>
       </div>
     </div>  
   </div>

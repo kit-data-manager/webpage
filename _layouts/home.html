@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
           integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <script src="https://code.jquery.com/jquery-3.3.0.min.js"
             integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
@@ -31,7 +32,23 @@
     <span id="logo"></span>
 
     <!--Leave button in but invisible to not break the relative placement of following components-->
-    <a href="{{ page.back }}" class="button fork" style="display:none"><strong>Back</strong></a>
+
+    <div id="breadcrumbs" class="breadcrumb-container">
+        <ol class="breadcrumb" id="breadcrumb">
+            {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+            <li><a href="/webpage/">home</a></li>
+            {% for crumb in crumbs offset: 1 %}
+            {% if forloop.last %}
+            / <li>{{ page.title }}</li>
+            {% else %}
+            /
+            <li><a
+                    href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'without-plugin/','without-plugins/' }}{% endfor %}">{{
+                crumb | replace:'-',' ' | remove:'.html' }}</a></li>
+            {% endif %}
+            {% endfor %}
+        </ol>
+    </div>
 
     {% if site.show_downloads %}
     <div class="downloads">

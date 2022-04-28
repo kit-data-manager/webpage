@@ -1,13 +1,13 @@
 ---
 title:  "Updating a Data Resource"
-layout: default_nav
+breadcrumbs: /base-repo/documentation/update-resource
+layout: default
 categories: base-repo general
 repository_url: https://github.com/kit-data-manager/base-repo
 repository_name: kit-data-manager/base-repo
-back: /webpage/base-repo.html
 ---
 
-#### {{ page.title }}
+### {{ page.title }}
 
 The default way of updating resources' metadata in KIT Data Manager is by using HTTP PATCH. Therefor, JSON Patch documents following the RFC 6902 specification are sent to the server stating 
 which operation should be applied to which field with which value. A sample request is shown below.

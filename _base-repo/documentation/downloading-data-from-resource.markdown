@@ -1,13 +1,13 @@
 ---
 title:  "Downloading Data from a Data Resource"
-layout: default_nav
+breadcrumbs: /base-repo/documentation/downloading-data-from-resource
+layout: default
 categories: base-repo general
 repository_url: https://github.com/kit-data-manager/base-repo
 repository_name: kit-data-manager/base-repo
-back: /webpage/base-repo.html
 ---
 
-#### {{ page.title }}
+### {{ page.title }}
 
 After explaining how metadata and data are put into the system, let's give a brief overview on downloading content. Actually, it's just putting the file URL received during upload to the browser address bar or 
 to issue a GET request without Accept header as you can see in the curl command below.
@@ -87,5 +87,4 @@ indicates that all content within the addressed folder is downloaded in a single
 |---|---|---
 |application/zip|File with zip compression|Part of default KIT DM 2.0 instance
 |application/vnd.datamanager.bagit+zip|BagIt file following the recommendations of the RDA Research Data Repository Interoperability Working Group with zip compression|Available via plugin (see [bagit-provider-plugin](https://github.com/kit-data-manager/bagit-provider-plugin))
- 
  

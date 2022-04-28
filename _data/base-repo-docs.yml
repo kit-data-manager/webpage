@@ -5,52 +5,52 @@ toc:
       - title: API Docs
         subfolderitems:
         - page: RESTful API 
-          url: /webpage/base-repo-docs/api-docs.html
+          url: /webpage/base-repo/documentation/api-docs.html
       - title: Metadata Handling
         subfolderitems:
         - page: Introduction
-          url: /webpage/base-repo-docs/resource-handling-introduction.html
+          url: /webpage/base-repo/documentation/resource-handling-introduction.html
         - page: Create a Data Resource
-          url: /webpage/base-repo-docs/create-resource.html
+          url: /webpage/base-repo/documentation/create-resource.html
         - page: Get a Data Resource
-          url: /webpage/base-repo-docs/get-resource.html
+          url: /webpage/base-repo/documentation/get-resource.html
         - page: Update a Data Resource
-          url: /webpage/base-repo-docs/update-resource.html
+          url: /webpage/base-repo/documentation/update-resource.html
         - page: Delete a Data Resource
-          url: /webpage/base-repo-docs/deleting-resource.html  
+          url: /webpage/base-repo/documentation/deleting-resource.html  
       - title: Data Handling
         subfolderitems:
         - page: Upload Data
-          url: /webpage/base-repo-docs/uploading-data-for-resource.html
+          url: /webpage/base-repo/documentation/uploading-data-for-resource.html
         - page: Content Listing
-          url: /webpage/base-repo-docs/listing-content-information.html
+          url: /webpage/base-repo/documentation/listing-content-information.html
         - page: Download Data
-          url: /webpage/base-repo-docs/downloading-data-from-resource.html
+          url: /webpage/base-repo/documentation/downloading-data-from-resource.html
   - title: Appendix
     subfolderitems:
       - title: General
         subfolderitems:
         - page: Configuration
-          url: /webpage/base-repo-docs/general-configuration.html
+          url: /webpage/base-repo/documentation/general-configuration.html
       - title: Messaging
         subfolderitems:
         - page: Introduction
-          url: /webpage/base-repo-docs/messaging-introduction.html
+          url: /webpage/base-repo/documentation/messaging-introduction.html
         - page: Types and Formats
-          url: /webpage/base-repo-docs/messaging-types-formats.html
+          url: /webpage/base-repo/documentation/messaging-types-formats.html
         - page: Configuration
-          url: /webpage/base-repo-docs/messaging-configuration.html
+          url: /webpage/base-repo/documentation/messaging-configuration.html
         - page: Custom Handler
-          url: /webpage/base-repo-docs/messaging-handler.html 
+          url: /webpage/base-repo/documentation/messaging-handler.html 
       - title: Audit Information
         subfolderitems:
         - page: Introduction
-          url:  /webpage/base-repo-docs/audit-introduction.html
+          url:  /webpage/base-repo/documentation/audit-introduction.html
         - page: Configuration
-          url:  /webpage/base-repo-docs/audit-configuration.html
+          url:  /webpage/base-repo/documentation/audit-configuration.html
         - page: Working with Versions
-          url:  /webpage/base-repo-docs/audit-access.html
+          url:  /webpage/base-repo/documentation/audit-access.html
         - page: Remarks
-          url:  /webpage/base-repo-docs/audit-remarks.html
+          url:  /webpage/base-repo/documentation/audit-remarks.html
      
      
