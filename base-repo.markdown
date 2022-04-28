@@ -20,7 +20,7 @@ The base-repo is a generic, general purpose research data repository service off
 * Configurable versioning of metadata and content, e.g., following the OCFL specification
 * (Optional) OAI-PMH support for metadata harvesting
 * (Optional) Messaging support via RabbitMQ to process repository events, e.g., resource creation or file upload.
-* (Optional) JWT-based autentication and authorization via Keycloak
+* (Optional) JWT-based authentication and authorization via Keycloak
 
 ## Additional Resources
 
