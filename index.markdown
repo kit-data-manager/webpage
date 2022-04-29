@@ -1,6 +1,5 @@
 ---
-layout: home
-breadcrumbs: /
+layout: home breadcrumbs: /
 ---
 
 <div id="myBtnContainer">
@@ -14,10 +13,12 @@ breadcrumbs: /
 
 <div class="flex flex-wrap -m-3"> 
 
+
+
   <div class="filterDiv w-full sm:w-1/2 md:w-1/3 flex-col p-3 data repository RESTful">
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col">
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col h-full">
       <div class="bg-cover h-48" style="background-image: url(assets/images/disks.jpg);"></div>
-      <div class="p-4 flex-1 flex flex-col" style="">
+      <div class="h-full p-4 flex-1 flex flex-col" style="">
         <h3 class="mb-4 text-2xl">base-repo</h3>
 		<b class="mb-4 text-1xl">a place to be for your data</b>
         <div class="mb-4 text-grey-darker text-sm flex-1">
@@ -27,11 +28,11 @@ breadcrumbs: /
       </div>
     </div>  
   </div>
-  
+
   <div class="filterDiv w-full sm:w-1/2 md:w-1/3 flex-col p-3 metadata repository RESTful">
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col">
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col h-full">
       <div class="bg-cover h-48" style="background-image: url(assets/images/metadata.jpg);"></div>
-      <div class="p-4 flex-1 flex flex-col" style="">
+      <div class="h-full p-4 flex-1 flex flex-col" style="">
         <h3 class="mb-4 text-2xl">MetaStore</h3>
 		<b class="mb-4 text-1xl">more fun with metadata</b>
         <div class="mb-4 text-grey-darker text-sm flex-1">
@@ -41,11 +42,11 @@ breadcrumbs: /
       </div>
     </div>  
   </div>
-  
+
    <div class="filterDiv w-full sm:w-1/2 md:w-1/3 flex-col p-3 RESTful">
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col">
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col h-full">
       <div class="bg-cover h-48" style="background-image: url(assets/images/collections.jpg);"></div>
-      <div class="p-4 flex-1 flex flex-col" style="">
+      <div class="h-full p-4 flex-1 flex flex-col" style="">
         <h3 class="mb-4 text-2xl">Collection Registry</h3>
 		<b class="mb-4 text-1xl">the data squirrel</b>
         <div class="mb-4 text-grey-darker text-sm flex-1">
@@ -55,11 +56,11 @@ breadcrumbs: /
       </div>
     </div>  
   </div>
-  
+
    <div class="filterDiv w-full sm:w-1/2 md:w-1/3 flex-col p-3 ui">
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col">
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col h-full">
       <div class="bg-cover h-48" style="background-image: url(assets/images/editor.png);"></div>
-      <div class="p-4 flex-1 flex flex-col" style="">
+      <div class="h-full p-4 flex-1 flex flex-col" style="">
         <h3 class="mb-4 text-2xl">Metadata Editor</h3>
 		<b class="mb-4 text-1xl">it's about filling in and out</b>
         <div class="mb-4 text-grey-darker text-sm flex-1">
@@ -69,8 +70,9 @@ breadcrumbs: /
       </div>
     </div>  
   </div>
-    
 </div>
+
+
 
 
 <script>
