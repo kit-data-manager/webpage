@@ -2,6 +2,7 @@
 title: Documentation
 breadcrumbs: /base-repo/documentation/
 layout: default
+navigation_id: base_repo_doc
 repository_url: https://github.com/kit-data-manager/base-repo
 repository_name: kit-data-manager/base-repo
 documentation_url: https://kit-data-manager.github.io/

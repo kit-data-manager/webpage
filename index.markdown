@@ -1,120 +1,103 @@
 ---
-layout: home 
+layout: home
 breadcrumbs: /
 ---
 
-<div>
-    <div class="container">
-        <div class="carousel">
-            <input type="radio" name="slides" checked="checked" id="slide-1">
-            <input type="radio" name="slides" id="slide-2">
-            <input type="radio" name="slides" id="slide-3">
-            <input type="radio" name="slides" id="slide-4">
-            <input type="radio" name="slides" id="slide-5">
-            <input type="radio" name="slides" id="slide-6">
-            <ul class="carousel__slides">
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                            <img src="https://picsum.photos/id/1041/800/450" alt="">
-                        </div>
-                        <figcaption>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <span class="credit">Photo: Tim Marshall</span>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                            <img src="https://picsum.photos/id/1043/800/450" alt="">
-                        </div>
-                        <figcaption>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <span class="credit">Photo: Christian Joudrey</span>                            
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                            <img src="https://picsum.photos/id/1044/800/450" alt="">
-                        </div>
-                        <figcaption>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <span class="credit">Photo: Steve Carter</span>                            
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                            <img src="https://picsum.photos/id/1045/800/450" alt="">
-                        </div>
-                        <figcaption>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <span class="credit">Photo: Aleksandra Boguslawska</span>                            
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                            <img src="https://picsum.photos/id/1049/800/450" alt="">
-                        </div>
-                        <figcaption>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <span class="credit">Photo: Rosan Harmens</span>                            
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                            <img src="https://picsum.photos/id/1052/800/450" alt="">
-                        </div>
-                        <figcaption>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <span class="credit">Photo: Annie Spratt</span>                            
-                        </figcaption>
-                    </figure>
-                </li>
-            </ul>    
-            <ul class="carousel__thumbnails">
-                <li>
-                    <label for="slide-1"><img src="https://picsum.photos/id/1041/150/150" alt=""></label>
-                </li>
-                <li>
-                    <label for="slide-2"><img src="https://picsum.photos/id/1043/150/150" alt=""></label>
-                </li>
-                <li>
-                    <label for="slide-3"><img src="https://picsum.photos/id/1044/150/150" alt=""></label>
-                </li>
-                <li>
-                    <label for="slide-4"><img src="https://picsum.photos/id/1045/150/150" alt=""></label>
-                </li>
-                <li>
-                    <label for="slide-5"><img src="https://picsum.photos/id/1049/150/150" alt=""></label>
-                </li>
-                <li>
-                    <label for="slide-6"><img src="https://picsum.photos/id/1052/150/150" alt=""></label>
-                </li>
-            </ul>
+<div id="myBtnContainer">
+  <div id="example-select"></div>
+  <button id="btn_all" class="btn rounded-lg shadow-lg"> Filter</button>
+</div>
+
+<div class="flex flex-wrap -m-3"> 
+
+  <div class="filterDiv w-full sm:w-1/2 md:w-1/3 flex-col p-3 data repository restful">
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col h-full">
+      <div class="bg-cover h-48" style="background-image: url(assets/images/disks.jpg);"></div>
+      <div class="h-full p-4 flex-1 flex flex-col" style="">
+        <h3 class="mb-4 text-2xl">base-repo</h3>
+		<b class="mb-4 text-1xl">a place to be for your data</b>
+        <div class="mb-4 text-grey-darker text-sm flex-1">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
         </div>
-    </div>
+        <a href="base-repo/index.html" class="border-t border-grey-light pt-2 text-xs text-grey hover:text-red uppercase no-underline tracking-wide" style="">more...</a>
+      </div>
+    </div>  
+  </div>
+
+  <div class="filterDiv w-full sm:w-1/2 md:w-1/3 flex-col p-3 metadata repository restful">
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col h-full">
+      <div class="bg-cover h-48" style="background-image: url(assets/images/metadata.jpg);"></div>
+      <div class="h-full p-4 flex-1 flex flex-col" style="">
+        <h3 class="mb-4 text-2xl">MetaStore</h3>
+		<b class="mb-4 text-1xl">more fun with metadata</b>
+        <div class="mb-4 text-grey-darker text-sm flex-1">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore sapiente eveniet quibusdam ab ea, quaerat placeat numquam aspernatur, accusamus magnam neque.</p>
+        </div>
+        <a href="metastore.html" class="border-t border-grey-light pt-2 text-xs text-grey hover:text-red uppercase no-underline tracking-wide" style="">more...</a>
+      </div>
+    </div>  
+  </div>
+
+   <div class="filterDiv w-full sm:w-1/2 md:w-1/3 flex-col p-3 restful">
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col h-full">
+      <div class="bg-cover h-48" style="background-image: url(assets/images/collections.jpg);"></div>
+      <div class="h-full p-4 flex-1 flex flex-col" style="">
+        <h3 class="mb-4 text-2xl">Collection Registry</h3>
+		<b class="mb-4 text-1xl">the data squirrel</b>
+        <div class="mb-4 text-grey-darker text-sm flex-1">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore sapiente eveniet quibusdam ab ea, quaerat placeat numquam aspernatur, accusamus magnam neque.</p>
+            </div>
+        <a href="collection-registry.html" class="border-t border-grey-light pt-2 text-xs text-grey hover:text-red uppercase no-underline tracking-wide" style="">more...</a>
+      </div>
+    </div>  
+  </div>
+
+   <div class="filterDiv w-full sm:w-1/2 md:w-1/3 flex-col p-3 ui">
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col h-full">
+      <div class="bg-cover h-48" style="background-image: url(assets/images/editor.png);"></div>
+      <div class="h-full p-4 flex-1 flex flex-col" style="">
+        <h3 class="mb-4 text-2xl">Metadata Editor</h3>
+		<b class="mb-4 text-1xl">it's about filling in and out</b>
+        <div class="mb-4 text-grey-darker text-sm flex-1">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore sapiente eveniet quibusdam ab ea, quaerat placeat numquam aspernatur, accusamus magnam neque.</p>
+        </div>
+        <a href="metadata-editor.html" class="border-t border-grey-light pt-2 text-xs text-grey hover:text-red uppercase no-underline tracking-wide" style="">more...</a>
+      </div>
+    </div>  
+  </div>
 </div>
 
 
 <script>
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
+var myOptions = [
+  { label: 'Repository', value: 'repository' },
+  { label: 'Data', value: 'data' },
+  { label: 'Metadata', value: 'metadata' },
+  { label: 'RESTful', value: 'restful' },
+  { label: 'UI', value: 'ui' }
+];
+
+VirtualSelect.init({
+  ele: '#example-select',
+  options: myOptions,
+  multiple: true
+});
+
+document.querySelector('#example-select').setValue(['repository', 'data', 'metadata', 'restful', 'ui']);
+filterSelection(['repository', 'data', 'metadata', 'restful', 'ui']);
+
+function filterSelection(values) {
+  var x, i, j;
+x = document.getElementsByClassName("filterDiv");
+for (i = 0; i < x.length; i++) {
     w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
+}
+
+for (i = 0; i < x.length; i++) {
+    for(j=0;j<values.length;j++){
+        if (x[i].className.indexOf(values[j]) > -1) w3AddClass(x[i], "show");
+    }
+};
 }
 
 function w3AddClass(element, name) {
@@ -138,17 +121,12 @@ function w3RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-// Add active class to the current button (highlight it)
 var btnContainer = document.getElementById("myBtnContainer");
 var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
 
+btns[0].addEventListener("click", function(evt){ 
+    filterSelection($('#example-select').val());
+});
 
 </script>
 

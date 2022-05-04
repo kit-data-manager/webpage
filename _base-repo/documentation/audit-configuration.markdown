@@ -6,6 +6,7 @@ categories: base-repo general
 repository_url: https://github.com/kit-data-manager/base-repo
 repository_name: kit-data-manager/base-repo
 back: /webpage/base-repo.html
+navigation_id: base_repo_doc
 ---
 
 ### {{ page.title }}
