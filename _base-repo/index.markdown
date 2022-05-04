@@ -2,11 +2,11 @@
 title: base-repo
 breadcrumbs: /base-repo/
 layout: default
-no_nav: true
 repository_url: https://github.com/kit-data-manager/base-repo
 repository_name: kit-data-manager/base-repo
 documentation_url: https://kit-data-manager.github.io/
 description: A Generic, General Purpose Research Data Repository Service.
+navigation_id: base_repo_index
 ---
 
 # The base-repo Service

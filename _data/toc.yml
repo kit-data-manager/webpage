@@ -1,0 +1,68 @@
+base_repo_index:
+  - title: base-repo
+    subfolderitems:
+      - title: Application Cases
+      - title: Additional Resources
+        subfolderitems:
+          - page: Documentation
+            url: base-repo/documentation/index.html
+          - page: Source Code
+            external_url: https://github.com/kit-data-manager/base-repo
+          - page: Issue Tracker
+            external_url: https://github.com/kit-data-manager/base-repo/issues
+          
+base_repo_doc:
+  - title: Documentation
+    subfolderitems:
+      - title: API Docs
+        subfolderitems:
+        - page: RESTful API 
+          url: base-repo/documentation/api-docs.html
+      - title: Metadata Handling
+        subfolderitems:
+        - page: Introduction
+          url: base-repo/documentation/resource-handling-introduction.html
+        - page: Create a Data Resource
+          url: base-repo/documentation/create-resource.html
+        - page: Get a Data Resource
+          url: base-repo/documentation/get-resource.html
+        - page: Update a Data Resource
+          url: base-repo/documentation/update-resource.html
+        - page: Delete a Data Resource
+          url: base-repo/documentation/deleting-resource.html
+      - title: Data Handling
+        subfolderitems:
+        - page: Upload Data
+          url: base-repo/documentation/uploading-data-for-resource.html
+        - page: Content Listing
+          url: base-repo/documentation/listing-content-information.html
+        - page: Download Data
+          url: base-repo/documentation/downloading-data-from-resource.html
+  - title: Appendix
+    subfolderitems:
+      - title: General
+        subfolderitems:
+        - page: Configuration
+          url: base-repo/documentation/general-configuration.html
+      - title: Messaging
+        subfolderitems:
+        - page: Introduction
+          url: base-repo/documentation/messaging-introduction.html
+        - page: Types and Formats
+          url: base-repo/documentation/messaging-types-formats.html
+        - page: Configuration
+          url: base-repo/documentation/messaging-configuration.html
+        - page: Custom Handler
+          url: base-repo/documentation/messaging-handler.html
+      - title: Audit Information
+        subfolderitems:
+        - page: Introduction
+          url:  base-repo/documentation/audit-introduction.html
+        - page: Configuration
+          url:  base-repo/documentation/audit-configuration.html
+        - page: Working with Versions
+          url:  base-repo/documentation/audit-access.html
+        - page: Remarks
+          url:  base-repo/documentation/audit-remarks.html
+     
+     

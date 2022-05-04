@@ -13,72 +13,56 @@ layout: home breadcrumbs: /
 
 <div class="flex flex-wrap -m-3"> 
 
+{% include card.html title="base-repo"
+subtitle="a place to be for your data"
+tags="repository data RESTful"
+background="assets/images/disks.jpg"
+content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore sapiente eveniet quibusdam ab ea,
+quaerat placeat numquam aspernatur, accusamus magnam neque."
+target="base-repo/index.html" %}
 
+{% include card.html title="MetaStore"
+subtitle="more fun with metadata"
+tags="repository metadata RESTful"
+background="assets/images/metadata.jpg"
+content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore sapiente eveniet quibusdam ab ea,
+quaerat placeat numquam aspernatur, accusamus magnam neque."
+target="metastore.html" %}
 
-  <div class="filterDiv w-full sm:w-1/2 md:w-1/3 flex-col p-3 data repository RESTful">
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col h-full">
-      <div class="bg-cover h-48" style="background-image: url(assets/images/disks.jpg);"></div>
-      <div class="h-full p-4 flex-1 flex flex-col" style="">
-        <h3 class="mb-4 text-2xl">base-repo</h3>
-		<b class="mb-4 text-1xl">a place to be for your data</b>
-        <div class="mb-4 text-grey-darker text-sm flex-1">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-        </div>
-        <a href="base-repo/index.html" class="border-t border-grey-light pt-2 text-xs text-grey hover:text-red uppercase no-underline tracking-wide" style="">more...</a>
-      </div>
-    </div>  
-  </div>
+{% include card.html title="Collection Registry"
+subtitle="the data squirrel"
+tags="metadata RESTful"
+background="assets/images/collections.jpg"
+content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore sapiente eveniet quibusdam ab ea,
+quaerat placeat numquam aspernatur, accusamus magnam neque."
+target="collection-registry.html" %}
 
-  <div class="filterDiv w-full sm:w-1/2 md:w-1/3 flex-col p-3 metadata repository RESTful">
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col h-full">
-      <div class="bg-cover h-48" style="background-image: url(assets/images/metadata.jpg);"></div>
-      <div class="h-full p-4 flex-1 flex flex-col" style="">
-        <h3 class="mb-4 text-2xl">MetaStore</h3>
-		<b class="mb-4 text-1xl">more fun with metadata</b>
-        <div class="mb-4 text-grey-darker text-sm flex-1">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore sapiente eveniet quibusdam ab ea, quaerat placeat numquam aspernatur, accusamus magnam neque.</p>
-        </div>
-        <a href="metastore.html" class="border-t border-grey-light pt-2 text-xs text-grey hover:text-red uppercase no-underline tracking-wide" style="">more...</a>
-      </div>
-    </div>  
-  </div>
+{% include card.html title="Metadata Editor"
+subtitle="it's about filling in and out"
+tags="ui"
+background="assets/images/editor.png"
+content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore sapiente eveniet quibusdam ab ea,
+quaerat placeat numquam aspernatur, accusamus magnam neque.."
+target="metadata-editor.html" %}
 
-   <div class="filterDiv w-full sm:w-1/2 md:w-1/3 flex-col p-3 RESTful">
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col h-full">
-      <div class="bg-cover h-48" style="background-image: url(assets/images/collections.jpg);"></div>
-      <div class="h-full p-4 flex-1 flex flex-col" style="">
-        <h3 class="mb-4 text-2xl">Collection Registry</h3>
-		<b class="mb-4 text-1xl">the data squirrel</b>
-        <div class="mb-4 text-grey-darker text-sm flex-1">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore sapiente eveniet quibusdam ab ea, quaerat placeat numquam aspernatur, accusamus magnam neque.</p>
-        </div>
-        <a href="collection-registry.html" class="border-t border-grey-light pt-2 text-xs text-grey hover:text-red uppercase no-underline tracking-wide" style="">more...</a>
-      </div>
-    </div>  
-  </div>
-
-   <div class="filterDiv w-full sm:w-1/2 md:w-1/3 flex-col p-3 ui">
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col h-full">
-      <div class="bg-cover h-48" style="background-image: url(assets/images/editor.png);"></div>
-      <div class="h-full p-4 flex-1 flex flex-col" style="">
-        <h3 class="mb-4 text-2xl">Metadata Editor</h3>
-		<b class="mb-4 text-1xl">it's about filling in and out</b>
-        <div class="mb-4 text-grey-darker text-sm flex-1">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore sapiente eveniet quibusdam ab ea, quaerat placeat numquam aspernatur, accusamus magnam neque.</p>
-        </div>
-        <a href="metadata-editor.html" class="border-t border-grey-light pt-2 text-xs text-grey hover:text-red uppercase no-underline tracking-wide" style="">more...</a>
-      </div>
-    </div>  
-  </div>
 </div>
 
-
-
-
 <script>
-filterSelection("all")
+//$.urlParam = function (name) {
+ //   let results = new RegExp('[\?&]' + name + '=([^&#]*)')
+  //                    .exec(window.location.search);
+
+    //return (results !== null) ? results[1] || 0 : false;
+//};
+
+//let params = $.urlParam('filter').split(",");
+//for (i = 0; i < params.length; i++) {
+ //   filterSelection(params[i]);
+//}
+
+filterSelection("all");
 function filterSelection(c) {
-  var x, i;
+  let x, i;
   x = document.getElementsByClassName("filterDiv");
   if (c == "all") c = "";
   for (i = 0; i < x.length; i++) {
@@ -88,7 +72,7 @@ function filterSelection(c) {
 }
 
 function w3AddClass(element, name) {
-  var i, arr1, arr2;
+  let i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
@@ -97,7 +81,7 @@ function w3AddClass(element, name) {
 }
 
 function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
+  let i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {

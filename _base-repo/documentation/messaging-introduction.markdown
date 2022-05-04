@@ -5,6 +5,7 @@ layout: default
 categories: base-repo messaging
 repository_url: https://github.com/kit-data-manager/base-repo
 repository_name: kit-data-manager/base-repo
+navigation_id: base_repo_doc
 ---
 
 ### {{ page.title }}
