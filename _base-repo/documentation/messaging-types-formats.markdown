@@ -2,13 +2,14 @@
 title:  "Message Types and Formats"
 breadcrumbs: /base-repo/documentation/messaging-types-formats
 layout: default
+description: A Generic, General Purpose Research Data Repository Service.
 categories: base-repo messaging
 repository_url: https://github.com/kit-data-manager/base-repo
 repository_name: kit-data-manager/base-repo
 navigation_id: base_repo_doc
 ---
 
-### {{ page.title }}
+# {{ page.title }}
 
 There are different kinds of messages grouped by category. Depending on its category, a message may contain additional properties or not. The following table shows all currently available message categories and the 
 condition under which a message with a certain category is sent.

@@ -2,13 +2,14 @@
 title:  "Introduction to Audit Features"
 breadcrumbs: /base-repo/documentation/audit-introduction
 layout: default
+description: A Generic, General Purpose Research Data Repository Service.
 categories: base-repo general
 repository_url: https://github.com/kit-data-manager/base-repo
 repository_name: kit-data-manager/base-repo
 navigation_id: base_repo_doc
 ---
 
-### {{ page.title }}
+# {{ page.title }}
 
 Not only in living data repositories metadata (and sometimes also data) are subject of change, either by a user or in the course of curation activities. For validation and documentation purposes it can be desirable 
 to keep track of these changes, either for monitoring or to be able to rollback unwanted changes at a later point in time. Therefor, KIT Data Manager offers support for capturing audit information and versioning of 

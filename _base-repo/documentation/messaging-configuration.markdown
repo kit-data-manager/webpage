@@ -1,14 +1,15 @@
 ---
 title:  "Configuration of Messaging Feature"
-breadcrumbs: /base-repo/documentation/messaging-configuration
+breadcrumbs: /base-repo/messaging-configuration
 layout: default
+description: A Generic, General Purpose Research Data Repository Service.
 categories: base-repo general
 repository_url: https://github.com/kit-data-manager/base-repo
 repository_name: kit-data-manager/base-repo
-navigation_id: base_repo_doc
+navigation_id: base_repo_index
 ---
 
-### {{ page.title }}
+# {{ page.title }}
 
 In order to make use of the messaging feature, a RabbitMQ instance must be running, preferably locally for security reasons. Please refer to the RabbitMQ web page [https://www.rabbitmq.com/]() on how to install and 
 operate such an instance. From the repository perspective, all relevant settings are part of the default configuration file 'application.properties'. These properties, their function and values/defaults are listed 

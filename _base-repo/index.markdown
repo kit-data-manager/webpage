@@ -2,11 +2,12 @@
 title: base-repo
 breadcrumbs: /base-repo/
 layout: default
+description: A Generic, General Purpose Research Data Repository Service.
 repository_url: https://github.com/kit-data-manager/base-repo
 repository_name: kit-data-manager/base-repo
 documentation_url: https://kit-data-manager.github.io/
-description: A Generic, General Purpose Research Data Repository Service.
 navigation_id: base_repo_index
+tag-name: base-repo
 ---
 
 # The base-repo Service
@@ -24,14 +25,14 @@ The base-repo is a generic, general purpose research data repository service off
 * (Optional) Messaging support via RabbitMQ to process repository events, e.g., resource creation or file upload.
 * (Optional) JWT-based authentication and authorization via Keycloak
 
-## Additional Resources
+## News
 
-<div>
-     <ul>
-	 <span><li><a href="{{ page.repository_url }}"><img src="assets/images/github-brands.svg" style="height:20px; width:20px"/> Source Code</a></li></span>
-	 <span><li><a href="{{ page.repository_url }}/issues"><img src="assets/images/bug-solid.svg" style="height:20px; width:20px"/> Issue Tracker</a></li></span>
-	 <span><li><a href="documentation/index.html"><img src="assets/images/book-solid.svg" style="height:20px; width:20px"/> Documentation</a></li></span>
-	 </ul>
-</div>
+<ul>
+  {% for post in site.posts %}
+    {% if post.tags contains page.tag-name %}
+      <li><a href="/webpage/{{ post.url }}">{{ post.title }}</a>, published {{ post.date | date: "%Y-%m-%d" }}</li>
+    {% endif %}
+  {% endfor %}
+</ul>
 
 

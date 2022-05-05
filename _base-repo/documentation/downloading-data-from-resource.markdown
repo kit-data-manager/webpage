@@ -2,13 +2,14 @@
 title:  "Downloading Data from a Data Resource"
 breadcrumbs: /base-repo/documentation/downloading-data-from-resource
 layout: default
+description: A Generic, General Purpose Research Data Repository Service.
 categories: base-repo general
 repository_url: https://github.com/kit-data-manager/base-repo
 repository_name: kit-data-manager/base-repo
 navigation_id: base_repo_doc
 ---
 
-### {{ page.title }}
+# {{ page.title }}
 
 After explaining how metadata and data are put into the system, let's give a brief overview on downloading content. Actually, it's just putting the file URL received during upload to the browser address bar or 
 to issue a GET request without Accept header as you can see in the curl command below.

@@ -10,65 +10,44 @@ breadcrumbs: /
 
 <div class="flex flex-wrap -m-3"> 
 
-  <div class="filterDiv w-full sm:w-1/2 md:w-1/3 flex-col p-3 data repository restful">
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col h-full">
-      <div class="bg-cover h-48" style="background-image: url(assets/images/disks.jpg);"></div>
-      <div class="h-full p-4 flex-1 flex flex-col" style="">
-        <h3 class="mb-4 text-2xl">base-repo</h3>
-		<b class="mb-4 text-1xl">a place to be for your data</b>
-        <div class="mb-4 text-grey-darker text-sm flex-1">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-        </div>
-        <a href="base-repo/index.html" class="border-t border-grey-light pt-2 text-xs text-grey hover:text-red uppercase no-underline tracking-wide" style="">more...</a>
-      </div>
-    </div>  
-  </div>
 
-  <div class="filterDiv w-full sm:w-1/2 md:w-1/3 flex-col p-3 metadata repository restful">
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col h-full">
-      <div class="bg-cover h-48" style="background-image: url(assets/images/metadata.jpg);"></div>
-      <div class="h-full p-4 flex-1 flex flex-col" style="">
-        <h3 class="mb-4 text-2xl">MetaStore</h3>
-		<b class="mb-4 text-1xl">more fun with metadata</b>
-        <div class="mb-4 text-grey-darker text-sm flex-1">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore sapiente eveniet quibusdam ab ea, quaerat placeat numquam aspernatur, accusamus magnam neque.</p>
-        </div>
-        <a href="metastore.html" class="border-t border-grey-light pt-2 text-xs text-grey hover:text-red uppercase no-underline tracking-wide" style="">more...</a>
-      </div>
-    </div>  
-  </div>
+{% include card.html tags="data repository restful" 
+target="base-repo/index.html" 
+background="assets/images/disks.jpg"
+title="base-repo"
+subtitle="a place to be for your data"
+content="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+%}
 
-   <div class="filterDiv w-full sm:w-1/2 md:w-1/3 flex-col p-3 restful">
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col h-full">
-      <div class="bg-cover h-48" style="background-image: url(assets/images/collections.jpg);"></div>
-      <div class="h-full p-4 flex-1 flex flex-col" style="">
-        <h3 class="mb-4 text-2xl">Collection Registry</h3>
-		<b class="mb-4 text-1xl">the data squirrel</b>
-        <div class="mb-4 text-grey-darker text-sm flex-1">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore sapiente eveniet quibusdam ab ea, quaerat placeat numquam aspernatur, accusamus magnam neque.</p>
-            </div>
-        <a href="collection-registry.html" class="border-t border-grey-light pt-2 text-xs text-grey hover:text-red uppercase no-underline tracking-wide" style="">more...</a>
-      </div>
-    </div>  
-  </div>
+{% include card.html tags="metadata repository restful"
+target="metastore/index.html"
+background="assets/images/metadata.jpg"
+title="MetaStore"
+subtitle="more fun with metadata"
+content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore sapiente eveniet quibusdam ab ea, quaerat placeat numquam aspernatur, accusamus magnam neque."
+%}
 
-   <div class="filterDiv w-full sm:w-1/2 md:w-1/3 flex-col p-3 ui">
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col h-full">
-      <div class="bg-cover h-48" style="background-image: url(assets/images/editor.png);"></div>
-      <div class="h-full p-4 flex-1 flex flex-col" style="">
-        <h3 class="mb-4 text-2xl">Metadata Editor</h3>
-		<b class="mb-4 text-1xl">it's about filling in and out</b>
-        <div class="mb-4 text-grey-darker text-sm flex-1">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore sapiente eveniet quibusdam ab ea, quaerat placeat numquam aspernatur, accusamus magnam neque.</p>
-        </div>
-        <a href="metadata-editor.html" class="border-t border-grey-light pt-2 text-xs text-grey hover:text-red uppercase no-underline tracking-wide" style="">more...</a>
-      </div>
-    </div>  
-  </div>
+{% include card.html tags="restful"
+target="collection-registry/index.html"
+background="assets/images/collections.jpg"
+title="Collection Registry"
+subtitle="collect, organize, share"
+content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore sapiente eveniet quibusdam ab ea, quaerat placeat numquam aspernatur, accusamus magnam neque."
+%}
+
+{% include card.html tags="ui"
+target="metadata-editor/index.html"
+background="assets/images/editor.png"
+title="Metadata Editor"
+subtitle="it's about filling in and out"
+content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore sapiente eveniet quibusdam ab ea, quaerat placeat numquam aspernatur, accusamus magnam neque."
+%}
+
 </div>
 
 
 <script>
+
 var myOptions = [
   { label: 'Repository', value: 'repository' },
   { label: 'Data', value: 'data' },

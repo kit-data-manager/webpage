@@ -2,13 +2,14 @@
 title:  "Listing Content Information"
 breadcrumbs: /base-repo/documentation/listing-content-information
 layout: default
+description: A Generic, General Purpose Research Data Repository Service.
 categories: base-repo general
 repository_url: https://github.com/kit-data-manager/base-repo
 repository_name: kit-data-manager/base-repo
 navigation_id: base_repo_doc
 ---
 
-### {{ page.title }}
+# {{ page.title }}
 
 If you just uploaded the data you still have the data access URL in the Location header of the upload response. However, if you are not the uploader you have to check first, which files are associated with a 
 resource in order to obtain a data access URL before download. This can be done by submitting an HTTP GET request to an arbitraty 'virtual folder' as shown in the next example.

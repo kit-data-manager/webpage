@@ -2,13 +2,14 @@
 title:  "Uploading Data for a Data Resource"
 breadcrumbs: /base-repo/documentation/uploading-data-for-resource
 layout: default
+description: A Generic, General Purpose Research Data Repository Service.
 categories: base-repo general
 repository_url: https://github.com/kit-data-manager/base-repo
 repository_name: kit-data-manager/base-repo
 navigation_id: base_repo_doc
 ---
 
-### {{ page.title }}
+# {{ page.title }}
 
 After covering the basics of metadata creation and modification it's time to associate the first file with a created data resource. Uploading data to a KIT Data Manager based repository is also
 done using the RESTful API. In order to inform the repository to access data or data-related metadata, you only have to append a path element 'data' to the URL of the actual resource. After this 

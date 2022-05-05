@@ -2,13 +2,14 @@
 title:  "Creating a Data Resource"
 breadcrumbs: /base-repo/documentation/create_resource
 layout: default
+description: A Generic, General Purpose Research Data Repository Service.
 categories: base-repo general
 repository_url: https://github.com/kit-data-manager/base-repo
 repository_name: kit-data-manager/base-repo
 navigation_id: base_repo_doc
 ---
 
-### {{ page.title }}
+# {{ page.title }}
 
 The following example shows the creation of the first resource only providing mandatory fields:
 

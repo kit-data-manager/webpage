@@ -2,13 +2,14 @@
 title:  "Remarks"
 breadcrumbs: /base-repo/documentation/audit-remarks
 layout: default
+description: A Generic, General Purpose Research Data Repository Service.
 categories: base-repo general
 repository_url: https://github.com/kit-data-manager/base-repo
 repository_name: kit-data-manager/base-repo
 navigation_id: base_repo_doc
 ---
 
-### {{ page.title }}
+# {{ page.title }}
 
 While working with versions you should keep some particularities in mind. Access to version is only possible for single resources. There is e.g. no way to obtain all resources in version 2 from the server.
 If a specific version of a resource is returned, the obtained ETag also relates to this specific version. Therefore, you should NOT use this ETag for any update operation as the operation will fail with response 

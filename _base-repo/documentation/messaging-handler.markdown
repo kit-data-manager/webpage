@@ -2,13 +2,14 @@
 title:  "Adding a Custom Message Handler"
 breadcrumbs: /base-repo/documentation/messaging-handler
 layout: default
+description: A Generic, General Purpose Research Data Repository Service.
 categories: base-repo general
 repository_url: https://github.com/kit-data-manager/base-repo
 repository_name: kit-data-manager/base-repo
 navigation_id: base_repo_doc
 ---
 
-### {{ page.title }}
+# {{ page.title }}
 
 There are multiple possibilities to consume messages from a server supporting the Advanced Message Queuing Protocol (AMQP) like RabbitMQ. In this documentation, we'll describe how to do this using the built-in messaging support. 
 Therefore, it's beneficial if you already have some programming experiences, preferably in Java. 

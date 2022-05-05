@@ -2,14 +2,14 @@
 title: Documentation
 breadcrumbs: /base-repo/documentation/
 layout: default
+description: A Generic, General Purpose Research Data Repository Service.
 navigation_id: base_repo_doc
 repository_url: https://github.com/kit-data-manager/base-repo
 repository_name: kit-data-manager/base-repo
-documentation_url: https://kit-data-manager.github.io/
-description: A Generic, General Purpose Research Data Repository Service.
+navigation_id: base_repo_doc
 ---
 
-### Introduction
+# Introduction
 
 In this documentation, the basics of the KIT Data Manager RESTful API of the Repository Service are described. You will be guided through the first steps of creating a data resource, listing existing resources and modifying a single resource on the metadata-level. Furthermore, the same operations on the data level are explained by example.
 

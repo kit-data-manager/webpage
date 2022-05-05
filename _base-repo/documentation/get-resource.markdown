@@ -2,13 +2,14 @@
 title:  "Getting a Data Resource"
 breadcrumbs: /base-repo/documentation/get-resource
 layout: default
+description: A Generic, General Purpose Research Data Repository Service.
 categories: base-repo general
 repository_url: https://github.com/kit-data-manager/base-repo
 repository_name: kit-data-manager/base-repo
 navigation_id: base_repo_doc
 ---
 
-### {{ page.title }}
+# {{ page.title }}
 
 For obtaining accessible data resources you have multiple options: list all resources, access a single resource using a known identifier or search by example. The following example shows how to obtain a 
 single resource.
