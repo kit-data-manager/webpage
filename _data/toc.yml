@@ -83,8 +83,8 @@ collection_registry_index:
           url: collection-registry/news.html
       - title: Users
         subfolderitems:
-        - page: AppCase 1
-          url: collection-registry/documentation/index.html
+        - page: Katacoda Tutorial
+          external_url: https://katacoda.com/kitdm/scenarios/collection-api
       - title: Developers
         subfolderitems:
         - page: RESTful API
