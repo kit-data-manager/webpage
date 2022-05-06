@@ -56,5 +56,10 @@ a [Liquid](https://shopify.github.io/liquid/) template.
 ### Sub-Pages using Collections
 
 As mentioned before, collections are used to define sub-folders which are scanned for Markdown files used to generate static
-Webpages by Jekyll. In the `_example` folder you can inform yourself how such a sub-page may look like.   
+Webpages by Jekyll. In the `_example` folder you can inform yourself how such a sub-page may look like. In order to show the example
+on the Webpage, three additional steps have to be performed:
+
+1. Add a collection entry for `_examples` including the `output: true` property to `_config.yml`
+2. Add the navigation elements described in `_example/index.markdown` to `_data/toc.yml`
+3. Add the entry card for the example page to `index.markdown`
 
