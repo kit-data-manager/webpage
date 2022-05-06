@@ -101,3 +101,24 @@ collection_registry_index:
         subfolderitems:
         - page: Installation
           url: collection-registry/documentation/installation.html
+metadata_editor_index:
+  - title:
+    subfolderitems:
+      - title: General
+        subfolderitems:
+          - page: The Metadata Editor
+            url: metadata-editor/index.html
+          - page: News Archive
+            url: metadata-editor/news.html
+      - title: Users
+        subfolderitems:
+          - page: Examples
+            url: metadata-editor/documentation/examples.html
+      - title: Developers
+        subfolderitems:
+          - page: Introduction
+            url: metadata-editor/documentation/index.html
+          - page: Source Code
+            external_url: https://github.com/kit-data-manager/metadata-editor
+          - page: Issue Tracker
+            external_url: https://github.com/kit-data-manager/metadata-editor/issues

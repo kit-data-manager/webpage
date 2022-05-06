@@ -32,7 +32,8 @@ target="collection-registry/index.html"
 background="assets/images/collections.jpg"
 title="Collection Registry"
 subtitle="collect, organize, share"
-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore sapiente eveniet quibusdam ab ea, quaerat placeat numquam aspernatur, accusamus magnam neque."
+content="The Collection Registry allows building collections of digital objects, independent of any repository in order to facilitate data
+interoperability, reuse and make collections actionable to be able to cope with ever-increasing amounts and volumes of data."
 %}
 
 {% include card.html tags="ui"
@@ -40,7 +41,7 @@ target="metadata-editor/index.html"
 background="assets/images/editor.png"
 title="Metadata Editor"
 subtitle="it's about filling in and out"
-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore sapiente eveniet quibusdam ab ea, quaerat placeat numquam aspernatur, accusamus magnam neque."
+content="The Metadata Editor is a JavaScript library allowing to generate web forms and validate metadata in an intuitive and generic way."
 %}
 
 </div>
