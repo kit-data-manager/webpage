@@ -72,5 +72,32 @@ base_repo_doc:
           url:  base-repo/documentation/audit-access.html
         - page: Remarks
           url:  base-repo/documentation/audit-remarks.html
-     
-     
+collection_registry_index:
+  - title:
+    subfolderitems:
+      - title: General
+        subfolderitems:
+        - page: The Collection Registry
+          url: collection-registry/index.html
+        - page: News Archive
+          url: collection-registry/news.html
+      - title: Users
+        subfolderitems:
+        - page: AppCase 1
+          url: collection-registry/documentation/index.html
+      - title: Developers
+        subfolderitems:
+        - page: RESTful API
+          url: collection-registry/documentation/api-docs.html
+        - page: Introduction
+          url: collection-registry/documentation/index.html
+        - page: Implementation
+          url: collection-registry/documentation/implementation.html
+        - page: Source Code
+          external_url: https://github.com/kit-data-manager/collection-api
+        - page: Issue Tracker
+          external_url: https://github.com/kit-data-manager/collection-api/issues
+      - title: Administrators
+        subfolderitems:
+        - page: Installation
+          url: collection-registry/documentation/installation.html

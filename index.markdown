@@ -16,7 +16,7 @@ target="base-repo/index.html"
 background="assets/images/disks.jpg"
 title="base-repo"
 subtitle="a place to be for your data"
-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+content="The base-repo is a generic, general purpose research data repository service offering clear, machine-actionable RESTful interfaces for storing, retrieving and managing research data."
 %}
 
 {% include card.html tags="metadata repository restful"

@@ -13,5 +13,6 @@ headingLevel: 2
 layout: swagger
 repository_url: https://github.com/kit-data-manager/base-repo
 repository_name: kit-data-manager/base-repo 
-navigation_id: base_repo_index
+navigation_id: base_repo_index 
+spec_url: /webpage/collection-registry/documentation/swagger.json
 ---

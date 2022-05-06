@@ -43,6 +43,8 @@ plugins:
 collections:
   base-repo:
     output: true
+  collection-registry:
+    output: true
         
     
 # Exclude from processing.
