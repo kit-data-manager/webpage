@@ -58,7 +58,7 @@ target="fairdo-cookbook/index.html"
 background="assets/images/cookbook.png"
 title="FAIR DO Cookbook"
 subtitle="a dish for every occasion"
-content="The Metadata Standards Catalog is an information platform for finding and sharing metadata standards and tools. It is based on the outcome of the [Metadata Standards Catalog Working Group](https://www.rd-alliance.org/groups/metadata-standards-catalog-working-group.html).  
+content="Todo.  
 "
 %}
 </div>
