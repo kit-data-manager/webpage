@@ -44,6 +44,15 @@ subtitle="it's about filling in and out"
 content="The Metadata Editor is a JavaScript library allowing to generate web forms and validate metadata in an intuitive and generic way."
 %}
 
+{% include card.html tags="ui"
+target="msc/index.html"
+background="assets/images/msc.png"
+title="Metadata Standards Catalog"
+subtitle="looking for a standard?"
+content="The Metadata Standards Catalog is an information platform for finding and sharing metadata standards and tools. It is based on the outcome of the [Metadata Standards Catalog Working Group](https://www.rd-alliance.org/groups/metadata-standards-catalog-working-group.html).  
+"
+%}
+
 </div>
 
 

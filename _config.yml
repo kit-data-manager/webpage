@@ -47,7 +47,8 @@ collections:
     output: true
   metadata-editor:
     output: true
-        
+  msc:
+    output: true
     
 # Exclude from processing.
 # The following items will not be processed, by default.

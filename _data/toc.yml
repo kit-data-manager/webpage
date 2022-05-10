@@ -122,3 +122,14 @@ metadata_editor_index:
             external_url: https://github.com/kit-data-manager/metadata-editor
           - page: Issue Tracker
             external_url: https://github.com/kit-data-manager/metadata-editor/issues
+msc_index:
+  - title:
+    subfolderitems:
+      - title: General
+        subfolderitems:
+          - page: The Metadata Standards Catalog
+            url: msc/index.html
+      - title: Users
+        subfolderitems:
+          - page: Helmholtz Instance
+            external_url: https://msc.datamanager.kit.edu/

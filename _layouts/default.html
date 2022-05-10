@@ -37,6 +37,7 @@
 
     {% include breadcrumbs.html %}
 
+    {% if page.repository_url %}
     <div class="downloads">
         <span>Downloads:</span>
         <ul>
@@ -45,6 +46,7 @@
                                                                                src="https://img.shields.io/github/v/release/{{page.repository_name}}?style=flat"/></a></li></span>
         </ul>
     </div>
+    {% endif %}
 
 </div><!-- end banner -->
 
