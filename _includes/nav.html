@@ -8,7 +8,7 @@
                 {% if entry2.url %}
                     <li><a href="{{site.baseurl}}/{{ entry2.url }}">{{ entry2.page }}</a></li>
                 {% else %}
-                    <li><a href="{{ entry2.external_url }}">{{ entry2.page }}</a></li>
+                    <li><i class="fa-solid fa-arrow-up-right-from-square" style="margin-right: 4px"></i><a href="{{ entry2.external_url }}" target="_blank">{{ entry2.page }}</a></li>
                 {% endif %}
             {% endfor %}
         </ul>
