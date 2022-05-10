@@ -16,14 +16,39 @@ The base-repo is a generic, general purpose research data repository service off
 
 ## Features
 
-* Light-weight microservice based on Spring Boot
-* Easy installation, e.g., using available Docker images
-* Full support of DataCite Standard 4.0
+* Light-weight microservice based on [Spring Boot](https://spring.io/projects/spring-boot)
+* Easy installation, e.g., using available [Docker images](https://hub.docker.com/repository/docker/kitdm/base-repo)
+* Full support of [DataCite Standard 4.0](https://schema.datacite.org/meta/kernel-4.0/)
 * Flexible organization of content in virtual folders
-* Configurable versioning of metadata and content, e.g., following the OCFL specification
+* Configurable versioning of metadata and content, e.g., following the [OCFL specification](https://ocfl.io/)
 * (Optional) OAI-PMH support for metadata harvesting
-* (Optional) Messaging support via RabbitMQ to process repository events, e.g., resource creation or file upload.
+* (Optional) Messaging support via [RabbitMQ](https://www.rabbitmq.com/) to process repository events, e.g., resource creation or file upload.
 * (Optional) JWT-based authentication and authorization via Keycloak
+
+<div class="flex flex-wrap -m-3 inset-5px">
+        <div class="w-full sm:w-1/2 md:w-1/3 flex-col p-3">
+            <h1 class="text-center"><i class="fa-brands fa-docker" aria-hidden="true"></i></h1>
+            <h3 class="text-center">Quickstart</h3>
+            <p>In case you want to have a quick try of base-repo without any configuration effort, check out our <a href="https://hub.docker.com/repository/docker/kitdm/base-repo">Docker Images</a>.
+                You'll get a pre-configured instance which can be customized later on according to your preferences.
+            </p>
+        </div>
+        <div class="w-full sm:w-1/2 md:w-1/3 flex-col p-3">
+            <h1 class="text-center"><i class="fa-solid fa-circle-question" aria-hidden="true"></i></h1>
+            <h3 class="text-center">Further Reading</h3>
+            <p>If you want to read more before you give base-repo a try, check out the different documents grouped by audience. There you can learn more about the
+            <a href="/webpage/base-repo/documentation/api-docs.html">RESTful API</a>, the <a href="/webpage/base-repo/documentation/index.html">Usage</a>, or the <a href="/webpage/base-repo/documentation/installation.html">Installation</a>.
+            </p>
+        </div>
+        <div class="w-full sm:w-1/2 md:w-1/3 flex-col p-3">
+            <h1 class="text-center"><i class="fa fa-code-fork" aria-hidden="true"></i></h1>
+            <h3 class="text-center">Looking for Code?</h3>
+            <p>In case you are interested in source-code, check out the <a href="https://github.com/kit-data-manager/base-repo">GitHub Repository of base-repo</a>. There
+            you can also open an <a href="https://github.com/kit-data-manager/base-repo/issues">Issue</a> to report a bug or to request a new feature.</p>
+        </div>
+</div>
+
+
 
 ## News
 
