@@ -29,7 +29,7 @@ The base-repo is a generic, general purpose research data repository service off
         <div class="w-full sm:w-1/2 md:w-1/3 flex-col p-3">
             <h1 class="text-center"><i class="fa-brands fa-docker" aria-hidden="true"></i></h1>
             <h3 class="text-center">Quickstart</h3>
-            <p>In case you want to have a quick try of base-repo without any configuration effort, check out our <a href="https://hub.docker.com/repository/docker/kitdm/base-repo">Docker Images</a>.
+            <p>In case you want to have a quick try of base-repo without any configuration effort, check out our <a href="https://hub.docker.com/r/kitdm/base-repo/">Docker Images</a>.
                 You'll get a pre-configured instance which can be customized later on according to your preferences.
             </p>
         </div>
