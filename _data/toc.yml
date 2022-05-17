@@ -133,3 +133,74 @@ msc_index:
         subfolderitems:
           - page: Helmholtz Instance
             external_url: https://msc.datamanager.kit.edu/
+metastore_doc_rest:
+  - title: Documentation (REST API)
+    subfolderitems:
+      - title: 
+        subfolderitems:
+        - page: Introduction
+          url: metastore/documentation/index.html
+      - title: Schema Registration
+        subfolderitems:
+        - page: Introduction
+          url: metastore/documentation/REST/introduction-schema.html
+        - page: Register a Schema
+          url: metastore/documentation/REST/register-schema.html
+        - page: Getting a Metadata Schema Record
+          url: metastore/documentation/REST/get-schema-record.html
+        - page: Getting a Metadata Schema Document
+          url: metastore/documentation/REST/get-schema-document.html
+        - page: Updating a Metadata Schema Document
+          url: metastore/documentation/REST/update-schema.html
+        - page: Getting a List of Metadata Schema Records
+          url: metastore/documentation/REST/list-schema-records.html
+        - page: Getting a List of all Schema Records for a Specific SchemaId
+          url: metastore/documentation/REST/list-specific-schema-records.html
+        - page: Updating a Metadata Schema Document3
+          url: metastore/documentation/REST/get-specific-schema-document.html
+        - page: Updating a Metadata Schema Document4
+          url: metastore/documentation/REST/update-schema.html
+      - title: Metadata Handling
+        subfolderitems:
+        - page: Introduction Metadata
+          url: metastore/documentation/REST/metadata/JSON/metadata-introduction.html
+        - page: Create a Data Resource
+          url: metastore/documentation/REST/metadata/JSON/create-resource.html
+        - page: Get a Data Resource
+          url: metastore/documentation/REST/metadata/JSON/get-resource.html
+        - page: Update a Data Resource
+          url: metastore/documentation/REST/metadata/JSON/update-resource.html
+        - page: Delete a Data Resource
+          url: metastore/documentation/REST/metadata/JSON/deleting-resource.html
+  - title: Appendix
+    subfolderitems:
+      - title: Messaging
+        subfolderitems:
+        - page: Introduction
+          url: base-repo/documentation/messaging-introduction.html
+        - page: Types and Formats
+          url: base-repo/documentation/messaging-types-formats.html
+        - page: Custom Handler
+          url: base-repo/documentation/messaging-handler.html
+      - title: Audit Information
+        subfolderitems:
+        - page: Introduction
+          url:  base-repo/documentation/audit-introduction.html
+        - page: Working with Versions
+          url:  base-repo/documentation/audit-access.html
+        - page: Remarks
+          url:  base-repo/documentation/audit-remarks.html
+metastore_doc:
+  - title: 
+    subfolderitems:
+      - title: Documentation MetaStore
+        subfolderitems:
+          - page: Installation
+            url: metastore/documentation/installation/index.html
+          - page: REST API
+            url: metastore/documentation/REST/index.html
+          - page: GUI
+            url: metastore/documentation/GUI/index.html
+          - page: Cookbook (external link)
+            url: https://demo.scc.kit.edu/metastore/introductionCookbook.html
+

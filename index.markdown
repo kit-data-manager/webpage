@@ -24,7 +24,7 @@ target="metastore/index.html"
 background="assets/images/metadata.jpg"
 title="MetaStore"
 subtitle="more fun with metadata"
-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore sapiente eveniet quibusdam ab ea, quaerat placeat numquam aspernatur, accusamus magnam neque."
+content="MetaStore is a research data repository service for managing formally quality-controlled metadata documents based on JSON or XML."
 %}
 
 {% include card.html tags="restful"
