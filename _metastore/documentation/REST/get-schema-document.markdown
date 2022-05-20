@@ -31,7 +31,7 @@ td, th {
    border: none!important;
 }
 </style>
-|[PREVIOUS](get-schema-record.html)| [NEXT](update-schema.html) |
+|[<< PREVIOUS](get-schema-record.html)| [NEXT >>](update-schema.html) |
 |:----|----:|
 | | |
 

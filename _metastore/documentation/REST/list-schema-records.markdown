@@ -44,7 +44,7 @@ td, th {
    border: none!important;
 }
 </style>
-|[PREVIOUS](update-schema.html)| [NEXT](list-specific-schema-records.html) |
+|[<< PREVIOUS](update-schema.html)| [NEXT >>](list-specific-schema-records.html) |
 |:----|----:|
 | | |
 

@@ -35,7 +35,7 @@ td, th {
    border: none!important;
 }
 </style>
-|[PREVIOUS](register-schema.html)| [NEXT](get-schema-document.html) |
+|[<< PREVIOUS](register-schema.html)| [NEXT >>](get-schema-document.html) |
 |:----|----:|
 | | |
 

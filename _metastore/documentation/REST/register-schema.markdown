@@ -65,7 +65,7 @@ td, th {
    border: none!important;
 }
 </style>
-|[PREVIOUS](introduction-schema.html)| [NEXT](get-schema-record.html) |
+|[<< PREVIOUS](introduction-schema.html)| [NEXT >>](get-schema-record.html) |
 |:----|----:|
 | | |
 

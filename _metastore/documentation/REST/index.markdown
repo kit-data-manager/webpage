@@ -28,7 +28,7 @@ td, th {
    border: none!important;
 }
 </style>
-| |[NEXT](introduction-schema.html)|
+| |[NEXT >>](introduction-schema.html)|
 |:----|----:|
 | | |
 

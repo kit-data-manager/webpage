@@ -42,6 +42,6 @@ td, th {
    border: none!important;
 }
 </style>
-|[PREVIOUS](index.html)| [NEXT](register-schema.html) |
+|[<< PREVIOUS](index.html)| [NEXT >>](register-schema.html) |
 |:----|----:|
 | | |

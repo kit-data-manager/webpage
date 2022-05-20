@@ -70,7 +70,7 @@ td, th {
    border: none!important;
 }
 </style>
-|[PREVIOUS](get-schema-document.html)| [NEXT](list-schema-records.html) |
+|[<< PREVIOUS](get-schema-document.html)| [NEXT >>](list-schema-records.html) |
 |:----|----:|
 | | |
 

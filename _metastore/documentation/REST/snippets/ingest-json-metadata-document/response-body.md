@@ -1,12 +1,12 @@
 ```
 {
-  "id" : "832baf8d-5c16-41a1-b4af-8d8538f73e8c",
+  "id" : "6785ad43-9a17-40b5-9653-220a8232ef2f",
   "relatedResource" : {
     "identifier" : "https://repo/anyResourceId",
     "identifierType" : "URL"
   },
-  "createdAt" : "2022-05-17T08:01:35Z",
-  "lastUpdate" : "2022-05-17T08:01:35.393Z",
+  "createdAt" : "2022-05-20T09:54:03Z",
+  "lastUpdate" : "2022-05-20T09:54:03.45Z",
   "schema" : {
     "identifier" : "http://localhost:8040/api/v1/schemas/my_first_json?version=1",
     "identifierType" : "URL"
@@ -14,11 +14,11 @@
   "schemaVersion" : 1,
   "recordVersion" : 1,
   "acl" : [ {
-    "id" : 4,
+    "id" : 3,
     "sid" : "SELF",
     "permission" : "ADMINISTRATE"
   } ],
-  "metadataDocumentUri" : "http://localhost:8040/api/v1/metadata/832baf8d-5c16-41a1-b4af-8d8538f73e8c?version=1",
+  "metadataDocumentUri" : "http://localhost:8040/api/v1/metadata/6785ad43-9a17-40b5-9653-220a8232ef2f?version=1",
   "documentHash" : "sha1:97ac2fb17cd40aac07a55444dc161d615c70af8a"
 }
 ```

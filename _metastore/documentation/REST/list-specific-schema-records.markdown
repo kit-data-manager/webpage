@@ -1,6 +1,6 @@
 ---
 title: Getting a List of all Schema Records for a Specific SchemaId
-breadcrumbs: /metastore/documentation/REST/Getting a Metadata Schema Document
+breadcrumbs: /metastore/documentation/REST/Getting a List of all Schema Records for a Specific SchemaId
 layout: default
 description: A Research Data Repository Service for Managing Metadata Documents based on JSON or XML.
 repository_url: https://github.com/kit-data-manager/metastore2
@@ -32,7 +32,7 @@ td, th {
    border: none!important;
 }
 </style>
-|[PREVIOUS](list-schema-records.html)| [NEXT](get-specific-schema-document.html) |
+|[<< PREVIOUS](list-schema-records.html)| [NEXT >>](get-specific-schema-document.html) |
 |:----|----:|
 | | |
 
