@@ -11,8 +11,9 @@ navigation_id: metastore_instal
 # {{ page.title }} 
 
 ## Prerequisites
-In order to run this microservice via docker you'll need:
+In order to run this microservice you'll need:
 
+* Linux, MacOs, WSL (not tested) 
 * [Java SE Development Kit >=8 and <=17](https://openjdk.java.net/) 
 * [git](https://git-scm.com/) 
 

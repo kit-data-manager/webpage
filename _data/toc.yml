@@ -192,28 +192,28 @@ metastore_doc:
           - page: GUI
             url: metastore/documentation/GUI/index.html
           - page: Cookbook (external link)
-            url: https://demo.scc.kit.edu/metastore/introductionCookbook.html
+            url: metastore/documentation/cookbook.html
 metastore_instal:
-  - title: 
+  - title: Installation & Setup
     subfolderitems:
-      - title: Installation MetaStore
+      - title: MetaStore
         subfolderitems:
           - page: Installation via DockerHub
             url: metastore/documentation/installation/installation-via-dockerHub.html
           - page: Build your own Docker Container
             url: metastore/documentation/installation/build-docker-container.html
-          - page: Build your own Docker Container
+          - page: Local Installation
             url: metastore/documentation/installation/local-installation.html
-      - title: Installation & Setup of Database
+          - page: Setup
+            url: metastore/documentation/installation/setup-metastore.html
+          - page: Backup
+            url: metastore/documentation/installation/backup-metastore.html
+      - title: Database
         subfolderitems:
           - page: Introduction
-            url: metastore/documentation/installation/postgres/index.html
+            url: metastore/documentation/installation/database/index.html
           - page: PostGres (Docker)
-            url: metastore/documentation/installation/postgres/index.html
-          - page: PostGres (
-            url: metastore/documentation/installation/postgres/index.html
-      - title: Setup MetaStore
-        subfolderitems:
-          - page: Installation via DockerHub
-            url: metastore/documentation/installation/installation-via-dockerhub.html
+            url: metastore/documentation/installation/database/postgres-docker.html
+          - page: PostGres (Ubuntu)
+            url: metastore/documentation/installation/database/postgres.html
 

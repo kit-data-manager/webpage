@@ -23,7 +23,7 @@ content="The base-repo is a generic, general purpose research data repository se
 target="metastore/index.html"
 background="assets/images/metadata.jpg"
 title="MetaStore"
-subtitle="more fun with metadata"
+subtitle="metadata - for sure"
 content="MetaStore is a research data repository service for managing formally quality-controlled metadata documents based on JSON or XML."
 %}
 

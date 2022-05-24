@@ -1,6 +1,6 @@
 ---
 title:  Build your own Docker Container
-breadcrumbs: /metastore/documentation/installation
+breadcrumbs: /metastore/documentation/installation/Build your own Docker Container
 layout: default
 description: A Research Data Repository Service for Managing Metadata Documents based on JSON or XML.
 repository_url: https://github.com/kit-data-manager/metastore2
@@ -47,4 +47,18 @@ user@localhost:/home/user/metastore2$ docker run -d -p8040:8040 --name metastore
 57c973e7092bfc3778569f90632d60775dfecd12352f13a4fd2fdf4270865286
 user@localhost:/home/user/metastore2$
 ```
+## Setup MetaStore inside Docker
+If you want to setup MetaStore inside a docker container you have stop and remove created image first and rebuild it with
+mounting a local directory holding your 'application.properties'
+```
+user@localhost:/home/user/metastore2$ docker stop metastore4docker 
+user@localhost:/home/user/metastore2$ docker rm metastore4docker 
+user@localhost:/home/user/metastore2$ docker run -d -p8040:8040 \
+                                                 --mount type=bind,source="$(pwd)"/config,target=/spring/metastore2/config \
+                                                 --name metastore4docker kitdm/metastore2:1.0.0-SNAPSHOT-2022-05-23
+57c973e7092bfc3778569f90632d60775dfecd12352f13a4fd2fdf4270865286
+user@localhost:/home/user/metastore2$
+```
+For how to set up MetaStore please refer to [Setup MetaStore](setup-metastore.html).
 
+From now on the container has to be restarted to trigger new settings from 'application.properties'.
