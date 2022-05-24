@@ -133,3 +133,49 @@ msc_index:
         subfolderitems:
           - page: Helmholtz Instance
             external_url: https://msc.datamanager.kit.edu/
+typed_pid_maker_index:
+  - title:
+    subfolderitems:
+      - title: General
+        subfolderitems:
+          - page: Typed PID Maker
+            url: typed-pid-maker/index.html
+      - title: Users
+        subfolderitems:
+          - page: Cookbook Overview
+            external_url: https://kit-data-manager.github.io/fairdo-cookbook/appendix/appendix_pit.html
+          - page: Create PIDs
+            external_url: https://kit-data-manager.github.io/fairdo-cookbook/pids/create.html
+          - page: Resolve PIDs
+            external_url: https://kit-data-manager.github.io/fairdo-cookbook/pids/create.html
+          - page: Update PIDs
+            external_url: https://kit-data-manager.github.io/fairdo-cookbook/pids/create.html
+          - page: Delete PIDs
+            external_url: https://kit-data-manager.github.io/fairdo-cookbook/pids/create.html
+          - page: Notify about your PIDs
+            external_url: https://kit-data-manager.github.io/fairdo-cookbook/pids/create.html
+      - title: Developers
+        subfolderitems:
+          - page: OpenAPI definition
+            external_url: https://app.swaggerhub.com/apis/pfeil/PIT-Service/
+          - page: Source Code
+            external_url: https://github.com/kit-data-manager/pit-service
+      - title: Administrators
+        subfolderitems:
+          - page: Installation
+            url: typed-pid-maker/installation.html
+          - page: Configuration
+            url: typed-pid-maker/configuration.html
+testbed_index:
+  - title:
+    subfolderitems:
+      - title: Sub-Item1
+        subfolderitems:
+          - page: Sub-Page
+            url: testbed/page1.html
+      - title: Sub-Item2
+        subfolderitems:
+          - page: Sub-Page
+            url: testbed/subfolder/page2.html
+          - page: Source Code
+            external_url: https://github.com/kit-data-manager/webpage

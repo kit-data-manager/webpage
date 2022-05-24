@@ -60,6 +60,24 @@ subtitle="a dish for every occasion"
 content="Todo.  
 "
 %}
+
+{% include card.html tags="restful fairdo metadata"
+target="typed-pid-maker/index.html"
+background="assets/images/cookbook.png"
+title="Typed PID Maker"
+subtitle="makes machine-actionable PIDs."
+content="Todo.  
+"
+%}
+
+{% include card.html tags="restful fairdo metadata"
+target="testbed/index.html"
+background="assets/images/cookbook.png"
+title="Testbed"
+subtitle="a sandboxed environment for FAIR DOs."
+content="Todo.  
+"
+%}
 </div>
 
 
@@ -70,7 +88,8 @@ var myOptions = [
   { label: 'Data', value: 'data' },
   { label: 'Metadata', value: 'metadata' },
   { label: 'RESTful', value: 'restful' },
-  { label: 'UI', value: 'ui' }
+  { label: 'UI', value: 'ui' },
+  { label: 'FAIR Digital Object', value: 'fairdo' }
 ];
 
 VirtualSelect.init({
@@ -79,8 +98,8 @@ VirtualSelect.init({
   multiple: true
 });
 
-document.querySelector('#example-select').setValue(['repository', 'data', 'metadata', 'restful', 'ui']);
-filterSelection(['repository', 'data', 'metadata', 'restful', 'ui']);
+document.querySelector('#example-select').setValue(['repository', 'data', 'metadata', 'restful', 'ui', 'fairdo']);
+filterSelection(['repository', 'data', 'metadata', 'restful', 'ui', 'fairdo']);
 
 function filterSelection(values) {
   var x, i, j;
