@@ -19,7 +19,7 @@ tag-name: metadata-editor
     <div class="news_card">
       <h2>{{ post.title }}</h2>
       <h5>published {{ post.date | date: "%Y-%m-%d" }}</h5>
-      <div class="fakeimg" style="height:200px;background-image: url('/webpage/assets/images/editor.png');transform: translate(0px, -100px);"></div>
+      <div class="fakeimg" style="height:200px;background-image: url('/webpage/assets/images/editor.png');background-position-x: 650x;background-position-y: 512px"></div>
       <p>{{ post.content }}</p>
     </div>
     {% endif %}
