@@ -1,12 +1,12 @@
 ---
 title: News Archive
-breadcrumbs: /collection-registry/news/
+breadcrumbs: /metadata-editor/news/
 layout: default
-repository_url: https://github.com/kit-data-manager/collection-api
-repository_name: kit-data-manager/collection-api
-description: A General Purpose Service for building Research Data Collections.
-navigation_id: collection_registry_index
-tag-name: collection-registry
+description: A JavaScript library to generate Web Forms for your Metadata.
+repository_url: https://github.com/kit-data-manager/metadata-editor
+repository_name: kit-data-manager/metadata-editor
+navigation_id: metadata_editor_index
+tag-name: metadata-editor
 ---
 
 # News Archive
