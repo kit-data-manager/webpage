@@ -3,9 +3,8 @@ layout: home
 breadcrumbs: /
 ---
 
-<div id="myBtnContainer">
+<div id="filter-ui" class="mb-5">
   <div id="example-select"></div>
-  <button id="btn_all" class="btn rounded-lg shadow-lg"> Filter</button>
 </div>
 
 <div class="flex flex-wrap -m-3"> 
@@ -118,10 +117,10 @@ function w3RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
+var ui = document.getElementById("filter-ui");
+var list = ui.getElementsByClassName("vscomp-dropbox");
 
-btns[0].addEventListener("click", function(evt){ 
+list[0].addEventListener("click", function(evt){ 
     filterSelection($('#example-select').val());
 });
 

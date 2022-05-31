@@ -220,4 +220,14 @@ metastore_instal:
             url: metastore/documentation/installation/setup-server.html
           - page: Backup
             url: metastore/documentation/installation/backup-metastore.html
-
+fairdo-cookbook_index:
+  - title:
+    subfolderitems:
+      - title: General
+        subfolderitems:
+          - page: The FAIR DO Cookbook
+            url: fairdo-cookbook/index.html
+      - title: Users
+        subfolderitems:
+          - page: Webpage
+            external_url: https://kit-data-manager.github.io/fairdo-cookbook/

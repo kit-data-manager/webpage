@@ -20,4 +20,4 @@ Today, we like to announce version 1.2.0 of the Collection Registry. Below, you 
 ### Fixed
 - Issue with identifiers containing slashes
 
-If you face any issues, please file an [issue at GitHub](https://github.com/kit-data-manager/collection-registry/issues). 
+If you face any issues, please file an [issue on GitHub](https://github.com/kit-data-manager/collection-registry/issues). 
