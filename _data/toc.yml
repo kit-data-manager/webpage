@@ -206,8 +206,6 @@ metastore_instal:
             url: metastore/documentation/installation/local-installation.html
           - page: Setup
             url: metastore/documentation/installation/setup-metastore.html
-          - page: Backup
-            url: metastore/documentation/installation/backup-metastore.html
       - title: Database
         subfolderitems:
           - page: Introduction
@@ -216,4 +214,10 @@ metastore_instal:
             url: metastore/documentation/installation/database/postgres-docker.html
           - page: PostGres (Ubuntu)
             url: metastore/documentation/installation/database/postgres.html
+      - title: Setup Server & Administration
+        subfolderitems:
+          - page: Setup Server
+            url: metastore/documentation/installation/setup-server.html
+          - page: Backup
+            url: metastore/documentation/installation/backup-metastore.html
 
