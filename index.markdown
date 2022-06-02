@@ -66,17 +66,15 @@ target="typed-pid-maker/index.html"
 background="assets/images/cookbook.png"
 title="Typed PID Maker"
 subtitle="makes machine-actionable PIDs."
-content="Todo.  
-"
+content="The Typed PID Maker is an entry point to integrate digital resources into the FAIR DO ecosystem. Create, modify, validate and retrieve PIDs for your digital objects. Offers sandboxed PIDs for testing, but can be configured to, e.g, the Handle system."
 %}
 
 {% include card.html tags="restful fairdo metadata"
 target="testbed/index.html"
 background="assets/images/cookbook.png"
-title="Testbed"
-subtitle="a sandboxed environment for FAIR DOs."
-content="Todo.  
-"
+title="FAIR DO Testbed"
+subtitle="an environment blueprint for FAIR DO infrastructures."
+content="The Testbed is a configurable structure of services to fulfill generic FAIR Digital Object (FAIR DO) use cases. It is a proposal for research which can be configured and extended to specific needs."
 %}
 </div>
 
