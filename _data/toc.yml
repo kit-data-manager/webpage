@@ -169,13 +169,28 @@ typed_pid_maker_index:
 testbed_index:
   - title:
     subfolderitems:
-      - title: Sub-Item1
+      - title: General
         subfolderitems:
-          - page: Sub-Page
-            url: testbed/page1.html
-      - title: Sub-Item2
+          - page: Overview
+            url: testbed/index.html
+      - title: Users
         subfolderitems:
-          - page: Sub-Page
-            url: testbed/subfolder/page2.html
+          - page: User Interface Guide
+            url: testbed/subfolder/ui-guide.html
+      - title: Developers
+        subfolderitems:
+          - page: Local Setup
+            url: testbed/docker-compose.html
+          - page: Configuration
+            url: testbed/configuration.html
+          - page: APIs
+            url: testbed/apis.html
           - page: Source Code
-            external_url: https://github.com/kit-data-manager/webpage
+            external_url: https://github.com/kit-data-manager/testbed4inf
+      - title: Administrators
+        subfolderitems:
+          - page: Status and Stability
+            url: testbed/status.html
+          - page: Server Setup
+            url: testbed/server-setup.html
+
