@@ -176,7 +176,7 @@ testbed_index:
       - title: Users
         subfolderitems:
           - page: User Interface Guide
-            url: testbed/subfolder/ui-guide.html
+            url: testbed/ui-guide.html
       - title: Developers
         subfolderitems:
           - page: Local Setup

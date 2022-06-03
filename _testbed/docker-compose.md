@@ -66,7 +66,7 @@ docker compose up  # start testbed
 docker compose down
 ```
 
-Then, remove the repository folder, for example using `rm -rf testbed4inf`.
+Then, remove the repository folder, for example using `rm -rf testbed4inf`. What is then remaining is a set of images. If you use Docker Desktop, you can use the UI to delete the ones you do not require. Alternatively you can use `docker images` to list them and `docker rmi <image>` to delete an image.
 
 ## Further configuration
 
