@@ -1,12 +1,12 @@
 ---
 title: News Archive
-breadcrumbs: /collection-registry/news/
+breadcrumbs: /metadata-editor/news/
 layout: default
-repository_url: https://github.com/kit-data-manager/collection-api
-repository_name: kit-data-manager/collection-api
-description: A General Purpose Service for building Research Data Collections.
-navigation_id: collection_registry_index
-tag-name: collection-registry
+description: A JavaScript library to generate Web Forms for your Metadata.
+repository_url: https://github.com/kit-data-manager/metadata-editor
+repository_name: kit-data-manager/metadata-editor
+navigation_id: metadata_editor_index
+tag-name: metadata-editor
 ---
 
 # News Archive
@@ -19,7 +19,7 @@ tag-name: collection-registry
     <div class="news_card">
       <h2>{{ post.title }}</h2>
       <h5>published {{ post.date | date: "%Y-%m-%d" }}</h5>
-      <div class="fakeimg" style="height:200px;background-image: url('/webpage/assets/images/collections.jpg')"></div>
+      <div class="fakeimg" style="height:200px;background-image: url('/webpage/assets/images/editor.png');background-position-x: 650x;background-position-y: 512px"></div>
       <p>{{ post.content }}</p>
     </div>
     {% endif %}
