@@ -76,6 +76,14 @@ title="FAIR DO Testbed"
 subtitle="an environment blueprint for FAIR DO infrastructures."
 content="The Testbed is a configurable structure of services to fulfill generic FAIR Digital Object (FAIR DO) use cases. It is a proposal for research which can be configured and extended to specific needs."
 %}
+
+{% include card.html tags="data metadata"
+target="ro-crate-java/index.html"
+background="assets/images/ro-crate-java_logo.svg"
+title="ro-crate-java"
+subtitle="a library to package and link all your research data."
+content="Using ro-crate-java, you can create and modify research packages (RO-Crates). These packages allow you to describe your research machine-readable and human-readable, making it FAIR. Build this functionality into your applications or use it directly."
+%}
 </div>
 
 

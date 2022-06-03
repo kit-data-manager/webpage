@@ -204,3 +204,23 @@ testbed_index:
             url: testbed/status.html
           - page: Server Setup
             url: testbed/server-setup.html
+ro-crate-java_index:
+  - title:
+    subfolderitems:
+      - title: General
+        subfolderitems:
+          - page: Overview
+            url: ro-crate-java/index.html
+      - title: Users
+        subfolderitems:
+          - page: Introduction
+            url: ro-crate-java/introduction.html
+          - page: Specification Examples
+            url: ro-crate-java/examples.html
+      - title: Developers
+        subfolderitems:
+          - page: Source Code
+            external_url: https://github.com/kit-data-manager/ro-crate-java
+          - page: Benchmark Code
+            external_url: https://github.com/kit-data-manager/ro-crate-benchmarks
+
