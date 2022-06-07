@@ -168,7 +168,7 @@ typed_pid_maker_index:
       - title: Developers
         subfolderitems:
           - page: OpenAPI definition
-            external_url: https://app.swaggerhub.com/apis/pfeil/PIT-Service/
+            url: typed-pid-maker/openapi.html
           - page: Source Code
             external_url: https://github.com/kit-data-manager/pit-service
       - title: Administrators
