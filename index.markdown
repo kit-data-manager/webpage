@@ -63,7 +63,7 @@ content="Todo.
 
 {% include card.html tags="restful fairdo metadata"
 target="typed-pid-maker/index.html"
-background="assets/images/cookbook.png"
+background="assets/images/typed-pid-maker_logo.svg"
 title="Typed PID Maker"
 subtitle="makes machine-actionable PIDs."
 content="The Typed PID Maker is an entry point to integrate digital resources into the FAIR DO ecosystem. Create, modify, validate and retrieve PIDs for your digital objects. Offers sandboxed PIDs for testing, but can be configured to, e.g, the Handle system."
