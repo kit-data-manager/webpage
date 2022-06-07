@@ -71,7 +71,7 @@ content="The Typed PID Maker is an entry point to integrate digital resources in
 
 {% include card.html tags="restful fairdo metadata"
 target="testbed/index.html"
-background="assets/images/cookbook.png"
+background="assets/images/testbed_preview.png"
 title="FAIR DO Testbed"
 subtitle="an environment blueprint for FAIR DO infrastructures."
 content="The Testbed is a configurable structure of services to fulfill generic FAIR Digital Object (FAIR DO) use cases. It is a proposal for research which can be configured and extended to specific needs."
