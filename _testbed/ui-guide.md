@@ -35,6 +35,22 @@ A quick guide:
 
 ## Kibana
 
-Kibana can be used to explore the database, but is being considered a management interface. It is not a simple interface for everyday search requests that should be accessible to all users.
+Kibana can be used to explore the database, but is being considered a management interface. It is not a simple interface for everyday search requests that should be accessible to all users. Kibana is available via <http://127.0.0.1:5601>.
 
-> TODO add quickstart
+- Click on discover in the left-side menu.
+
+    ![](../assets/images/testbed/Kibana-1-discover.png){:class="max-h-96"}
+
+- Set `record*` as the index pattern.
+
+    ![](../assets/images/testbed/Kibana-2-index-pattern.png){:class="max-h-52"}
+
+- You can not set a time filter or choose not to.
+
+    ![](../assets/images/testbed/Kibana-3-time-filter.png){:class="max-h-52"}
+
+- Click on Discover again (see first image)
+
+- View and search through your PIDs.
+
+    ![](../assets/images/testbed/Kibana-4-query.png){:class="max-h-96"}
