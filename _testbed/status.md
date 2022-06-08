@@ -12,4 +12,4 @@ navigation_id: testbed_index
 
 The following image describes the services, how they communicate, and their status. Not that some services, like RabbitMQ, Elasticsearch and Kibana are well-established components in modern infrastructures. The arrows describe dependencies: a service will not work properly if it points to a service which is missing. This should also help for the configuration of the testbed.
 
-![status illustration of all components](status_components.drawio.svg)
+![status illustration of all components](../assets/images/testbed/status_components.drawio.svg)
