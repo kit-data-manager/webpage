@@ -52,7 +52,7 @@
         {% include nav.html %}
         {% endunless %}
 
-        <section>
+        <section onclick="window.dispatchEvent(new Event('resize'));">
             <h3>RESTful API</h3>
             <rapi-doc-mini
                 spec-url="{{page.spec_url}}"
