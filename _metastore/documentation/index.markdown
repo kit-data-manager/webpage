@@ -11,8 +11,7 @@ navigation_id: metastore_doc
 # {{ page.title }} 
 
 In this documentation, the basics of the MetaStore Service are described. 
-It is splitted in four parts:
+It is splitted in three parts:
 - [Installation](installation/index.html)
 - [REST](REST/index.html)
-- [GUI](GUI/index.html)
-- [Cookbook (external)](https://demo.scc.kit.edu/metastore/introductionCookbook.html)
+- [GUI (external)](https://kit-data-manager.github.io/metastore2)

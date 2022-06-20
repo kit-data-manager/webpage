@@ -190,9 +190,7 @@ metastore_doc:
           - page: REST API
             url: metastore/documentation/REST/index.html
           - page: GUI
-            url: metastore/documentation/GUI/index.html
-          - page: Cookbook (external link)
-            url: metastore/documentation/cookbook.html
+            external_url: https://kit-data-manager.github.io/metastore2
 metastore_instal:
   - title: Installation & Setup
     subfolderitems:
