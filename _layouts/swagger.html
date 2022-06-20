@@ -1,90 +1,83 @@
 <!doctype html>
-<html lang="{{ site.lang | default: " en-US" }}">
+<html lang="{{ site.lang | default: "en-US" }}">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script type="module" src="https://unpkg.com/rapidoc/dist/rapidoc-min.js"></script>
     {% seo %}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
-          integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
-          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <!--link rel="stylesheet" href="/webpage/assets/css/fontawesome/all.min.css"/-->
     <script src="https://kit.fontawesome.com/7bd54a708b.js" crossorigin="anonymous"></script>
 
 
     <script src="https://code.jquery.com/jquery-3.3.0.min.js"
             integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"
-            integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
-    <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     {% include head-custom.html %}
 
 </head>
+
 <body>
 
-<header>
-    <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-    <p>{{ page.description | default: site.description | default: site.github.project_tagline }}</p>
-</header>
+    <header>
+        <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+        <p>{{ page.description | default: site.description | default: site.github.project_tagline }}</p>
+    </header>
 
-<div id="banner">
-    <span id="logo"></span>
+    <div id="banner">
+        <span id="logo"></span>
 
-    {% include breadcrumbs.html %}
+        {% include breadcrumbs.html %}
 
-    <div class="downloads">
-        <span>Downloads:</span>
-        <ul>
-            <span><li><a href="{{ page.repository_url }}/releases/latest"><img style="margin-top:14px"
-                                                                               alt="GitHub release (latest by date)"
-                                                                               src="https://img.shields.io/github/v/release/{{page.repository_name}}?style=flat"/></a></li></span>
-        </ul>
-    </div>
-</div><!-- end banner -->
+        <div class="downloads">
+            <span>Downloads:</span>
+            <ul>
+                <span>
+                    <li><a href="{{ page.repository_url }}/releases/latest"><img style="margin-top:14px"
+                                alt="GitHub release (latest by date)"
+                                src="https://img.shields.io/github/v/release/{{page.repository_name}}?style=flat" /></a>
+                    </li>
+                </span>
+            </ul>
+        </div>
+    </div><!-- end banner -->
 
-<div class="wrapper" style="margin-top:200px">
+    <div class="wrapper" style="margin-top:200px">
 
-    {% unless page.no_nav %}
+        {% unless page.no_nav %}
         {% include nav.html %}
-    {% endunless %}
+        {% endunless %}
 
-    <section>
-        <h3>RESTful API</h3>
-    <rapi-doc-mini
-            spec-url="{{page.spec_url}}"
-            style="width:700px; border-radius: 4px; border: 1px solid #cbcbcb; box-shadow: 0px 1px 2px rgb(0 0 0 / 9%), inset 0px 0px 2px 2px rgb(255 255 255 / 50%), inset 0 0 5px 5px rgb(255 255 255 / 40%); background:#FFFFFF;color:#0d0d0d;"
-            paths-expanded="false"
-            id="thedoc"
-            theme="dark"
-            schema-style="table"
-            sort-endpoints-by="method"
-            layout="column"
-            paths-expanded="false"
-            schema-expand-level="2"
-            bg-color="#f9f9fb"
-    ></rapi-doc-mini>
-    </section>
+        <section onclick="window.dispatchEvent(new Event('resize'));">
+            <h3>RESTful API</h3>
+            <rapi-doc-mini
+                spec-url="{{page.spec_url}}"
+                style="width:700px; border-radius: 4px; border: 1px solid #cbcbcb; box-shadow: 0px 1px 2px rgb(0 0 0 / 9%), inset 0px 0px 2px 2px rgb(255 255 255 / 50%), inset 0 0 5px 5px rgb(255 255 255 / 40%); background:#FFFFFF;color:#0d0d0d;"
+                paths-expanded="false"
+                id="thedoc"
+                theme="dark"
+                schema-style="table"
+                sort-endpoints-by="method"
+                layout="column"
+                paths-expanded="false"
+                schema-expand-level="2"
+                bg-color="#f9f9fb">
+            </rapi-doc-mini>
+        </section>
 
-    <footer>
-        {% if site.github.is_project_page %}
-        <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a
-                href="https://twitter.com/mattgraham">mattgraham</a></small></p>
-    </footer>
-</div>
+        <footer>
+            {% if site.github.is_project_page %}
+            <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+            {% endif %}
+            <p><small>Hosted on GitHub Pages &mdash; Theme by <a
+                        href="https://twitter.com/mattgraham">mattgraham</a></small></p>
+        </footer>
+    </div>
 
-
-<!--div class="wrapper">
-
-
-
- <rapi-doc spec-url = "http://localhost:4000/webpage/base-repo-docs/swagger.json" style = "height:100vh; width:100%;" render-style = "graynav"> </rapi-doc>
-
-</div-->
 </body>
+
 </html>
