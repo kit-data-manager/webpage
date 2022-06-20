@@ -144,3 +144,83 @@ fairdo-cookbook_index:
         subfolderitems:
           - page: Webpage
             external_url: https://kit-data-manager.github.io/fairdo-cookbook/
+typed_pid_maker_index:
+  - title:
+    subfolderitems:
+      - title: General
+        subfolderitems:
+          - page: Typed PID Maker
+            url: typed-pid-maker/index.html
+      - title: Users
+        subfolderitems:
+          - page: Cookbook Overview
+            external_url: https://kit-data-manager.github.io/fairdo-cookbook/appendix/appendix_pit.html
+          - page: Create PIDs
+            external_url: https://kit-data-manager.github.io/fairdo-cookbook/pids/create.html
+          - page: Resolve PIDs
+            external_url: https://kit-data-manager.github.io/fairdo-cookbook/pids/create.html
+          - page: Update PIDs
+            external_url: https://kit-data-manager.github.io/fairdo-cookbook/pids/create.html
+          - page: Delete PIDs
+            external_url: https://kit-data-manager.github.io/fairdo-cookbook/pids/create.html
+          - page: Notify about your PIDs
+            external_url: https://kit-data-manager.github.io/fairdo-cookbook/pids/create.html
+      - title: Developers
+        subfolderitems:
+          - page: OpenAPI definition
+            url: typed-pid-maker/openapi.html
+          - page: Source Code
+            external_url: https://github.com/kit-data-manager/pit-service
+      - title: Administrators
+        subfolderitems:
+          - page: Installation
+            url: typed-pid-maker/installation.html
+          - page: Configuration
+            url: typed-pid-maker/configuration.html
+fair_do_lab_index:
+  - title:
+    subfolderitems:
+      - title: General
+        subfolderitems:
+          - page: Overview
+            url: fair-do-lab/index.html
+      - title: Users
+        subfolderitems:
+          - page: User Interface Guide
+            url: fair-do-lab/ui-guide.html
+      - title: Developers
+        subfolderitems:
+          - page: Local Setup
+            url: fair-do-lab/docker-compose.html
+          - page: Configuration
+            url: fair-do-lab/configuration.html
+          - page: APIs
+            url: fair-do-lab/apis.html
+          - page: Source Code
+            external_url: https://github.com/kit-data-manager/testbed4inf
+      - title: Administrators
+        subfolderitems:
+          - page: Status and Stability
+            url: fair-do-lab/status.html
+          - page: Server Setup
+            url: fair-do-lab/server-setup.html
+ro-crate-java_index:
+  - title:
+    subfolderitems:
+      - title: General
+        subfolderitems:
+          - page: Overview
+            url: ro-crate-java/index.html
+      - title: Users
+        subfolderitems:
+          - page: Introduction
+            url: ro-crate-java/introduction.html
+          - page: Specification Examples
+            url: ro-crate-java/examples.html
+      - title: Developers
+        subfolderitems:
+          - page: Source Code
+            external_url: https://github.com/kit-data-manager/ro-crate-java
+          - page: Benchmark Code
+            external_url: https://github.com/kit-data-manager/ro-crate-benchmarks
+

@@ -60,6 +60,30 @@ subtitle="a dish for every occasion"
 content="Todo.  
 "
 %}
+
+{% include card.html tags="restful fairdo metadata"
+target="typed-pid-maker/index.html"
+background="assets/images/typed-pid-maker_logo.svg"
+title="Typed PID Maker"
+subtitle="makes machine-actionable PIDs."
+content="The Typed PID Maker is an entry point to integrate digital resources into the FAIR DO ecosystem. Create, modify, validate and retrieve PIDs for your digital objects. Offers sandboxed PIDs for testing, but can be configured to, e.g, the Handle system."
+%}
+
+{% include card.html tags="restful fairdo metadata"
+target="fair-do-lab/index.html"
+background="assets/images/fair-do-lab/testbed_preview.png"
+title="FAIR DO Lab"
+subtitle="an environment blueprint for FAIR DO infrastructures."
+content="The FAIR DO Lab is a configurable structure of services to fulfill generic FAIR Digital Object (FAIR DO) use cases. It is a proposal for research which can be configured and extended to specific needs."
+%}
+
+{% include card.html tags="data metadata"
+target="ro-crate-java/index.html"
+background="assets/images/ro-crate-java_logo.svg"
+title="ro-crate-java"
+subtitle="a library to package and link all your research data."
+content="Using ro-crate-java, you can create and modify research packages (RO-Crates). These packages allow you to describe your research machine-readable and human-readable, making it FAIR. Build this functionality into your applications or use it directly."
+%}
 </div>
 
 
@@ -70,7 +94,8 @@ var myOptions = [
   { label: 'Data', value: 'data' },
   { label: 'Metadata', value: 'metadata' },
   { label: 'RESTful', value: 'restful' },
-  { label: 'UI', value: 'ui' }
+  { label: 'UI', value: 'ui' },
+  { label: 'FAIR Digital Object', value: 'fairdo' }
 ];
 
 VirtualSelect.init({
@@ -79,8 +104,8 @@ VirtualSelect.init({
   multiple: true
 });
 
-document.querySelector('#example-select').setValue(['repository', 'data', 'metadata', 'restful', 'ui']);
-filterSelection(['repository', 'data', 'metadata', 'restful', 'ui']);
+document.querySelector('#example-select').setValue(['repository', 'data', 'metadata', 'restful', 'ui', 'fairdo']);
+filterSelection(['repository', 'data', 'metadata', 'restful', 'ui', 'fairdo']);
 
 function filterSelection(values) {
   var x, i, j;
