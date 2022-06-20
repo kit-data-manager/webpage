@@ -1,12 +1,12 @@
 ---
-title: FAIR DO Testbed
-breadcrumbs: /testbed/
+title: FAIR DO Lab
+breadcrumbs: /fair-do-lab/
 layout: default
 description: A configurable FAIR DO blueprint architecture.
 repository_url: https://github.com/kit-data-manager/testbed4inf
 repository_name: kit-data-manager/testbed4inf
-navigation_id: testbed_index
-tag-name: testbed
+navigation_id: fair_do_lab_index
+tag-name: fair-do-lab
 ---
 
 # The {{ page.title }}
@@ -14,6 +14,8 @@ tag-name: testbed
 The {{ page.title }} is a configurable structure of services to fulfill generic FAIR Digital Object (FAIR DO) use cases. It is a proposal for research which can be configured and extended to specific needs. As the {{ page.title }} is easy to run on local computers and its default configuration offers a sandboxed PID service, it is therefore also suited to serve developers as a testing environment.
 
 As its core, it uses the [Typed PID Maker], which then will notify other services about its actions, so they can automatically react to those. For example, an indexer service will put new or changed record information into a search engine without any human interaction required.
+
+The FAIR DO Lab is based on its predecessor, the FAIR DO Testbed, which was [introduced at the RDA Virtual Plenary 17 Poster](https://doi.org/10.5445/ir/1000131613) Session. In contrast to it, the FAIR DO Lab aims for production ready software rather than experimentation.
 
 ## Features
 

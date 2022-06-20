@@ -1,16 +1,16 @@
 ---
-title: Configuring the FAIR DO Testbed
+title: Configuring the FAIR DO Lab
 breadcrumbs: /typed-pid-maker/configuration
 layout: default
 description: Configuring single components.
 repository_url: https://github.com/kit-data-manager/testbed4inf
 repository_name: kit-data-manager/testbed4inf
-navigation_id: testbed_index
+navigation_id: fair_do_lab_index
 ---
 
 # {{ page.title }}
 
-As the Testbed is a set of components, configuring it means to configure these components and its composition.
+As the Lab is a set of components, configuring it means to configure these components and its composition.
 
 ## Configure the component structure
 

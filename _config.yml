@@ -51,7 +51,7 @@ collections:
     output: true
   fairdo-cookbook:
     output: true
-  testbed:
+  fair-do-lab:
     output: true
   typed-pid-maker:
     output: true

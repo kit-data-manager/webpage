@@ -177,33 +177,33 @@ typed_pid_maker_index:
             url: typed-pid-maker/installation.html
           - page: Configuration
             url: typed-pid-maker/configuration.html
-testbed_index:
+fair_do_lab_index:
   - title:
     subfolderitems:
       - title: General
         subfolderitems:
           - page: Overview
-            url: testbed/index.html
+            url: fair-do-lab/index.html
       - title: Users
         subfolderitems:
           - page: User Interface Guide
-            url: testbed/ui-guide.html
+            url: fair-do-lab/ui-guide.html
       - title: Developers
         subfolderitems:
           - page: Local Setup
-            url: testbed/docker-compose.html
+            url: fair-do-lab/docker-compose.html
           - page: Configuration
-            url: testbed/configuration.html
+            url: fair-do-lab/configuration.html
           - page: APIs
-            url: testbed/apis.html
+            url: fair-do-lab/apis.html
           - page: Source Code
             external_url: https://github.com/kit-data-manager/testbed4inf
       - title: Administrators
         subfolderitems:
           - page: Status and Stability
-            url: testbed/status.html
+            url: fair-do-lab/status.html
           - page: Server Setup
-            url: testbed/server-setup.html
+            url: fair-do-lab/server-setup.html
 ro-crate-java_index:
   - title:
     subfolderitems:

@@ -1,24 +1,26 @@
 ---
-title: FAIR DO Testbed - User Interfaces
+title: FAIR DO Lab - User Interfaces
 breadcrumbs: /typed-pid-maker/ui-guide
 layout: default
 description: Demo interfaces for exporation.
 repository_url: https://github.com/kit-data-manager/testbed4inf
 repository_name: kit-data-manager/testbed4inf
-navigation_id: testbed_index
+navigation_id: fair_do_lab_index
 ---
 
 # {{ page.title }}
 
-The FAIR DO Testbed contains user interfaces to demonstrate the services. Not all of them are meant for production.
+The FAIR DO Lab contains user interfaces to demonstrate the services. Not all of them are meant for production.
 
 ## Fairris (demonstration interface)
 
-Fairris is a small user interface to register FAIR DOs.
-The idea is to give a quick impression of what the Testbed is able to do, as most features require a PID to be created.
-The capability of Fairris is limited and meant for demonstrations in combination with the sandboxed PIDs, which the Testbed offers by default.
+> Note: Fairris was initially developed for the FAIR DO Labs predecessor, the FAIR DO Testbed. It is now deprecated and might be removed soon (as soon as breaking changes occur). A replacement is being considered.
 
-As soon as the Testbed is started (described in "[Local Setup](docker-compose.html)"), Fairris is available via <http://localhost:8080/>.
+Fairris is a small user interface to register FAIR DOs.
+The idea is to give a quick impression of what the FAIR DO Lab is able to do, as most features require a PID to be created.
+The capability of Fairris is limited and meant for demonstrations in combination with the sandboxed PIDs, which the FAIR DO Lab offers by default.
+
+As soon as the FAIR DO Lab is started (described in "[Local Setup](docker-compose.html)"), Fairris is available via <http://localhost:8080/>.
 
 ![test](../assets/images/fairris/fairris_overview_annotated.png)
 
@@ -39,18 +41,18 @@ Kibana can be used to explore the database, but is being considered a management
 
 - Click on discover in the left-side menu.
 
-    ![](../assets/images/testbed/Kibana-1-discover.png){:class="max-h-96"}
+    ![](../assets/images/fair-do-lab/Kibana-1-discover.png){:class="max-h-96"}
 
 - Set `record*` as the index pattern.
 
-    ![](../assets/images/testbed/Kibana-2-index-pattern.png){:class="max-h-52"}
+    ![](../assets/images/fair-do-lab/Kibana-2-index-pattern.png){:class="max-h-52"}
 
 - You can not set a time filter or choose not to.
 
-    ![](../assets/images/testbed/Kibana-3-time-filter.png){:class="max-h-52"}
+    ![](../assets/images/fair-do-lab/Kibana-3-time-filter.png){:class="max-h-52"}
 
 - Click on Discover again (see first image)
 
 - View and search through your PIDs.
 
-    ![](../assets/images/testbed/Kibana-4-query.png){:class="max-h-96"}
+    ![](../assets/images/fair-do-lab/Kibana-4-query.png){:class="max-h-96"}
