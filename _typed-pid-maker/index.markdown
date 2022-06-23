@@ -44,17 +44,11 @@ The system follows the [RDA Recommendations on PID Information Types](https://rd
 
 Currently, the Typed PID Maker is in beta. While the development can be followed on GitHub, here are the most important points which have to be done before a 1.0 release:
 
-* Persist created PIDs locally.
+* **Persist created PIDs locally.** – Ensure recoverability of PIDs in case all other systems fail.
 
-  Ensure recoverability of PIDs in case all other systems fail.
+* **Persist sandboxed PID Systems in a local database.** – Enable more extensive tests. Currently, the sandboxed PIDs are stored in memory (RAM).
 
-* Persist sandboxed PID Systems in a local database.
-
-  Enable more extensive tests. Currently, the sandboxed PIDs are stored in memory (RAM).
-
-* Configurable Docker-Container for releases.
-
-  Make it easier to try the service locally and ease the work of administrators as well.
+* **Configurable Docker-Container for releases.** – Make it easier to try the service locally and ease the work of administrators as well.
 
 
 {% assign servicePosts = site.posts | where_exp: "post", "post.tags contains page.tag-name" %}
