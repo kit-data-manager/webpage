@@ -29,13 +29,9 @@ The FAIR DO Lab is based on its predecessor, the FAIR DO Testbed, which was [int
 
 Currently, the {{ page.title }} contains services which are not production-ready. While the development can be followed on GitHub, here are the most important points which are planned in near future:
 
-* The [Typed PID Maker] must reach version 1.0.
+* **The [Typed PID Maker] must reach version 1.0.** – Ideally, all services should be production-ready, but as the [Typed PID Maker] is a vital part of the {{ page.title }}, we consider its stability as a requirement for production use. As the {{ page.title }} is a living proposal, we do not have this requirement for all the services, but we offer [explicit documentation about the status of the different components](status.html).
 
-  Ideally, all services should be production-ready, but as the [Typed PID Maker] is a vital part of the {{ page.title }}, we consider its stability as a requirement for production use. As the {{ page.title }} is a living proposal, we do not have this requirement for all the services, but we offer [explicit documentation about the status of the different components](status.html).
-
-* Stable and flexible indexing process.
-
-  Searching for FAIR DOs is an important use case. We consider the current indexing process to be a proof-of-concept. For a 1.0 release, we plan to make it more flexible and use it to extract even more information about FAIR DOs.
+* **Stable and flexible indexing process.** – Searching for FAIR DOs is an important use case. We consider the current indexing process to be a proof-of-concept. For a 1.0 release, we plan to make it more flexible and use it to extract even more information about FAIR DOs.
 
 
 {% assign servicePosts = site.posts | where_exp: "post", "post.tags contains page.tag-name" %}

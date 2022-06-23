@@ -32,9 +32,7 @@ In the context of development, we created benchmarks to compare the existing imp
 
 Ro-crate-java has been extensively tested using unit and integration tests and was successfully used in tests with existing crates, as well as examples from the specification. Yet, it is currently not being integrated in other software and has not experienced large amounts of use in practice, which is why we consider it beta software. We encourage you to try it for your project, to change this situation. Of course, we have a certain roadmap to do so ourself.
 
-- Apply the library in our own repositories and tools.
-
-  We are planning to integrate it with our software and use it in real projects.
+- **Apply the library in our own repositories and tools** – We are planning to integrate ro-crate-java with our software and use it in research projects.
 
 
 {% assign servicePosts = site.posts | where_exp: "post", "post.tags contains page.tag-name" %}
