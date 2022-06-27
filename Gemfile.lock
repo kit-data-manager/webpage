@@ -284,6 +284,7 @@ PLATFORMS
   x64-unknown
   x86_64-darwin-20
   x86_64-linux
+  x86_64-darwin-21
 
 DEPENDENCIES
   github-pages (~> 223)

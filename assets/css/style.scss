@@ -467,3 +467,7 @@ footer {
 .demo:hover {
   opacity: 1;
 }
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
