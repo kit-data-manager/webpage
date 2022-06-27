@@ -4,6 +4,10 @@ _site
 .jekyll-metadata
 vendor
 
+
+# Ignore backup files
+**/*~
+**/*.bak
 # maxOS
 ## General
 .DS_Store

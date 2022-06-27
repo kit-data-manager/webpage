@@ -47,6 +47,10 @@ collections:
     output: true
   metadata-editor:
     output: true
+  metastore:
+    output: true
+  turntable:
+    output: true
   msc:
     output: true
   fairdo-cookbook:

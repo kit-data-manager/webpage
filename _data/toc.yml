@@ -133,6 +133,91 @@ msc_index:
         subfolderitems:
           - page: Helmholtz Instance
             external_url: https://msc.datamanager.kit.edu/
+metastore_doc_rest:
+  - title: Documentation (REST API)
+    subfolderitems:
+      - title: 
+        subfolderitems:
+        - page: Introduction
+          url: metastore/documentation/index.html
+      - title: Schema Management
+        subfolderitems:
+        - page: Introduction
+          url: metastore/documentation/REST/introduction-schema.html
+        - page: Register a Schema
+          url: metastore/documentation/REST/register-schema.html
+        - page: Getting a Metadata Schema Record
+          url: metastore/documentation/REST/get-schema-record.html
+        - page: Getting a Metadata Schema Document
+          url: metastore/documentation/REST/get-schema-document.html
+        - page: Updating a Metadata Schema Document
+          url: metastore/documentation/REST/update-schema.html
+        - page: Getting a List of Metadata Schema Records
+          url: metastore/documentation/REST/list-schema-records.html
+        - page: Getting a List of all Schema Records for a Specific SchemaId
+          url: metastore/documentation/REST/list-specific-schema-records.html
+        - page: Getting a specific Version of Metadata Schema Document
+          url: metastore/documentation/REST/get-specific-schema-document.html
+        - page: Validating Metadata Document
+          url: metastore/documentation/REST/update-schema.html
+      - title: Metadata Management
+        subfolderitems:
+        - page: Introduction
+          url: metastore/documentation/REST/introduction-metadata.html
+        - page: Register/Ingest a Metadata Record with Metadata Document
+          url: metastore/documentation/REST/register-metadata.html
+        - page: Accessing Metadata Document
+          url: metastore/documentation/REST/get-metadata-document.html
+        - page: Accessing Metadata Record
+          url: metastore/documentation/REST/get-metadata-record.html
+        - page: Updating a Metadata Record
+          url: metastore/documentation/REST/update-metadata-record.html
+        - page: Getting a List of all Metadata Records
+          url: metastore/documentation/REST/find-metadata-records.html
+        - page: Filter Metadata Records by Document Id
+          url: metastore/documentation/REST/filter-metadata-records-by-id.html
+        - page: Filter Metadata Records by Related Resource
+          url: metastore/documentation/REST/filter-metadata-records-by-related-resource.html
+        - page: Filter Metadata Records by Date
+          url: metastore/documentation/REST/filter-metadata-records-by-date.html
+metastore_doc:
+  - title: 
+    subfolderitems:
+      - title: Documentation MetaStore
+        subfolderitems:
+          - page: Installation
+            url: metastore/documentation/installation/index.html
+          - page: REST API
+            url: metastore/documentation/REST/index.html
+          - page: GUI
+            external_url: https://kit-data-manager.github.io/metastore2
+metastore_instal:
+  - title: Installation & Setup
+    subfolderitems:
+      - title: MetaStore
+        subfolderitems:
+          - page: Installation via DockerHub
+            url: metastore/documentation/installation/installation-via-dockerHub.html
+          - page: Build your own Docker Container
+            url: metastore/documentation/installation/build-docker-container.html
+          - page: Local Installation
+            url: metastore/documentation/installation/local-installation.html
+          - page: Setup
+            url: metastore/documentation/installation/setup-metastore.html
+      - title: Database
+        subfolderitems:
+          - page: Introduction
+            url: metastore/documentation/installation/database/index.html
+          - page: PostGres (Docker)
+            url: metastore/documentation/installation/database/postgres-docker.html
+          - page: PostGres (Ubuntu)
+            url: metastore/documentation/installation/database/postgres.html
+      - title: Setup Server & Administration
+        subfolderitems:
+          - page: Setup Server
+            url: metastore/documentation/installation/setup-server.html
+          - page: Backup
+            url: metastore/documentation/installation/backup-metastore.html
 fairdo-cookbook_index:
   - title:
     subfolderitems:
@@ -144,6 +229,16 @@ fairdo-cookbook_index:
         subfolderitems:
           - page: Webpage
             external_url: https://kit-data-manager.github.io/fairdo-cookbook/
+turntable_index:
+  - title:
+    subfolderitems:
+      - title: Links
+        subfolderitems:
+          - page: Turntable API
+            external_url: https://nfdi4ing.pages.rwth-aachen.de/s-3/s-3-3/turntable-interface/
+          - page: News
+            url: turntable/news
+            
 typed_pid_maker_index:
   - title:
     subfolderitems:
@@ -223,4 +318,3 @@ ro-crate-java_index:
             external_url: https://github.com/kit-data-manager/ro-crate-java
           - page: Benchmark Code
             external_url: https://github.com/kit-data-manager/ro-crate-benchmarks
-

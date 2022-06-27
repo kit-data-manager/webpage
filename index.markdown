@@ -22,8 +22,8 @@ content="The base-repo is a generic, general purpose research data repository se
 target="metastore/index.html"
 background="assets/images/metadata.jpg"
 title="MetaStore"
-subtitle="more fun with metadata"
-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, tempore sapiente eveniet quibusdam ab ea, quaerat placeat numquam aspernatur, accusamus magnam neque."
+subtitle="metadata - for sure"
+content="MetaStore is a research data repository service for managing formally quality-controlled metadata documents based on JSON or XML."
 %}
 
 {% include card.html tags="restful"
@@ -59,6 +59,14 @@ title="FAIR DO Cookbook"
 subtitle="a dish for every occasion"
 content="Todo.  
 "
+%}
+
+{% include card.html tags="metadata repository"
+target="turntable/index.html"
+background="assets/images/turntable.png"
+title="Turntable API"
+subtitle="one for all"
+content="Turntable is a generic API which allows to use multiple repositories."
 %}
 
 {% include card.html tags="restful fairdo metadata"

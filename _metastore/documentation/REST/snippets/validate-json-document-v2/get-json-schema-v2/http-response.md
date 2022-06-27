@@ -1,0 +1,31 @@
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 605
+Accept-Ranges: bytes
+
+{
+  "$schema" : "http://json-schema.org/draft/2019-09/schema#",
+  "$id" : "http://www.example.org/schema/json",
+  "type" : "object",
+  "title" : "Json schema for tests",
+  "default" : { },
+  "required" : [ "title", "date" ],
+  "properties" : {
+    "title" : {
+      "$id" : "#/properties/string",
+      "type" : "string",
+      "title" : "Title",
+      "description" : "Title of object."
+    },
+    "date" : {
+      "$id" : "#/properties/string",
+      "type" : "string",
+      "format" : "date",
+      "title" : "Date",
+      "description" : "Date of object"
+    }
+  },
+  "additionalProperties" : false
+}
+```
