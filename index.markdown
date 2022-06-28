@@ -66,7 +66,7 @@ target="turntable/index.html"
 background="assets/images/turntable.png"
 title="Turntable API"
 subtitle="one for all"
-content="Turntable is a generic API which allows to use multiple repositories."
+content="The Turntable API is a generic API which allows to use multiple repositories."
 %}
 
 </div>
