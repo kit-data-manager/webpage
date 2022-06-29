@@ -22,7 +22,7 @@ to:
 For some recipes, services from the FAIR Data Commons portfolio are used. If you need more information about a particular
 service, please refer to the according sub-page accessible via the [Service Overview](https://kit-data-manager.github.io/webpage/).
 
-The head over directly to the FAIR DO Cookbook, please use the external link in the navigation on the left.
+To head over directly to the FAIR DO Cookbook, please use the external link in the navigation on the left.
 
 
 
