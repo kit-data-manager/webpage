@@ -10,5 +10,5 @@ navigation_id: metastore_doc
 
 # {{ page.title }} 
 
-Please refer to external [Cookbook](https://demo.scc.kit.edu/metastore)
+Please refer to external [Cookbook](https://kit-data-manager.github.io/metastore2/)
 
