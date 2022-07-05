@@ -238,4 +238,13 @@ turntable_index:
             external_url: https://nfdi4ing.pages.rwth-aachen.de/s-3/s-3-3/turntable-interface/
           - page: News
             url: turntable/news
+metadatahub_doc:
+  - title: 
+    subfolderitems:
+      - title: Documentation MetadataHub
+        subfolderitems:
+          - page: Installation
+            url: metadatahub/documentation/installation/index.html
+          - page: Setup
+            url: metadatahub/documentation/setup.html
             

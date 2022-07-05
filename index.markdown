@@ -74,8 +74,7 @@ target="metadatahub/index.html"
 background="assets/images/turntable.png"
 title="MetadataHub"
 subtitle="one to serve all"
-content="The MetadataHub is a service which acts as a proxy for multiple repositories.
-It implements the 'Turntable API'."
+content="The MetadataHub is a framework which acts as a proxy for multiple (metadata) repositories. It implements the 'Turntable API'."
 %}
 
 </div>

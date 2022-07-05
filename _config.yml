@@ -51,6 +51,8 @@ collections:
     output: true
   turntable:
     output: true
+  metadatahub:
+    output: true
   msc:
     output: true
   fairdo-cookbook:
