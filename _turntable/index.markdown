@@ -12,9 +12,16 @@ tag-name: turntable
 
 # The Turntable API
 
-The Turntable API acts as a facade for (multiple) (metadata) repositories.
-As a result ideally only one client is needed to manage metadata from multiple repositories.
+The Turntable API defines a uniform interface to metadata repositories. It can serve as a
+facade for (multiple) (metadata) repositories. It thus represents the ideal entry point
+for developers to
+- a unified user interface independent of the repository.
+- a service for multiple repostories.
 
+This allows for more effective use of manpower, in addition to simplifying maintenance.
+
+## Target Audience
+- Developers
 
 <div class="flex flex-wrap -m-3 inset-5px">
         <div class="w-full sm:w-1/2 md:w-1/3 flex-col p-3">
