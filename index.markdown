@@ -57,7 +57,8 @@ target="fairdo-cookbook/index.html"
 background="assets/images/cookbook.png"
 title="FAIR DO Cookbook"
 subtitle="a dish for every occasion"
-content="Todo.  
+content="The FAIR DO Cookbook is intended to provide first guidance while entering the world of FAIR Digital Objects. It offers a collection of recipes 
+on how to appoach different concepts related to FAIR Digital Objects, i.e., Data Types, and PID Kernel Information Profiles.
 "
 %}
 
