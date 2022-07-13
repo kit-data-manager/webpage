@@ -20,7 +20,7 @@ tag-name: metastore
     <div class="news_card">
       <h2>{{ post.title }}</h2>
       <h5>published {{ post.date | date: "%Y-%m-%d" }}</h5>
-      <div class="fakeimg" style="height:200px;background-image: url('/webpage/assets/images/disks.jpg')"></div>
+      <div class="fakeimg" style="height:200px;background-image: url('/webpage/assets/images/metadata.jpg')"></div>
       <p>{{ post.content }}</p>
     </div>
     {% endif %}
