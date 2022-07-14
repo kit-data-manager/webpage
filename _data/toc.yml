@@ -227,7 +227,7 @@ fairdo-cookbook_index:
             url: fairdo-cookbook/index.html
       - title: Users
         subfolderitems:
-          - page: Webpage
+          - page: Go to Cookbook
             external_url: https://kit-data-manager.github.io/fairdo-cookbook/
 turntable_index:
   - title:
