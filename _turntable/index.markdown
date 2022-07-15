@@ -27,8 +27,9 @@ This allows for more effective use of manpower, in addition to simplifying maint
         <div class="w-full sm:w-1/2 md:w-1/3 flex-col p-3">
             <h1 class="text-center"><i class="fa-solid fa-circle-question" aria-hidden="true"></i></h1>
             <h3 class="text-center">Further Reading</h3>
-            <p>If you want to read more about turntable API please refer to 
-            <a href="https://nfdi4ing.pages.rwth-aachen.de/s-3/s-3-3/turntable-interface/">this</a> external page.
+            <p>For more information, please refer to 
+            <a href="https://nfdi4ing.pages.rwth-aachen.de/s-3/s-3-3/turntable-interface/">this page,</a> 
+            which contains the specification. 
             </p>
         </div>
 </div>

@@ -6,6 +6,7 @@ description: A generic metadata repository for all kind of metadata repositories
 repository_url: https://git.rwth-aachen.de/nfdi4ing/s-3/s-3-3/metadatahub
 repository_name: nfdi4ing/s-3/s-3-3/metadatahub
 documentation_url: https://kit-data-manager.github.io/
+navigation_id: metadatahub_index
 ---
 
 # {{ page.title }} 
@@ -21,7 +22,7 @@ In order to run this microservice you'll need:
 First of all you'll have to clone this repository:
 ```
 user@localhost:/home/user/$ git clone https://git.rwth-aachen.de/nfdi4ing/s-3/s-3-3/metadatahub
-Clone to 'metastore2'
+Clone to 'metadatahub'
 [...]
 user@localhost:/home/user/$ cd metadatahub
 user@localhost:/home/user/metadatahub$
@@ -39,8 +40,7 @@ Now you can start the service by calling /PATH/TO/EMPTY/INSTALLATION/DIRECTORY/r
 ---------------------------------------------------------------------------
 user@localhost:/home/user/metadatahub$
 ```
-: FQDN
-  Full qualified domain name (e.g.: metadatahub.example.com)
+***FQDN:*** Full qualified domain name (e.g.: metadatahub.example.com)
   
 To use your own mappings you have to remove all mappings (*_mappings.json) from the 'mappings' subdirectory and 
 replace it by your own. 

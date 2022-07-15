@@ -287,21 +287,39 @@ fairdo-cookbook_index:
           - page: Webpage
             external_url: https://kit-data-manager.github.io/fairdo-cookbook/
 turntable_index:
-  - title:
-    subfolderitems:
-      - title: Links
-        subfolderitems:
-          - page: Turntable API
-            external_url: https://nfdi4ing.pages.rwth-aachen.de/s-3/s-3-3/turntable-interface/
-          - page: News
-            url: turntable/news
-metadatahub_doc:
   - title: 
     subfolderitems:
-      - title: Documentation MetadataHub
+      - title: General
         subfolderitems:
-          - page: Installation
+          - page: The Turntable API
+            url: turntable/index.html
+          - page: News Archive
+            url: turntable/news.html
+      - title: Developers
+        subfolderitems:
+        - page: Specification Turntable API
+          external_url: https://nfdi4ing.pages.rwth-aachen.de/s-3/s-3-3/turntable-interface/
+metadatahub_index:
+  - title: 
+    subfolderitems:
+      - title: General
+        subfolderitems:
+          - page: The MetadataHub
+            url: metadatahub/index.html
+          - page: News Archive
+            url: metadatahub/news.html
+      - title: Developers
+        subfolderitems:
+        - page: API
+          external_url: https://nfdi4ing.pages.rwth-aachen.de/s-3/s-3-3/turntable-interface/
+        - page: Source Code
+          external_url: https://git.rwth-aachen.de/nfdi4ing/s-3/s-3-3/metadatahub
+        - page: Issue Tracker
+          external_url: https://git.rwth-aachen.de/nfdi4ing/s-3/s-3-3/metadatahub/issues
+      - title: Administrators
+        subfolderitems:
+          - page: Installation MetadataHub
             url: metadatahub/documentation/installation/index.html
-          - page: Setup
+          - page: Setup MetadataHub
             url: metadatahub/documentation/setup.html
             

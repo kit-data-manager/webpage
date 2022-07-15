@@ -17,7 +17,7 @@ to access (metadata) repositories with a uniform interface. For this
 purpose, developers only need to set up a mapping to the specific 
 implementations  they want. This makes it
 - easier for developers to provide a User interface independent of the implementaion used.
-- aysy to provide a low-threshold access to repositories for scientists   
+- easy to provide a low-threshold access to repositories for scientists   
   (once familiar with the user interface, the repository used no longer plays a role).
 
 
@@ -47,15 +47,15 @@ implementations  they want. This makes it
 </div>
 
 
-
+{% assign servicePosts = site.posts | where_exp: "post", "post.tags contains page.tag-name" %}
+{% assign amountPosts = servicePosts | size %}
+{% if amountPosts > 0 %}
 ## News
 
 <ul>
-  {% for post in site.posts %}
-    {% if post.tags contains page.tag-name %}
+  {% for post in servicePosts %}
       <li><a href="/webpage/{{ post.url }}">{{ post.title }}</a>, published {{ post.date | date: "%Y-%m-%d" }}</li>
-    {% endif %}
   {% endfor %}
 </ul>
-
+{% endif %}
 
