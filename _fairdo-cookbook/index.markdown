@@ -19,8 +19,28 @@ to:
 * Create a PID Kernel Information Profile
 * Validate a PID record against a PID Kernel Information Profile
 
-For some recipes, services from the FAIR Data Commons portfolio are used. If you need more information about a particular
+<div class="flex flex-wrap -m-3 inset-5px">
+        <div class="w-full sm:w-1/2 md:w-1/3 flex-col p-3">
+            <h1 class="text-center"><i class="fa-solid fa-circle-info" aria-hidden="true"></i></h1>
+            <h3 class="text-center">More Information</h3>
+            <p>For some recipes, services from the FAIR Data Commons portfolio are used. If you need more information about a particular
 service, please refer to the according sub-page accessible via the [Service Overview](https://kit-data-manager.github.io/webpage/).
+            </p>
+        </div>
+        <div class="w-full sm:w-1/2 md:w-1/3 flex-col p-3">
+            <h1 class="text-center"><i class="fa-solid fa-file-circle-plus" aria-hidden="true"></i></h1>
+            <h3 class="text-center">Request for Recipe</h3>
+            <p>If you miss a certain recipe and you want to share your idea, please create a 
+            <a href="https://github.com/kit-data-manager/webpage/issues/new?assignees=&labels=recipe&template=recipe-request.md&title=%5BRECIPE%5D+Your+recipe+title
+">New Recipe Issue</a> and we'll get in touch with you.
+            </p>
+        </div>
+        <div class="w-full sm:w-1/2 md:w-1/3 flex-col p-3">
+            <h1 class="text-center"><i class="fa fa-code-fork" aria-hidden="true"></i></h1>
+            <h3 class="text-center">Looking for Code?</h3>
+            <p>In case you are interested in source-code, check out the <a href="https://github.com/kit-data-manager/fairdo-cookbook/tree/gh-pages">GitHub Repository of the FAIR DO Cookbook</a>.</p>
+        </div>
+</div>
 
 To head over directly to the FAIR DO Cookbook, please use the external link in the navigation on the left.
 
