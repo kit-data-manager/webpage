@@ -27,7 +27,7 @@ To head over directly to the FAIR DO Cookbook, please use the external link in t
             <h1 class="text-center"><i class="fa-solid fa-circle-info" aria-hidden="true"></i></h1>
             <h3 class="text-center">More Information</h3>
             <p>For some recipes, services from the FAIR Data Commons portfolio are used. If you need more information about a particular
-service, please refer to the according sub-page accessible via the [Service Overview](https://kit-data-manager.github.io/webpage/).
+service, please refer to the according sub-page accessible via the <a href="https://kit-data-manager.github.io/webpage/">Service Overview</a>.
             </p>
         </div>
         <div class="w-full sm:w-1/2 md:w-1/3 flex-col p-3">
