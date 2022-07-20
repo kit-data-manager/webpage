@@ -133,10 +133,51 @@ msc_index:
         subfolderitems:
           - page: Helmholtz Instance
             external_url: https://msc.datamanager.kit.edu/
-metastore_doc_rest:
-  - title: Documentation (REST API)
+metastore_index:
+  - title: 
     subfolderitems:
-      - title: 
+      - title: General
+        subfolderitems:
+          - page: The MetaStore Service
+            url: metastore/index.html
+          - page: Docker Images
+            external_url: https://hub.docker.com/r/kitdm/metastore2/tags
+          - page: News Archive
+            url: metastore/news.html
+      - title: Users 
+        subfolderitems:
+        - page: GUI
+          external_url: https://kit-data-manager.github.io/metastore2
+      - title: Developers
+        subfolderitems:
+        - page: REST API
+          url: metastore/documentation/REST/index.html
+        - page: Source Code
+          external_url: https://github.com/kit-data-manager/metastore2
+        - page: Issue Tracker
+          external_url: https://github.com/kit-data-manager/metastore2/issues
+      - title: Administrators
+        subfolderitems:
+          - page: Installation MetaStore
+            url: metastore/documentation/installation/index.html
+          - page: Installation Database
+            url: metastore/documentation/installation/database/index.html
+          - page: Setup MetaStore Server
+            url: metastore/documentation/installation/setup-server.html
+          - page: Backup MetaStore Server
+            url: metastore/documentation/installation/backup-metastore.html
+metastore_doc_rest:
+  - title: 
+    subfolderitems:
+      - title: General
+        subfolderitems:
+          - page: The MetaStore Service
+            url: metastore/index.html
+          - page: Docker Images
+            external_url: https://hub.docker.com/r/kitdm/metastore2/tags
+          - page: News Archive
+            url: metastore/news.html
+      - title: Documentation (REST API)
         subfolderitems:
         - page: Introduction
           url: metastore/documentation/index.html
@@ -181,8 +222,16 @@ metastore_doc_rest:
         - page: Filter Metadata Records by Date
           url: metastore/documentation/REST/filter-metadata-records-by-date.html
 metastore_doc:
-  - title: 
+  - title: Documentation
     subfolderitems:
+      - title: General
+        subfolderitems:
+          - page: The MetaStore Service
+            url: metastore/index.html
+          - page: Docker Images
+            external_url: https://hub.docker.com/r/kitdm/metastore2/tags
+          - page: News Archive
+            url: metastore/news.html
       - title: Documentation MetaStore
         subfolderitems:
           - page: Installation
@@ -194,6 +243,14 @@ metastore_doc:
 metastore_instal:
   - title: Installation & Setup
     subfolderitems:
+      - title: General
+        subfolderitems:
+          - page: The MetaStore Service
+            url: metastore/index.html
+          - page: Docker Images
+            external_url: https://hub.docker.com/r/kitdm/metastore2/tags
+          - page: News Archive
+            url: metastore/news.html
       - title: MetaStore
         subfolderitems:
           - page: Installation via DockerHub
@@ -230,14 +287,41 @@ fairdo-cookbook_index:
           - page: Webpage
             external_url: https://kit-data-manager.github.io/fairdo-cookbook/
 turntable_index:
-  - title:
+  - title: 
     subfolderitems:
-      - title: Links
+      - title: General
         subfolderitems:
-          - page: Turntable API
-            external_url: https://nfdi4ing.pages.rwth-aachen.de/s-3/s-3-3/turntable-interface/
-          - page: News
-            url: turntable/news
+          - page: The Turntable API
+            url: turntable/index.html
+          - page: News Archive
+            url: turntable/news.html
+      - title: Developers
+        subfolderitems:
+        - page: Specification Turntable API
+          external_url: https://nfdi4ing.pages.rwth-aachen.de/s-3/s-3-3/turntable-interface/
+metadatahub_index:
+  - title: 
+    subfolderitems:
+      - title: General
+        subfolderitems:
+          - page: The MetadataHub
+            url: metadatahub/index.html
+          - page: News Archive
+            url: metadatahub/news.html
+      - title: Developers
+        subfolderitems:
+        - page: API
+          external_url: https://nfdi4ing.pages.rwth-aachen.de/s-3/s-3-3/turntable-interface/
+        - page: Source Code
+          external_url: https://git.rwth-aachen.de/nfdi4ing/s-3/s-3-3/metadatahub
+        - page: Issue Tracker
+          external_url: https://git.rwth-aachen.de/nfdi4ing/s-3/s-3-3/metadatahub/issues
+      - title: Administrators
+        subfolderitems:
+          - page: Installation MetadataHub
+            url: metadatahub/documentation/installation/index.html
+          - page: Setup MetadataHub
+            url: metadatahub/documentation/setup.html
             
 typed_pid_maker_index:
   - title:

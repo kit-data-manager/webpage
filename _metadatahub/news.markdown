@@ -1,16 +1,16 @@
 ---
-title: News Archive (MetaStore)
-breadcrumbs: /metastore/news/
+title: News Archive (MetadataHub)
+breadcrumbs: /metadatahub/news/
 layout: default
-description: A Research Data Repository Service for Managing Metadata Documents based on JSON or XML.
-Mozhderepository_url: https://github.com/kit-data-manager/metastore2
-repository_name: kit-data-manager/metastore2
+description: A generic metadata repository for all kind of metadata repositories.
+repository_url: https://git.rwth-aachen.de/nfdi4ing/s-3/s-3-3/metadatahub
+repository_name: nfdi4ing/s-3/s-3-3/metadatahub
 documentation_url: https://kit-data-manager.github.io/
-navigation_id: metastore_index
-tag-name: metastore
+navigation_id: metadatahub_index
+tag-name: metadatahub
 ---
 
-# News Archive (MetaStore)
+# News Archive (MetadataHub)
 
 <ul>
   {% for post in site.posts %}
@@ -20,7 +20,7 @@ tag-name: metastore
     <div class="news_card">
       <h2>{{ post.title }}</h2>
       <h5>published {{ post.date | date: "%Y-%m-%d" }}</h5>
-      <div class="fakeimg" style="height:200px;background-image: url('/webpage/assets/images/metadata.jpg')"></div>
+      <div class="fakeimg" style="height:200px;background-image: url('/webpage/assets/images/turntable.png')"></div>
       <p>{{ post.content }}</p>
     </div>
     {% endif %}

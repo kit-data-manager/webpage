@@ -66,7 +66,15 @@ target="turntable/index.html"
 background="assets/images/turntable.png"
 title="Turntable API"
 subtitle="one for all"
-content="Turntable is a generic API which allows to use multiple repositories."
+content="The Turntable API is a generic API which allows to use multiple repositories."
+%}
+
+{% include card.html tags="metadata repository"
+target="metadatahub/index.html"
+background="assets/images/turntable.png"
+title="MetadataHub"
+subtitle="one to serve all"
+content="The MetadataHub is a framework which acts as a proxy for multiple (metadata) repositories. It implements the 'Turntable API'."
 %}
 
 {% include card.html tags="restful fairdo metadata"
