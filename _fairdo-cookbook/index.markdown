@@ -19,6 +19,9 @@ to:
 * Create a PID Kernel Information Profile
 * Validate a PID record against a PID Kernel Information Profile
 
+To head over directly to the FAIR DO Cookbook, please use the external link in the navigation on the left. Otherwise, you may want to start with one of the topics below.
+
+
 <div class="flex flex-wrap -m-3 inset-5px">
         <div class="w-full sm:w-1/2 md:w-1/3 flex-col p-3">
             <h1 class="text-center"><i class="fa-solid fa-circle-info" aria-hidden="true"></i></h1>
@@ -42,7 +45,6 @@ service, please refer to the according sub-page accessible via the [Service Over
         </div>
 </div>
 
-To head over directly to the FAIR DO Cookbook, please use the external link in the navigation on the left.
 
 
 
