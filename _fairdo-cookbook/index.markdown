@@ -47,5 +47,14 @@ service, please refer to the according sub-page accessible via the [Service Over
 
 
 
+{% assign servicePosts = site.posts | where_exp: "post", "post.tags contains page.tag-name" %}
+{% assign amountPosts = servicePosts | size %}
+{% if amountPosts > 0 %}
+## News
 
-
+<ul>
+  {% for post in servicePosts %}
+      <li><a href="/webpage/{{ post.url }}">{{ post.title }}</a>, published {{ post.date | date: "%Y-%m-%d" }}</li>
+  {% endfor %}
+</ul>
+{% endif %}
