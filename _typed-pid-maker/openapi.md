@@ -3,7 +3,7 @@ title: RESTful API v0.4
 language_tabs:
   - python: Python
   - java: Java 
-description: A Generic, General Purpose Research Data Repository Service.
+description: A REST-Gateway to typed PIDs.
 breadcrumbs: /typed-pid-maker/openapi
 toc_footers: []
 includes: []

@@ -13,7 +13,7 @@ base_repo_index:
             url: base-repo/documentation/index.html
       - title: Developers
         subfolderitems:
-          - page: RESTful API
+          - page: OpenAPI definition
             url: base-repo/documentation/api-docs.html
           - page: Documentation
             url: base-repo/documentation/index.html
@@ -87,7 +87,7 @@ collection_registry_index:
           external_url: https://katacoda.com/kitdm/scenarios/collection-api
       - title: Developers
         subfolderitems:
-        - page: RESTful API
+        - page: OpenAPI definition
           url: collection-registry/documentation/api-docs.html
         - page: Introduction
           url: collection-registry/documentation/index.html
