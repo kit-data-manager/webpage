@@ -10,10 +10,33 @@ navigation_id: ro-crate-java_index
 
 # {{ page.title }}
 
-Build and run tests: `./gradlew build`  
-Build documentation: `./gradlew javadoc`
+Using ro-crate-java is done easily using wide-spread build managers. To find the instructions, [visit the maven search page for ro-crate-java](https://search.maven.org/artifact/edu.kit.datamanager/ro-crate-java) and select the latest version. It has up-to-date definitions for a wide range of package managers and offers also manual JAR downloads.
 
-On windows, replace `./gradlew` with `gradlew.bat`.
+As a visual cue, here is how it looks like for Gradle and Maven. Note that the version number might be outdated.
+
+## Example: Gradle
+
+In your build.gradle file, add this line to the dependency section:
+
+```groovy
+implementation 'edu.kit.datamanager:ro-crate-java:1.0.4'
+```
+
+## Example: Maven
+
+The configuration in maven is similar:
+
+```xml
+<dependency>
+    <groupId>edu.kit.datamanager</groupId>
+    <artifactId>ro-crate-java</artifactId>
+    <version>1.0.4</version>
+</dependency>
+```
+
+## Others
+
+Please [choose the latest version on this page](https://search.maven.org/artifact/edu.kit.datamanager/ro-crate-java) to find more detailed instructions.
 
 ## Quickstart
 ### Example for a basic crate from [RO-Crate website](https://www.researchobject.org/ro-crate/1.1/root-data-entity.html#ro-crate-metadata-file-descriptor)
