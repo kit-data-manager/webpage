@@ -1,7 +1,7 @@
 # Contribution Guideline
 
 This repository contains the sources from which the statical Webpage hosted at 
-(FAIR Data Commons - Service Portfolio)[https://kit-data-manager.github.io/webpage/] is build. The deployment process is 
+[FAIR Data Commons - Service Portfolio](https://kit-data-manager.github.io/webpage/) is built. The deployment process is
 automatically triggered at each push to the `gh-pages` branch. Therefor, the static site generator [Jekyll](https://jekyllrb.com/)
 is used. If you plan to extend the Webpage, it is recommended to install Jekyll locally on your machine in order to be able 
 to test the resulting page before publishing it. More information on how to install Jekyll can be found in the 
@@ -32,8 +32,8 @@ Configuration file: /home/user/webpage/_config.yml
 ```
 
 With the test instance running, you can now start adding your content. This can be done while the instance is running, as 
-Jekyll will rebuild on every change allowing you the see all updated after refreshing the page in the Browser. However,
-this does not apply if you change any global information which you can find in `_config.yml`. Changed to this file require a 
+Jekyll will rebuild on every change allowing you to see all updates after refreshing the page in the Browser. However,
+this does not apply if you change any global information found in `_config.yml`. Changes to this file require a
 full restart of the instance.
 
 ## Structure of the Webpage
@@ -41,14 +41,14 @@ full restart of the instance.
 The project is structured as specified by Jekyll. In the root folder, you'll find the main index pages as well as 
 the file `_config.yml`, which contains the site configuration, e.g. the general page title, domain information and the 
 theme selection. For extending the Webpage, the most relevant part of `_config.yml` is the `collections` definition, 
-which defines, which sub-folders are used to generated HTML pages from Markdown files. The definition may look as follows: 
+which defines which sub-folders are used to generated HTML pages from Markdown files. The definition may look as follows:
 
 ```
 collections:
   base-repo:
     output: true
 ```
-This snippet defines, that Jekyll will look in the project's root for a folder `_base-repo` and will generate HTML output files,
+This snippet defines that Jekyll will look in the project's root for a folder `_base-repo` and will generate HTML output files,
 no matter whether the files are referenced anywhere on the Webpage or not. If the `output` property is omitted, the files of this
 collection are only rendered if the collection is directly addressed in one of the sub-pages, e.g., by iteration through it using 
 a [Liquid](https://shopify.github.io/liquid/) template.
