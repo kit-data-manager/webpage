@@ -14,7 +14,7 @@ breadcrumbs: /
 target="base-repo/index.html" 
 background="assets/images/disks.jpg"
 title="base-repo"
-subtitle="a place to be for your data"
+subtitle="A place to be for your data"
 content="The base-repo is a generic, general purpose research data repository service offering clear, machine-actionable RESTful interfaces for storing, retrieving and managing research data."
 %}
 
@@ -22,7 +22,7 @@ content="The base-repo is a generic, general purpose research data repository se
 target="metastore/index.html"
 background="assets/images/metadata.jpg"
 title="MetaStore"
-subtitle="metadata - for sure"
+subtitle="Metadata - for sure"
 content="MetaStore is a research data repository service for managing formally quality-controlled metadata documents based on JSON or XML."
 %}
 
@@ -30,7 +30,7 @@ content="MetaStore is a research data repository service for managing formally q
 target="collection-registry/index.html"
 background="assets/images/collections.jpg"
 title="Collection Registry"
-subtitle="collect, organize, share"
+subtitle="Collect, Organize, Share"
 content="The Collection Registry allows building collections of digital objects, independent of any repository in order to facilitate data
 interoperability, reuse and make collections actionable to be able to cope with ever-increasing amounts and volumes of data."
 %}
@@ -39,7 +39,7 @@ interoperability, reuse and make collections actionable to be able to cope with 
 target="metadata-editor/index.html"
 background="assets/images/editor.png"
 title="Metadata Editor"
-subtitle="it's about filling in and out"
+subtitle="It's about filling in and out"
 content="The Metadata Editor is a JavaScript library allowing to generate web forms and validate metadata in an intuitive and generic way."
 %}
 
@@ -47,7 +47,7 @@ content="The Metadata Editor is a JavaScript library allowing to generate web fo
 target="msc/index.html"
 background="assets/images/msc.png"
 title="Metadata Standards Catalog"
-subtitle="looking for a standard?"
+subtitle="Looking for a standard?"
 content="The Metadata Standards Catalog is an information platform for finding and sharing metadata standards and tools. It is based on the outcome of the [Metadata Standards Catalog Working Group](https://www.rd-alliance.org/groups/metadata-standards-catalog-working-group.html).  
 "
 %}
@@ -56,7 +56,7 @@ content="The Metadata Standards Catalog is an information platform for finding a
 target="fairdo-cookbook/index.html"
 background="assets/images/cookbook.png"
 title="FAIR DO Cookbook"
-subtitle="a dish for every occasion"
+subtitle="A dish for every occasion"
 content="The FAIR DO Cookbook is intended to provide first guidance while entering the world of FAIR Digital Objects. It offers a collection of recipes 
 on how to appoach different concepts related to FAIR Digital Objects, i.e., Data Types, and PID Kernel Information Profiles.
 "
@@ -66,7 +66,7 @@ on how to appoach different concepts related to FAIR Digital Objects, i.e., Data
 target="turntable/index.html"
 background="assets/images/turntable.png"
 title="Turntable API"
-subtitle="one for all"
+subtitle="One for All"
 content="The Turntable API is a generic API which allows to use multiple repositories."
 %}
 
@@ -74,7 +74,7 @@ content="The Turntable API is a generic API which allows to use multiple reposit
 target="metadatahub/index.html"
 background="assets/images/turntable.png"
 title="MetadataHub"
-subtitle="one to serve all"
+subtitle="One to serve all"
 content="The MetadataHub is a framework which acts as a proxy for multiple (metadata) repositories. It implements the 'Turntable API'."
 %}
 
@@ -82,7 +82,7 @@ content="The MetadataHub is a framework which acts as a proxy for multiple (meta
 target="typed-pid-maker/index.html"
 background="assets/images/typed-pid-maker_logo.svg"
 title="Typed PID Maker"
-subtitle="makes machine-actionable PIDs."
+subtitle="Makes machine-actionable PIDs"
 content="The Typed PID Maker is an entry point to integrate digital resources into the FAIR DO ecosystem. Create, modify, validate and retrieve PIDs for your digital objects. Offers sandboxed PIDs for testing, but can be configured to, e.g, the Handle system."
 %}
 
@@ -90,7 +90,7 @@ content="The Typed PID Maker is an entry point to integrate digital resources in
 target="fair-do-lab/index.html"
 background="assets/images/fair-do-lab/testbed_preview.png"
 title="FAIR DO Lab"
-subtitle="an environment blueprint for FAIR DO infrastructures."
+subtitle="An environment blueprint for FAIR DO infrastructures"
 content="The FAIR DO Lab is a configurable structure of services to fulfill generic FAIR Digital Object (FAIR DO) use cases. It is a proposal for research which can be configured and extended to specific needs."
 %}
 
@@ -98,7 +98,7 @@ content="The FAIR DO Lab is a configurable structure of services to fulfill gene
 target="ro-crate-java/index.html"
 background="assets/images/ro-crate-java_logo.svg"
 title="ro-crate-java"
-subtitle="a library to package and link all your research data."
+subtitle="A library to package and link all your research data"
 content="Using ro-crate-java, you can create and modify research packages (RO-Crates). These packages allow you to describe your research machine-readable and human-readable, making it FAIR. Build this functionality into your applications or use it directly."
 %}
 </div>
