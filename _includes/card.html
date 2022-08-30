@@ -1,12 +1,14 @@
 <div class="filterDiv w-full sm:w-1/2 md:w-1/3 flex-col p-3 {{ include.tags }}">
     <div class="bg-white rounded-lg shadow-lg overflow-hidden flex-1 flex flex-col h-full">
-        <a href="{{ include.target }}"><div class="bg-cover h-48" style="background-image: url({{ include.background }});"></div></a>
-        <div class="h-full p-4 flex-1 flex flex-col" style="">
-            <h3 class="mb-4 text-2xl">{{ include.title }}</h3>
-            <b class="mb-4 text-1xl">{{ include.subtitle }}</b>
-            <div class="mb-4 text-grey-darker text-sm flex-1">
-                <p>{{ include.content }}</p>
+        <a class="text-black" href="{{ include.target }}">
+            <div class="bg-cover h-48" style="background-image: url({{ include.background }});"></div>
+            <div class="h-full p-4 flex-1 flex flex-col" style="">
+                <h3 class="mb-4 text-2xl">{{ include.title }}</h3>
+                <b class="mb-4 text-1xl">{{ include.subtitle }}</b>
+                <div class="mb-4 text-grey-darker text-sm flex-1">
+                    <p>{{ include.content }}</p>
+                </div>
             </div>
-        </div>
+        </a>
     </div>
 </div>
