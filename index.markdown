@@ -83,7 +83,7 @@ target="typed-pid-maker/index.html"
 background="assets/images/typed-pid-maker_logo.svg"
 title="Typed PID Maker"
 subtitle="Makes machine-actionable PIDs"
-content="The Typed PID Maker is an entry point to integrate digital resources into the FAIR DO ecosystem. Create, modify, validate and retrieve PIDs for your digital objects. Offers sandboxed PIDs for testing, but can be configured to, e.g, the Handle system."
+content="The Typed PID Maker is an entry point to integrate digital resources into the FAIR DO ecosystem. It allows creating, modifying and validating PIDs with typed information or retrieving typed information by their PID. It offers sandboxed PIDs for testing, as well as real Handle PIDs."
 %}
 
 {% include card.html tags="restful fairdo metadata"
