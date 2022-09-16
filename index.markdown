@@ -98,8 +98,8 @@ content="The FAIR DO Lab is a configurable structure of services to fulfill gene
 target="ro-crate-java/index.html"
 background="assets/images/ro-crate-java_logo.svg"
 title="ro-crate-java"
-subtitle="A library to package and link all your research data"
-content="Using ro-crate-java, you can create and modify research packages (RO-Crates). These packages allow you to describe your research machine-readable and human-readable, making it FAIR. Build this functionality into your applications or use it directly."
+subtitle="A software library to package and link research data"
+content="ro-crate-java enables the safe creation and modification of research packages following the RO-Crate specification. These packages allow the machine-readable and human-readable description and documentation of research, making it FAIR."
 %}
 </div>
 
