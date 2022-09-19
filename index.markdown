@@ -101,6 +101,14 @@ title="ro-crate-java"
 subtitle="A software library to package and link research data"
 content="ro-crate-java enables the safe creation and modification of research packages following the RO-Crate specification. These packages allow the machine-readable and human-readable description and documentation of research, making it FAIR."
 %}
+
+{% include card.html tags="data repository"
+target="https://rxp.datamanager.kit.edu"
+background="assets/images/DCE.png"
+title="Data Collections Explorer"
+subtitle="Discover engineering datasets"
+content="The Data Collections Explorer is an information system for the engineering community to facilitate research of domain specific repositories and databases, as well as datasets published individually by research groups."
+%}
 </div>
 
 
