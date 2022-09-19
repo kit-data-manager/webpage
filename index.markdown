@@ -130,8 +130,10 @@ VirtualSelect.init({
   multiple: true
 });
 
-document.querySelector('#example-select').setValue(['repository', 'data', 'engineering', 'metadata', 'restful', 'ui', 'fairdo']);
-filterSelection(['repository', 'data', 'engineering', 'metadata', 'restful', 'ui', 'fairdo']);
+var selectionOptions = ['repository', 'data', 'engineering', 'metadata', 'restful', 'ui', 'fairdo'];
+
+document.querySelector('#example-select').setValue(selectionOptions);
+filterSelection(selectionOptions);
 
 function filterSelection(values) {
   var x, i, j;
