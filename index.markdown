@@ -102,7 +102,7 @@ subtitle="A software library to package and link research data"
 content="ro-crate-java enables the safe creation and modification of research packages following the RO-Crate specification. These packages allow the machine-readable and human-readable description and documentation of research, making it FAIR."
 %}
 
-{% include card.html tags="data repository"
+{% include card.html tags="data engineering repository"
 target="https://rxp.datamanager.kit.edu"
 background="assets/images/DCE.png"
 title="Data Collections Explorer"
@@ -117,6 +117,7 @@ content="The Data Collections Explorer is an information system for the engineer
 var myOptions = [
   { label: 'Repository', value: 'repository' },
   { label: 'Data', value: 'data' },
+  { label: 'Engineering', value: 'engineering' },
   { label: 'Metadata', value: 'metadata' },
   { label: 'RESTful', value: 'restful' },
   { label: 'UI', value: 'ui' },
@@ -129,8 +130,8 @@ VirtualSelect.init({
   multiple: true
 });
 
-document.querySelector('#example-select').setValue(['repository', 'data', 'metadata', 'restful', 'ui', 'fairdo']);
-filterSelection(['repository', 'data', 'metadata', 'restful', 'ui', 'fairdo']);
+document.querySelector('#example-select').setValue(['repository', 'data', 'engineering', 'metadata', 'restful', 'ui', 'fairdo']);
+filterSelection(['repository', 'data', 'engineering', 'metadata', 'restful', 'ui', 'fairdo']);
 
 function filterSelection(values) {
   var x, i, j;
