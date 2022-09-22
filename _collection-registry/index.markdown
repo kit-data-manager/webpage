@@ -23,6 +23,7 @@ and has been implemented following these recommendations.
 * Full implementation of the official RDA recommendation on Research Collections
 * Support for typed collections 
 * (Optional) PID support for collections and their members
+* Smart-Collections for rule-based grouping of member items
 
 ## News
 

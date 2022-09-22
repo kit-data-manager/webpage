@@ -84,6 +84,65 @@ The following table shows supported capabilities, their description and defaults
 | hasAccessRestrictions | Indicates whether the collection is fully open or has access restrictions.                                                                                     | false
 | memberOf              | If provided, this is a list of collection identifiers to which this collection itself belongs.                                                                 | [] (empty list)
 | descriptionOntology   | Identifies the ontology used for descriptive metadata. Implementation is expected to supply the URI of a controlled vocabulary.                                | null
+| smartRules   | A list of rules applied to added members for deciding, whether the member is added to this collection (no rule applies) or to one more more other collections as defined by the rule which applies.                                | null
+
+#### Rule-based Collections
+
+Introduced in version 1.3.0, the Collection Registry supports rule-based collections. Rules are defined in the collection properties by string. Each rule consists of four parts:
+
+- The field which is checked
+- The comparator which is applies
+- The comparator term the field should match
+- The target collection id a member is added to if the rules applies
+
+Together with some delimiters and separators for better parsing, a valid rule looks like:
+
+```
+DATA_TYPE EQUALS 'application/json' > json-metadata
+```
+
+Which means, "put all members whose *dataType* field value *equals* the string *application/json* to collection *json-metadata*.
+If collection *json-metadata* does not exist, yet, it will be created as sub-collection of the collection the addMember operation was applied to. If the collection already exists, either as member of the target collection or not, the new member will be added.
+
+:grey_exclamation: Restrictions by collection capabilities and properties are only checked for the collection the addMember operation was applied to. If a smart-rules applied to a member, for the new targe collection no further checks are applied. E.g., a collection might be filled beyond its maxLength by a smart rule. :grey_exclamation:
+
+If none of the provided rules apply, the member will be added to the collection the addMember operation was applied to.
+
+The following values are supported for the certain parts:
+
+**Field:**
+
+| Value             | Target field
+|-------------------|-----------
+| MEMBER_ID         | mid  
+| DATA_TYPE         | datatype 
+| DESCRIPTION       | description
+| LOCATION          | location
+| ONTOLOGY          | ontology
+| MEMBER_ROLE       | mappings.memberRole
+
+(For field descriptions see table in next chapter)
+
+**Operator:**
+
+| Value             | Notes
+|-------------------|-----------
+| STARTS_WITH       | -
+| ENDS_WITH         | -
+| CONTAINS          | -
+| NOT_CONTAINS      | -
+| EQUALS            | Case-sensitive equals 
+| NOT_EQUALS        | -
+| EQUALS_IGNORE_CASE| Case-insensive equals
+| MATCHES           | Regular expression
+        
+The following table shows some example rules with a short description on what they mean:
+
+| Rule              | Description
+|-------------------|-----------
+| DATA_TYPE STARTS_WITH 'image' > images   | Put all members with a dataType starting with *image* to a collection with id *images*.
+| LOCATION CONTAINS 'localhost' > local_members  | Put all members with a location containing *localhost* to a collection with id *local_members*
+| DESCRIPTION NOT_CONTAINS 'pre-release' > released | Put all members not containing 'pre-release' in their description to a collection with id *released*
 
 
 ### Collection Item Properties

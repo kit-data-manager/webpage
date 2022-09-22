@@ -31,3 +31,4 @@ clearly defined, the implementation contains some fixes [FIX], additions [ADD] a
 * [RES] There is currently no build-in PID support. If no PID are provided with a collection or member, a UUID is assigned.
 * [ADD] Integrated ETag support in order to avoid concurrent modifications.
 * [ADD] Navigation through a result set is realized using default Spring pagination, e.g. supporting page and size query parameters. The cursors (next and prev) of a result set are pointing to the next/prev page link.
+* [ADD] Smart-collections for rule-based grouping of member items a creation time.
