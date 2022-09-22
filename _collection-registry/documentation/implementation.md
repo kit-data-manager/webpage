@@ -104,7 +104,11 @@ DATA_TYPE EQUALS 'application/json' > json-metadata
 Which means, "put all members whose *dataType* field value *equals* the string *application/json* to collection *json-metadata*.
 If collection *json-metadata* does not exist, yet, it will be created as sub-collection of the collection the addMember operation was applied to. If the collection already exists, either as member of the target collection or not, the new member will be added.
 
-:grey_exclamation: Restrictions by collection capabilities and properties are only checked for the collection the addMember operation was applied to. If a smart-rules applied to a member, for the new targe collection no further checks are applied. E.g., a collection might be filled beyond its maxLength by a smart rule. :grey_exclamation:
+---
+**NOTE**
+Restrictions, e.g., by collection capabilities and properties, are only checked for the collection the addMember operation was applied to. If a smart-rules applied to a member, for the new target collection NO further checks are applied. E.g., a collection might be filled beyond its maxLength by a smart rule.
+
+---
 
 If none of the provided rules apply, the member will be added to the collection the addMember operation was applied to.
 
