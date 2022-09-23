@@ -423,3 +423,16 @@ wap-server_index:
         subfolderitems:
           - page: Installation
             url: wap-server/documentation/installation.html
+fairdoscope_index:
+  - title:
+    subfolderitems:
+      - title: General
+        subfolderitems:
+          - page: FAIR-DOscope
+            url: fairdoscope/index.html
+      - title: Users
+        subfolderitems:
+          - page: Usage
+            url: fairdoscope/documentation/index.html
+          - page: Showcase
+            external_url: https://kit-data-manager.github.io/fairdoscope/

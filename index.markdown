@@ -104,6 +104,15 @@ content="The FAIR DO Lab is a configurable structure of services to fulfill gene
 %}
 
 {% include card.html tags="data metadata"
+target="fairdoscope/index.html"
+background="assets/images/fairdoscope/logo.png"
+title="FAIR-DOscope"
+subtitle="Explore the facets of FAIR Digital Objects"
+content="FAIR-DOscope is an easy-to-use, generic FAIR Digital Object viewer and browser accepting PIDs of FAIR DOs and presenting
+the associated PID record in a graphical and user-friendly way."
+%}
+
+{% include card.html tags="data metadata"
 target="ro-crate-java/index.html"
 background="assets/images/ro-crate-java_logo.svg"
 title="ro-crate-java"
