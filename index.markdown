@@ -35,6 +35,15 @@ content="The Collection Registry allows building collections of digital objects,
 interoperability, reuse and make collections actionable to be able to cope with ever-increasing amounts and volumes of data."
 %}
 
+{% include card.html tags="restful"
+target="wap-server/index.html"
+background="assets/images/annotation.jpg"
+title="Web Annotation Protocol server"
+subtitle="The digital sticky note solution"
+content="The Web Application Protocol server allows creating and managing annotations following the Web Annotation Data Model (WADM) specified by the World Wide Web Consortium (w3c).
+It offers a full implementation of the Web Annotation Protocol (WAP) and can therefore be used standalone to annotate arbitrary digital content."
+%}
+
 {% include card.html tags="ui"
 target="metadata-editor/index.html"
 background="assets/images/editor.png"

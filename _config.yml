@@ -63,6 +63,8 @@ collections:
     output: true
   ro-crate-java:
     output: true
+  wap-server:
+    output: true
     
 # Exclude from processing.
 # The following items will not be processed, by default.
