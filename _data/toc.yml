@@ -436,3 +436,9 @@ fairdoscope_index:
             url: fairdoscope/documentation/index.html
           - page: Showcase
             external_url: https://kit-data-manager.github.io/fairdoscope/
+      - title: Developers
+        subfolderitems:
+          - page: Source Code
+            external_url: https://github.com/kit-data-manager/fairdoscope
+          - page: Issue Tracker
+            external_url: https://github.com/kit-data-manager/fairdoscope/issues
