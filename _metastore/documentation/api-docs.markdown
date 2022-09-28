@@ -3,7 +3,7 @@ title: RESTful API v1.0.0
 language_tabs:
   - java: Java 
 description: A Research Data Repository Service for Managing Metadata Documents based on JSON or XML.
-breadcrumbs: /metastore/api-docs
+breadcrumbs: /metastore/documentation/api-docs
 toc_footers: []
 includes: []
 search: true
