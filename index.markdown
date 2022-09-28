@@ -72,14 +72,6 @@ on how to appoach different concepts related to FAIR Digital Objects, i.e., Data
 %}
 
 {% include card.html tags="metadata repository"
-target="turntable/index.html"
-background="assets/images/turntable.png"
-title="Turntable API"
-subtitle="One for All"
-content="The Turntable API is a generic API which allows to use multiple repositories."
-%}
-
-{% include card.html tags="metadata repository"
 target="metadatahub/index.html"
 background="assets/images/turntable.png"
 title="MetadataHub"
