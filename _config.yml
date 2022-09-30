@@ -45,6 +45,8 @@ collections:
     output: true
   collection-registry:
     output: true
+  dce:
+    output: true
   metadata-editor:
     output: true
   metastore:

@@ -103,7 +103,7 @@ content="ro-crate-java enables the safe creation and modification of research pa
 %}
 
 {% include card.html tags="data engineering repository"
-target="https://rxp.datamanager.kit.edu"
+target="dce/index.html"
 background="assets/images/dce.png"
 title="Data Collections Explorer"
 subtitle="Discover engineering datasets"
