@@ -12,7 +12,7 @@ tag-name: metadatahub
 
 # The MetadataHub
 
-The MetadataHub provides a framework powered by the 'Turntable API'
+The MetadataHub provides a framework powered by the '[Turntable API](turntable.html)'
 to access (metadata) repositories with a uniform interface. For this
 purpose, developers only need to set up a mapping to the specific 
 implementations  they want. This makes it
@@ -23,7 +23,6 @@ implementations  they want. This makes it
 
 ## Target Audience
 - Developers
-- Scientists
 
 ## Features
 * Register/Edit/View schema
