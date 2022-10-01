@@ -1,5 +1,5 @@
 ---
-title: Web Application Protocol Server
+title: Web Annotation Protocol Server
 breadcrumbs: /wap-server/
 layout: default
 description: A service for annotating digital content.

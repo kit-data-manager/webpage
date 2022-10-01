@@ -406,7 +406,7 @@ wap-server_index:
     subfolderitems:
       - title: General
         subfolderitems:
-          - page: The Web Application Protocol Server
+          - page: The Web Annotation Protocol Server
             url: wap-server/index.html
           - page: News Archive
             url: wap-server/news.html
