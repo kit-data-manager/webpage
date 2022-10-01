@@ -298,19 +298,6 @@ fairdo-cookbook_index:
         subfolderitems:
           - page: Go to Cookbook
             external_url: https://kit-data-manager.github.io/fairdo-cookbook/
-turntable_index:
-  - title: 
-    subfolderitems:
-      - title: General
-        subfolderitems:
-          - page: The Turntable API
-            url: turntable/index.html
-          - page: News Archive
-            url: turntable/news.html
-      - title: Developers
-        subfolderitems:
-        - page: Specification Turntable API
-          external_url: https://nfdi4ing.pages.rwth-aachen.de/s-3/s-3-3/turntable-interface/
 metadatahub_index:
   - title: 
     subfolderitems:
