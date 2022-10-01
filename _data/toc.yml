@@ -140,6 +140,8 @@ metastore_index:
         subfolderitems:
           - page: The MetaStore Service
             url: metastore/index.html
+          - page: Documentation
+            url: metastore/documentation/index.html
           - page: Docker Images
             external_url: https://hub.docker.com/r/kitdm/metastore2/tags
           - page: News Archive
@@ -150,6 +152,8 @@ metastore_index:
           external_url: https://kit-data-manager.github.io/metastore2
       - title: Developers
         subfolderitems:
+        - page: OpenAPI Definition
+          url: metastore/documentation/api-docs.html
         - page: REST API
           url: metastore/documentation/REST/index.html
         - page: Source Code
@@ -173,6 +177,8 @@ metastore_doc_rest:
         subfolderitems:
           - page: The MetaStore Service
             url: metastore/index.html
+          - page: Documentation
+            url: metastore/documentation/index.html
           - page: Docker Images
             external_url: https://hub.docker.com/r/kitdm/metastore2/tags
           - page: News Archive
@@ -228,6 +234,8 @@ metastore_doc:
         subfolderitems:
           - page: The MetaStore Service
             url: metastore/index.html
+          - page: Documentation
+            url: metastore/documentation/index.html
           - page: Docker Images
             external_url: https://hub.docker.com/r/kitdm/metastore2/tags
           - page: News Archive
@@ -236,6 +244,8 @@ metastore_doc:
         subfolderitems:
           - page: Installation
             url: metastore/documentation/installation/index.html
+          - page: OpenAPI Definition
+            url: metastore/documentation/api-docs.html
           - page: REST API
             url: metastore/documentation/REST/index.html
           - page: GUI
@@ -247,6 +257,8 @@ metastore_instal:
         subfolderitems:
           - page: The MetaStore Service
             url: metastore/index.html
+          - page: Documentation
+            url: metastore/documentation/index.html
           - page: Docker Images
             external_url: https://hub.docker.com/r/kitdm/metastore2/tags
           - page: News Archive
