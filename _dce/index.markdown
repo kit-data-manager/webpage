@@ -11,7 +11,7 @@ tag-name: dce
 
 Easy findability and accessibility are important for the efficient re-use of research data. The Data Collections Explorer is an information system for engineers looking for discipline specific repositories, archives, databases, and individually published datasets. It aims to help answer the following questions:
 - Are there datasets available to support my research questions?
-- Are benchmarks available to check my results?
+- Are there benchmarks available to check my results?
 - Are datasets published Open Access?
 - Where to publish my research datasets?
 - Are there size limitations for datasets?
