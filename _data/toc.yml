@@ -101,6 +101,17 @@ collection_registry_index:
         subfolderitems:
         - page: Installation
           url: collection-registry/documentation/installation.html
+dce_index:
+    - title:
+      subfolderitems:
+          - title: General
+            subfolderitems:
+                - page: The Data Collections Explorer
+                  url: dce/index.html
+          - title: Users
+            subfolderitems:
+                - page: NFDI4Ing Data Collections Explorer
+                  external_url: https://rxp.datamanager.kit.edu
 metadata_editor_index:
   - title:
     subfolderitems:
