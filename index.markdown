@@ -100,8 +100,7 @@ target="fairdoscope/index.html"
 background="assets/images/fairdoscope/logo.png"
 title="FAIR-DOscope"
 subtitle="Explore the facets of FAIR Digital Objects"
-content="FAIR-DOscope is an easy-to-use, generic FAIR Digital Object viewer and browser accepting PIDs of FAIR DOs and presenting
-the associated PID record in a graphical and user-friendly way."
+content="FAIR-DOscope is an easy-to-use, generic FAIR Digital Object viewer and browser. It accepts PIDs of FAIR DOs and presents the associated PID record in a graphical and user-friendly way."
 %}
 
 {% include card.html tags="data metadata"
