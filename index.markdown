@@ -23,7 +23,7 @@ target="metastore/index.html"
 background="assets/images/metadata.jpg"
 title="MetaStore"
 subtitle="Metadata - for sure"
-content="MetaStore is a research data repository service for managing formally quality-controlled metadata documents based on JSON or XML."
+content="MetaStore is a research data repository service storing metadata documents and schemas. By associating each document with a schema and validating it, quality and consistency are maintained. Supports JSON and XML."
 %}
 
 {% include card.html tags="restful"
