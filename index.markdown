@@ -48,7 +48,7 @@ It offers a full implementation of the Web Annotation Protocol (WAP) and can the
 target="metadata-editor/index.html"
 background="assets/images/editor.png"
 title="Metadata Editor"
-subtitle="It's about filling in and out"
+subtitle="Generate and validate input forms"
 content="The Metadata Editor is a JavaScript library allowing to generate web forms and validate metadata in an intuitive and generic way."
 %}
 
