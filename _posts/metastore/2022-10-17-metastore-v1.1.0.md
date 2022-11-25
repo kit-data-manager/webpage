@@ -33,7 +33,7 @@ Today, we like to announce version 1.1.0 of the metastore service. Below, you ca
 - Update to postgresql 42.5.0
 - Update to h2 2.1.214
 - Update to gradle version 7.5.1
-- Get rid of powermock
+- Remove powermock
 - Support for Java 17 (tests)
 - Remove jwt libraries (already part of service-base).
 
