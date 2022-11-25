@@ -40,8 +40,8 @@ target="wap-server/index.html"
 background="assets/images/annotation.jpg"
 title="Web Annotation Protocol server"
 subtitle="The digital sticky note solution"
-content="The Web Application Protocol server allows creating and managing annotations following the Web Annotation Data Model (WADM) specified by the World Wide Web Consortium (w3c).
-It offers a full implementation of the Web Annotation Protocol (WAP) and can therefore be used standalone to annotate arbitrary digital content."
+content="The Web Application Protocol server allows creating and managing annotations following the Web Annotation Data Model as specified by the World Wide Web Consortium.
+Offering a full implementation of the Web Annotation Protocol, it can be used standalone to annotate arbitrary digital content."
 %}
 
 {% include card.html tags="ui"
