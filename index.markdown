@@ -56,7 +56,7 @@ content="The Metadata Editor is a JavaScript library allowing to generate web fo
 target="msc/index.html"
 background="assets/images/msc.png"
 title="Metadata Standards Catalog"
-subtitle="Looking for a standard?"
+subtitle="An overview of metadata standards and tools"
 content="The Metadata Standards Catalog is an information platform for finding and sharing metadata standards and tools. It is based on the outcome of the RDA Metadata Standards Catalog Working Group.
 "
 %}
