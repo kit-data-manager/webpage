@@ -75,7 +75,7 @@ on how to appoach different concepts related to FAIR Digital Objects, i.e., Data
 target="metadatahub/index.html"
 background="assets/images/turntable.png"
 title="MetadataHub"
-subtitle="One to serve all"
+subtitle="The hub for repositories"
 content="The MetadataHub is a framework which acts as a proxy for multiple (metadata) repositories. It implements the 'Turntable API'."
 %}
 
