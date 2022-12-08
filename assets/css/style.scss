@@ -16,6 +16,14 @@ header{
   border: 1px solid #14c8ff;
 }
 
+td {
+  border-right: 1px solid #14c8ff!important
+}
+
+td:first-child {
+  border-left: 1px solid #14c8ff!important
+}
+
 .wrapper {
   width:800px;
   margin:0 auto;
