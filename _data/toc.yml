@@ -7,10 +7,6 @@ base_repo_index:
             url: base-repo/index.html
           - page: News Archive
             url: base-repo/news.html
-      - title: Users
-        subfolderitems:
-          - page: AppCase 1
-            url: base-repo/documentation/index.html
       - title: Developers
         subfolderitems:
           - page: OpenAPI definition
