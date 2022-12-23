@@ -11,11 +11,11 @@ tag-name: typed-pid-maker
 
 # The {{ page.title }}
 
-The Typed PID Maker is an entry point to integrate digital resources into the FAIR DO ecosystem.
+The Typed PID Maker is an entry point to integrate digital resources into the FAIR Digital Object (FAIR DO) ecosystem.
 It allows creating PIDs for resources and to provide them with the necessary metadata to ensure that the resources can be found and understood.
 
-In order to do so, it requires access to a PID service.
-It will then abstract away the complexity of these systems and provide a simple, unified REST interface for applications.
+In order to do so, it requires write-access to a PID service (sometimes called a "Prefix").
+It will then abstract away the complexity of such systems and provide a simple, unified REST interface for applications.
 Via this interface, PIDs can be created, updated (maintained), resolved and validated.
 Validation requires access to a public Data Type Registry (DTR), compatible with the ePIC DTR, which is pre-configured.
 Creating and updating PIDs using the Typed PID Maker will always validate the PID records content before doing so.
@@ -33,22 +33,21 @@ The system follows the [RDA Recommendations on PID Information Types](https://rd
 
 * Create, update/maintain and resolve PIDs
 * Profile-based validation (implicit and explicit)
+* Resolve PIDs
+* Store created PIDs in a local database
 * Ease development by hiding complexity of PID Systems and Data Type Registries
 * Common technologies for easy, programming language independent development (REST and JSON)
-* Extendable to more PID Systems (by default only the Handle System is supported)
-* (Optional) A sandboxed PID System for testing purposes
+* Extendable to more PID Systems (currently only supports the Handle System)
+* (Optional) Sandboxed PID Systems for testing purposes (in-memory or database)
 * (Optional) Notification of other systems about changes on PIDs via RabbitMQ (AMQP Standard)
 * (Optional) JWT-based authentication and authorization via Keycloak
 
 ## Roadmap
 
-Currently, the Typed PID Maker is in beta. While the development can be followed on GitHub, here are the most important points which have to be done before a 1.0 release:
+The Typed PID Maker is stable and production-ready. The banner at the top shows the current version. Besides maintenance, there are further plans (excerpt/directions):
 
-* **Persist created PIDs locally.** – Ensure recoverability of PIDs in case all other systems fail.
-
-* **Persist sandboxed PID Systems in a local database.** – Enable more extensive tests. Currently, the sandboxed PIDs are stored in memory (RAM).
-
-* **Configurable Docker-Container for releases.** – Make it easier to try the service locally and ease the work of administrators as well.
+* **Ease deployment** – Make it easier to try the service locally and ease the work of administrators as well. For example by offering a configurable docker container. [#25](https://github.com/kit-data-manager/pit-service/issues/25)
+* **Different enhancements regarding PID resolution and maintenance** – The Typed PID Maker is also easing the maintenance of FAIR DOs. We collect and evaluate such [enhancements in our issue tracker](https://github.com/kit-data-manager/pit-service/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement).
 
 
 {% assign servicePosts = site.posts | where_exp: "post", "post.tags contains page.tag-name" %}
