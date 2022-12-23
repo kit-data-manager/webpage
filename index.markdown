@@ -31,8 +31,8 @@ target="collection-registry/index.html"
 background="assets/images/collections.jpg"
 title="Collection Registry"
 subtitle="Collect, Organize, Share"
-content="The Collection Registry allows building collections of digital objects, independent of any repository in order to facilitate data
-interoperability, reuse and make collections actionable to be able to cope with ever-increasing amounts and volumes of data."
+content="The Collection Registry allows building collections of digital objects, independent of any repository. In doing so, it facilitates data
+interoperability, data reuse, and makes collections actionable to be able to cope with ever-increasing amounts and volumes of data."
 %}
 
 {% include card.html tags="restful"
