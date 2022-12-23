@@ -116,7 +116,7 @@ target="dce/index.html"
 background="assets/images/dce/dce.png"
 title="Data Collections Explorer"
 subtitle="Discover engineering datasets"
-content="The Data Collections Explorer is an information system for the engineering community to facilitate research of domain specific repositories and databases, as well as datasets published individually by research groups."
+content="The Data Collections Explorer is an information system for the engineering community. It facilitates research of domain specific repositories and databases, as well as datasets published individually by research groups."
 %}
 </div>
 
