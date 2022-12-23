@@ -12,12 +12,15 @@ navigation_id: typed_pid_maker_index
 
 There are a couple of configuration options which are described here.
 All configuration is done in the file 'application.properties'.
+There is a [well-documented example-configuration in the Typed PID Maker code repository](https://github.com/kit-data-manager/pit-service/blob/master/config/application.properties).
+This document explains the basic configuration in a more structured way for an easy introduction.
+
 Spring Boot offers different ways of providing the configuration to a service.
 For the Typed PID Maker, three options are relevant, whereas "current directory" describes the directory, where TypedPidMaker-$(version).jar is located:
 
-1. In a /config subfolder of the current directory.
-2. In the current directory
-3. Provided as command line argument -Dspring.config.location=[absolute path to application.properties]
+- In a /config subfolder of the current directory.
+- In the current directory
+- Provided as command line argument -Dspring.config.location=[absolute path to application.properties]
 
 Generally, all [listed properties] offered by the Spring Framework are supported, but only a few of them are used by default.
 With the source code comes a default application.properties, already containing all relevant properties with default values.
@@ -68,15 +71,52 @@ repo.messaging.sender.exchange: record_events
 
 The current version ships with a Handle implementation which uses the Handle Protocol (in contrast to the REST interface).
 It uses the official Handle Java Client Library and is therefore considered reliable.
-Alternatively, you can choose an In-Memory-Implementation to create sandboxed PIDs.
+
+There are further implementations which will not create globally resolvable PIDs.
+We call those "sandboxed PIDs", and their purpose is mostly for testing or special use-cases.
+There is a "Local PID System" implementation, which stores PIDs in a local database.
+PIDs will then only be resolvable using this instance of the Typed PID Maker.
+Alternatively, you can choose an In-Memory-Implementation to create sandboxed PIDs which do only last until the service stops.
+PIDs will not be a available after starting the service again, and you'll have to begin from scratch.
+
 You can choose an implementation by specifying it like this:
 
 ```properties
-pit.pidsystem.implementation = IN_MEMORY # other values: HANDLE_PROTOCOL
+pit.pidsystem.implementation = LOCAL # other values: HANDLE_PROTOCOL, IN_MEMORY
 ```
 
-Depending on this setting, other settings might be available.
+Depending on this setting, other settings might be available:
+
 The IN_MEMORY implementation does currently not have any settings.
+
+The LOCAL implementation depends on the general database configuration of the whole instance.
+These settings are always available and should be set properly:
+
+```properties
+####################################
+# Storing known PIDs in a database #
+### (Also required for messaging) ##
+####################################
+# This database will always run, as it is also required for the messaging feature,
+# but for the messaging it is not required to be persistent.
+# But the service will also use this database to store known PIDs.
+# This can be used as a backup or documentation of all PIDs.
+# The following properties can (and should) be set.
+# The driver detemins the database system to start. Other drivers are untested, but may work.
+spring.datasource.driver-class-name: org.h2.Driver
+# Next, please choose a location for the database file on your file system.
+# WARNING: If no url is being defined, an in-memory database is being used,
+#          loosing all data on restart.
+# WARNING: Change the DB to be stored somewhere outside of /tmp!
+spring.datasource.url:  jdbc:h2:file:/tmp/database;MODE=LEGACY;NON_KEYWORDS=VALUE
+# Credentials for the database:
+spring.datasource.username: <your user name here>
+spring.datasource.password: <your password here>
+# Do not change ddl-auto if you do not know what you are doing:
+# https://docs.spring.io/spring-boot/docs/1.1.0.M1/reference/html/howto-database-initialization.html
+spring.jpa.hibernate.ddl-auto: update
+```
+
 The HANDLE_PROTOCOL implementation requires keys and certificates to access the PID service:
 
 ```properties
