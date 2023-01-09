@@ -23,7 +23,7 @@ target="metastore/index.html"
 background="assets/images/metadata.jpg"
 title="MetaStore"
 subtitle="Store metadata consistently"
-content="MetaStore is a research data repository service storing metadata documents and schemas. By associating each document with a schema and validating it, quality and consistency are maintained. Supports JSON and XML."
+content="MetaStore is a research data repository software for storing metadata documents and schemas. Quality and consistency are ensured by associating and validating each document against a schema. It supports JSON and XML."
 %}
 
 {% include card.html tags="restful"
