@@ -1,5 +1,5 @@
 ---
-title: RESTful API v0.4
+title: RESTful API v1
 language_tabs:
   - python: Python
   - java: Java 
