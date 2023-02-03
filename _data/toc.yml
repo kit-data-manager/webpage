@@ -282,6 +282,8 @@ metastore_instal:
             url: metastore/documentation/installation/local-installation.html
           - page: Setup
             url: metastore/documentation/installation/setup-metastore.html
+          - page: Setup Search
+            url: metastore/documentation/search-configuration.html
       - title: Database
         subfolderitems:
           - page: Introduction
