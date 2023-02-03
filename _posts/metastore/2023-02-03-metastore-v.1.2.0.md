@@ -12,17 +12,17 @@ title:  "MetaStore v1.2.0 released"
 
 Today, we like to announce version 1.2.0 of the metastore service. Below, you can find the list of changes. 
 
-##  :star: New Features
+## New Features
 * Add proxy for authenticated search via elasticsearch
 * Add commandline parser for reindexing elasticsearch
 * Add actuator endpoints for info and health (https://github.com/kit-data-manager/metastore2/issues/184)
  
-## :beetle: Bugfixes
+## Bugfixes
 * Invalid input for resource identifier causes NPE (https://github.com/kit-data-manager/metastore2/issues/198)
 * Hibernate validation was not enabled by default. (https://github.com/kit-data-manager/metastore2/issues/191)
 * Check metadata directory for valid entry during startup (https://github.com/kit-data-manager/metastore2/issues/185)
 
-## :hammer: Dependency Upgrades
+## Dependency Upgrades
 * Bump commons-text from 1.9 to 1.10.0
 * Bump gradle from 7.5.1 to 7.6. by @VolkerHartmann in https://github.com/kit-data-manager/metastore2/pull/172
 * Bump httpclient from 4.5.13 to 4.5.14 by @dependabot in https://github.com/kit-data-manager/metastore2/pull/145
