@@ -24,6 +24,7 @@ The base-repo is a generic, general purpose research data repository service off
 * (Optional) OAI-PMH support for metadata harvesting
 * (Optional) Messaging support via [RabbitMQ](https://www.rabbitmq.com/) to process repository events, e.g., resource creation or file upload.
 * (Optional) JWT-based authentication and authorization via Keycloak
+* (Optional) Elastic-based indexing and search seamlessly integrated and secured
 
 <div class="flex flex-wrap -m-3 inset-5px">
         <div class="w-full sm:w-1/2 md:w-1/3 flex-col p-3">
