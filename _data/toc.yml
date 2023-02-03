@@ -27,6 +27,8 @@ base_repo_index:
             url: base-repo/documentation/messaging-configuration.html
           - page: Configure Auditing
             url:  base-repo/documentation/audit-configuration.html
+          - page: Indexing and Search
+            url:  base-repo/documentation/search-configuration.html
 base_repo_doc:
   - title: Documentation
     subfolderitems:
