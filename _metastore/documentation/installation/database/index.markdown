@@ -14,3 +14,14 @@ For production use it's recommended to use an external database.
 This documentation describes the installation and setup using a postgres database as an example.
 For other implementations please refer to Spring Boot documentation. 
 
+- [Installation PostgreSQL](postgres.html)
+- [Installation PostgreSQL (Docker)](postgres-docker.html)
+
+<style>
+td, th {
+   border: none!important;
+}
+</style>
+| |[NEXT >>](postgres.html)|
+|:----|----:|
+| | |
