@@ -33,13 +33,18 @@ root@server:~# systemctl status apache2.service
 
 ### Configure Proxy for Service
 ```
+root@server:/etc/apache2/sites-available/# cp -R /var/www/httpd /var/www/'FQDN'
+[...]
 root@server:~# cd /etc/apache2/sites-available/
-root@server:/etc/apache2/sites-available/# cp 000-default.conf  'SERVICE'.conf
+root@server:/etc/apache2/sites-available/# cp 000-default.conf  'FQDN'.conf
 [...]
-root@server:/etc/apache2/sites-available/# joe 'SERVICE'.conf
+root@server:/etc/apache2/sites-available/# joe 'FQDN'.conf
         ServerName 'FQDN'
+        DocumentRoot /var/www/'FQDN'
 [...]
-root@server:/etc/apache2/sites-available/# a2ensite 'SERVICE'.conf
+root@server:/etc/apache2/sites-available/# a2ensite 'FQDN'.conf
+[...]
+root@server:/etc/apache2/sites-available/# a2dissite 000-default.conf
 [...]
 root@server:/etc/apache2/sites-available/# systemctl reload apache2
 [...]
@@ -56,9 +61,7 @@ NOTE
 : To use the scripts the server ports 80 and 443 should be accessible from everywhere.
 
 ```
-root@server:~# apt install certbot python3-certbot-nginx
-[...]
-root@server:~# apt install python3-certbot-apache
+root@server:~# apt install certbot python3-certbot-apache
 [...]
 root@server:~# certbot --apache -d 'FQDN'
 [...]
@@ -95,11 +98,14 @@ root@server:~# ln -s /installation/path/'SERVICE'-VERSION.jar /installation/path
 NOTE
 : Bootable jars myare not compatible to all OS.
 
-Create 'application.properties' and adjust it to your needs (optional):
+Create '[config/]application.properties' and adjust it to your needs (optional):
 ```
-root@server:~# vi /installation/path/application.properties
+root@server:~# vi /installation/path/[config/]application.properties
 [...]
 ```
+NOTE
+: You can use 'config/application.properties' to override the default settings from 'application.properties'.
+
 ## Create Keystore for Service
 To make the certificate available to a service it has to be stored in a keystore.
 ```
@@ -150,13 +156,14 @@ server.ssl.key-password: 'PASSWORD_KEYSTORE'
 ## Configure Proxy for HTTPS
 To enable service via proxy an additional proxy file is needed:
 ```
-/etc/apache2/sites-available/'SERVICE'-ssl.conf
+/etc/apache2/sites-available/'FQDN'-ssl.conf
 ===============================================
 <IfModule mod_ssl.c>
 <VirtualHost *:443>
         [...]
         ServerName  'FQDN'
         ServerAlias 'FQDN'
+        DocumentRoot /var/www/'FQDN'
         [...]
         #################################################
         # Configuration for Reverse Proxy
@@ -173,10 +180,9 @@ To enable service via proxy an additional proxy file is needed:
 </VirtualHost>
 </IfModule>
 ```
-To enable these settings you have to create a softlink to this file in
-folder '/etc/apache2/sites-enabled'
+Enable these settings
 ```
-root@server:~# ln -s /etc/apache2/sites-available/'SERVICE'-ssl.conf /etc/apache2/sites-enabled/'SERVICE'-ssl.conf
+root@server:~# a2ensite 'FQDN'-ssl.conf
 ```
 Restart apache server
 ```
