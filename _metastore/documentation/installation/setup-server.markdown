@@ -33,7 +33,7 @@ root@server:~# systemctl status apache2.service
 
 ### Configure Proxy for Service
 ```
-root@server:/etc/apache2/sites-available/# cp -R /var/www/httpd /var/www/'FQDN'
+root@server:~# cp -R /var/www/httpd /var/www/'FQDN'
 [...]
 root@server:~# cd /etc/apache2/sites-available/
 root@server:/etc/apache2/sites-available/# cp 000-default.conf  'FQDN'.conf
