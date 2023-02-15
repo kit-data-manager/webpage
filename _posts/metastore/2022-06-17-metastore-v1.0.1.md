@@ -10,7 +10,7 @@ tags: metastore
 title:  "MetaStore v1.0.1 released"
 ---
 
-Today, we like to announce version 1.0.1 of the metastore service. Below, you can find the list of changes. 
+Today, we like to announce version 1.0.1 of the MetaStore service. Below, you can find the list of changes. 
 
 ### Security
 - Update to h2 2.1.212:

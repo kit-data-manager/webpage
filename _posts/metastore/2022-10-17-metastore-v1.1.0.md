@@ -10,7 +10,7 @@ tags: metastore
 title:  "MetaStore v1.1.0 released"
 ---
 
-Today, we like to announce version 1.1.0 of the metastore service. Below, you can find the list of changes. 
+Today, we like to announce version 1.1.0 of the MetaStore service. Below, you can find the list of changes. 
 
 ### Security
 - Switch to 'eclipse-temurin' for docker due to end of support for 'openjdk'.

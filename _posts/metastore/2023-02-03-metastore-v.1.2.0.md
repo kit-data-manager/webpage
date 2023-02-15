@@ -10,7 +10,7 @@ tags: metastore
 title:  "MetaStore v1.2.0 released"
 ---
 
-Today, we like to announce version 1.2.0 of the metastore service. Below, you can find the list of changes. 
+Today, we like to announce version 1.2.0 of the MetaStore service. Below, you can find the list of changes. 
 
 ## New Features
 * Add proxy for authenticated search via elasticsearch
