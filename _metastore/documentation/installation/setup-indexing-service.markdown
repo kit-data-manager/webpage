@@ -23,7 +23,7 @@ NOTE
 ## Build Indexing-Service
 The first step is to download the repository from git:
 ```
-user@server:~# git clone git@github.com:kit-data-manager/indexing-service.git
+user@server:~# git clone https://github.com/kit-data-manager/frontend-collection.git
 user@server:~# cd indexing-service
 ```
 Determine latest version:
@@ -121,13 +121,13 @@ root@server:~#
 ```
 Congratulations: You are done! 
     
-If you want to set up a service to start automatically at startup, you might want to take a look at [Setup Server, section 'Installation as a systemd Service'](setup-server.html)
+If you want to set up a service to start automatically at startup, you might want to take a look at [Setup Server, section 'Installation as a systemd Service'](setup-systemd.html)
 
 <style>
 td, th {
    border: none!important;
 }
 </style>
-| [<< PREVIOUS](setup-rabbitMq.html) |[NEXT >>](setup-server.html)|
+| [<< PREVIOUS](setup-rabbitMq.html) |[NEXT >>](setup-metastore-service.html)|
 |:----|----:|
 | | |

@@ -20,12 +20,13 @@ This includes:
 - RabbitMQ
 : Messaging server to inform indexing-service about created/updated metadata documents.
 
-This documents guides you to the several steps:
-- [Installation Elasticsearch](setup-elasticsearch.html) (optional)
-- [Installation RabbitMQ](setup-rabbitMq.html) (optional)
-- [Installation Indexing-Service](setup-indexing-service.html) (optional)
-- [Installation MetaStore](setup-metastore-service.html)
-- [Installation Frontend](setup-frontend.html) (optional)
+This documents guides you through the several steps:
+- [Installing Elasticsearch](setup-elasticsearch.html) (optional)
+- [Installing RabbitMQ](setup-rabbitMq.html) (optional)
+- [Installing Indexing-Service](setup-indexing-service.html) (optional)
+- [Installing MetaStore](setup-metastore-service.html)
+- [Installing Apache as a Proxy Server](setup-apache-as-proxy.html)
+- [Installing Frontend](setup-frontend.html) (optional)
 
 <style>
 td, th {

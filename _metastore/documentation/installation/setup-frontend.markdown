@@ -11,10 +11,8 @@ navigation_id: metastore_instal
 # {{ page.title }} 
 
 ## Requirements
-- JAVA 11 or higher (JDK)
+- Apache2
 - Git
-- Python (3.6 or higher)
-- PostgreSql
 
 ## Build Indexing-Service
 The first step is to download the repository from git:
@@ -73,6 +71,6 @@ td, th {
    border: none!important;
 }
 </style>
-| [<< PREVIOUS](setup-metastore-service.html) ||
+| [<< PREVIOUS](setup-apache-as-proxy.html) ||
 |:----|----:|
 | | |

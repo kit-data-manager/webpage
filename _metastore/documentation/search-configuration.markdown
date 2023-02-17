@@ -28,7 +28,7 @@ searched via Elastic tools, e.g., [Kibana](https://www.elastic.co/de/kibana/) or
 This endpoint accepts an Elastic query document and returns the query result in the official Elastic format. A sample call may look like: 
 
 ```bash
-$ curl 'http://localhost:8080/api/v1/metadata/search' -i -X POST \
+$ curl 'http://localhost:8040/api/v1/metadata/search' -i -X POST \
     -H 'Content-Type: application/json' \
     -d '{
     "query": {
