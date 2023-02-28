@@ -64,7 +64,7 @@ them against the schema.
             <h1 class="text-center"><i class="fa-brands fa-docker" aria-hidden="true"></i></h1>
             <h3 class="text-center">Quickstart Framework (Linux only)</h3>
             <p>In case you want to have a quick try of MetaStore framework without any configuration effort, check out our <a href="https://raw.githubusercontent.com/kit-data-manager/metastore2/main/docker-compose.yml">docker compose file</a>.
-                You'll get a pre-configured instance with a UI and support for search via elasticsearch. Take a look at this <a href="https://github.com/kit-data-manager/metastore2#build-framework-using-docker">site</a> for further information. 
+                You'll get a pre-configured instance with a UI and support for search via elasticsearch. Take a look at this <a href="https://github.com/kit-data-manager/metastore2#build-framework-using-docker-linux-only">site</a> for further information. 
             </p>
         </div>
 </div>
