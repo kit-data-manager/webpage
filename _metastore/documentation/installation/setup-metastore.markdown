@@ -15,6 +15,10 @@ The 'application.properties' in the config directory overwrites all settings of 
 the parent directory. Therefor you may delete all settings from the 'config/application.properties'
 you don't want to change.
 
+NOTE
+: If you only want to remove properties (and not change them), they must be commented out 
+('#' at the beginning of the line) in 'application.properties'.
+
 The default configuration may look like this:
 ```
 ###############################################################################
@@ -29,6 +33,18 @@ The default configuration may look like this:
 ###############################################################################
 server.port: 8040
 ```
+# Forwarded Headers (Proxy)
+ATTENTION
+: If you would like to use the service behind a proxy, you will need to 
+uncomment this line.
+
+```
+###############################################################################
+# Proxy (enable this line if you want to use the service behind a proxy.)
+###############################################################################
+#server.forward-headers-strategy=framework
+```
+
 # Paths
 ATTENTION
 : Directories must be writable by the service!
@@ -48,7 +64,7 @@ metastore.metadata.metadataFolder:file:///tmp/metastore2/metadata
 # OAI PMH
 NOTE
 : Make sure that your service is accessible. Replace 'localhost' by the 
-full qualified hostname of your server.
+full qualified hostname of your server/proxy.
 
 ```
 ###############################################################################
@@ -84,10 +100,10 @@ NOTE
 logging.level.root: ERROR
 logging.level.edu.kit: WARN
 ```
-# RabbitMQ
+# Token Management
 NOTE
 : jwtSecret has to be configured if you want to use the search functionality
-togehter with authentication. In that case the jwtSecret of MetaStore and 
+together with authentication. In that case the jwtSecret of MetaStore and 
 indexing-service should contain the same value.
 
 ```
@@ -134,7 +150,7 @@ and provide a valid URL to elasticsearch. Otherwise the service will not start.
 repo.search.enabled = false
 repo.search.url = http://localhost:9200
 ```
-# Management Health Endpoint
+# Database Settings
 ATTENTION
 : If you want to use another database please make sure, that the following lines
 are disabled in ***ALL*** application.properties files!
@@ -144,10 +160,9 @@ are disabled in ***ALL*** application.properties files!
 # Database
 ###############################################################################
 spring.datasource.driver-class-name: org.h2.Driver
-spring.datasource.url:  jdbc:h2:file:/tmp/metastore2/database;MODE=LEGACY;NON_KE
-YWORDS=VALUE
-spring.datasource.username: sa
-spring.datasource.password: sa
+spring.datasource.url:  jdbc:h2:file:./database/metastore;MODE=LEGACY;NON_KEYWORDS=VALUE
+spring.datasource.username: any
+spring.datasource.password: any
 spring.jpa.hibernate.ddl-auto: update
    
 ###############################################################################
@@ -199,7 +214,7 @@ configured as allowed origin.
 metastore.security.enable-csrf=false
 metastore.security.allowedOriginPattern=http*://localhost:*
 ```
-# Keycload
+# Keycloak
 ATTENTION
 : If you want to add keycloak to your configuration please make sure, that the 
 'spring.autoconfigure.exclude' is disabled in ***ALL*** application.properties files.
