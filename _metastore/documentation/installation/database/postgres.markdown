@@ -57,7 +57,7 @@ spring.jpa.hibernate.ddl-auto: update
 [...]
 ```
 NOTE
-: Ensure that database settings for h2 are disabled!
+: Make sure that database settings for h2 are disabled in ***ALL*** application.properties files!
 
 ## Indexing-Service
 ### Setup Database 4 Indexing-Service
@@ -96,7 +96,7 @@ spring.jpa.hibernate.ddl-auto: update
 [...]
 ```
 NOTE
-: Ensure that database settings for h2 are disabled!
+: Make sure that database settings for h2 are disabled in ***ALL*** application.properties files!
 
 ## Manage PostgreSQL
 To start/stop docker service afterwards use
