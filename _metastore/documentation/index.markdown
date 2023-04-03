@@ -11,10 +11,13 @@ navigation_id: metastore_doc
 # {{ page.title }} 
 
 In this documentation, the basics of the MetaStore Service are described. 
-It is splitted in four parts:
-- [Installation](installation/index.html)
-- [Setup Server](installation/setup-server.html)
-- [REST](REST/index.html)
+It is splitted in six parts:
+### Installation & Setup
+- [Installation MetaStore (Standalone)](installation/index.html)
+- [Installation & Setup MetaStore Framework](installation/setup-server.html)
+
+### Documentation & Manuals
+- [REST Documentation](REST/index.html)
 - [OpenAPI Definition](api-docs.html)
 - [Web Frontend](frontend/index.html)
 - [GUI (external link)](https://kit-data-manager.github.io/metastore2)

@@ -1,5 +1,5 @@
 ---
-title:  Installation
+title:  Installation MetaStore (Standalone)
 breadcrumbs: /metastore/documentation/installation
 layout: default
 description: A Research Data Repository Service for Managing Metadata Documents based on JSON or XML.
@@ -9,7 +9,10 @@ navigation_id: metastore_instal
 ---
 
 # {{ page.title }} 
-There are three ways to install metaStore2 as a micorservice:
+NOTE
+: Standalone service will only support simple search via administrative metadata.
+
+There are three ways to install MetaStore as a micorservice:
 - [Using](installation-via-dockerHub.html) the image available via [DockerHub](https://hub.docker.com/r/kitdm/) (***recommended***)
 - [Building](build-docker-container.html) docker image locally
 - [Building](local-installation.html) and running locally

@@ -140,8 +140,14 @@ To enable service via proxy an additional proxy file is needed:
         SSLEngine on
         SSLProxyEngine On
         ProxyPreserveHost On
-        ProxyPass / https://0.0.0.0:8443/
-        ProxyPassReverse / https://0.0.0.0:8443/
+        #################################################
+        # Configure prefix for service 'SERVICE'
+        #################################################
+        <LocationMatch "/'SERVICE'">
+          ProxyPass https://0.0.0.0:8443
+          ProxyPassReverse https://0.0.0.0:8443
+          RequestHeader set x-forwarded-prefix "/'SERVICE'"
+        </LocationMatch>
 
         SSLCertificateFile /etc/letsencrypt/live/'FQDN'/fullchain.pem
         SSLCertificateKeyFile /etc/letsencrypt/live/'FQDN'/privkey.pem
@@ -158,8 +164,26 @@ Restart apache server
 ```
 root@server:~# systemctl restart apache2
 ```
+## Enabling Prefix for (SpringBoot) Service
+To enable a prefix for SpringBoot services you have to extend the config/application.properties file.
+Please add the following line(s):
+```
+config/application.properties
+=============================
+# This file overwrites/extends the settings defined in ../application.properties
+[...]
+###############################################################################
+# Proxy (enable this line if you want to use the service behind a proxy.)
+###############################################################################
+server.forward-headers-strategy=framework
+```
+Restart (MetaStore) Service
+```
+root@server:~# systemctl restart metastore
+```
+You should repeat this for indexing-service also. 
 
-For further Information how to Configure Apache Proxy (for SSL)
+For further Information how to configure Apache Proxy (for SSL)
 - [Configure Proxy (apache2)](https://httpd.apache.org/docs/2.4/howto/reverse_proxy.html)
 - [Configure Proxy (How to)](https://www.middlewareinventory.com/blog/apache-reverse-proxy-what-how-to-configure-setup-reverse-proxy/)
 - [Configure Proxy using Siny server as example](https://www.r-bloggers.com/2015/12/shiny-https-securing-shiny-open-source-with-ssl/)

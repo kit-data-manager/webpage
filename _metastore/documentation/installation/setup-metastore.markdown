@@ -55,6 +55,32 @@ ATTENTION
 ###############################################################################
 metastore.schema.schemaFolder:file:///tmp/metastore2/schema
 metastore.metadata.metadataFolder:file:///tmp/metastore2/metadata
+```
+NOTE
+: Leave the file management section unchanged if you do not expect more than 10,000 files per month.
+Otherwise, configure the directory structure more fine-grained or switch to ID-based management.
+
+
+```
+###############################################################################
+# Setup folder management for metadata documents
+# Note: Creating more than 50.000 directories inside one directory might cause
+#       performance issues. 
+# Possible values: 
+# - simple (No hierarchie at all)
+# - idBased (Split ID in small parts and create directory structure out of it)
+# - dateBased (Create directory structure by date) (default) 
+###############################################################################
+metastore.metadata.storagepattern:dateBased
+
+# Configuration for 'idBased' e.g. 4ca2cc62-df0b-49b1-b622-ce855554adfc -> 4ca2/cc62/df0b/49b1/b622/ce85/5554/4ca2cc62df0b49b1b622ce855554adfc
+# default: charPerDirectory: 4, maxDepth: 7
+repo.plugin.storage.id.charPerDirectory:4
+repo.plugin.storage.id.maxDepth:7
+
+# Configuration for 'dateBased' e.g.: @{year}/@{year}_@{month}_@{day}_@{hour}_@{minute}
+# default: @{year}/@{month}
+repo.plugin.storage.date.pathPattern:@{year}/@{year}_@{month}_@{day}_@{hour}_@{minute}
 
 ###############################################################################
 # Setup schema registries. (Optional, no longer necessary)

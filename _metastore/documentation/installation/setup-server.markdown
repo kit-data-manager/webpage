@@ -25,7 +25,8 @@ This documents guides you through the several steps:
 - [Installing RabbitMQ](setup-rabbitMq.html) (optional)
 - [Installing Indexing-Service](setup-indexing-service.html) (optional)
 - [Installing MetaStore](setup-metastore-service.html)
-- [Installing Apache as a Proxy Server](setup-apache-as-proxy.html)
+- [Setup Service as Daemon (Debian)](setup-systemd.html) (recommended)
+- [Installing Apache as a Proxy Server](setup-apache-as-proxy.html) (optional)
 - [Installing Frontend](setup-frontend.html) (optional)
 
 <style>

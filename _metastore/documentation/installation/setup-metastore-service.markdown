@@ -17,28 +17,27 @@ NOTE
 ## Requirements
 - JAVA 11 or higher (JDK)
 - Git
-- Python (3.6 or higher)
 - PostgreSql
 
-## Build Indexing-Service
+## Build MetaStore
 The first step is to download the repository from git:
 ```
 user@server:~# git clone https://github.com/kit-data-manager/metastore2.git
-user@server:~# cd indexing-service
+user@server:~# cd metastore2
 ```
 Determine latest version:
 ```
-user@server:~/indexing-service# git tag -l |tail -1
+user@server:~/metastore2# git tag -l |tail -1
 v1.2.1
 ```
 Checkout latest version:
 ```
-user@server:~/indexing-service# git checkout v1.2.1
+user@server:~/metastore2# git checkout v1.2.1
 Note: switching to 'v1.2.1'.
 [...]
 HEAD is now at 2c18bff  [Gradle Release Plugin] - pre tag commit:  'v1.2.1'.
 ```
-Build indexing-service:
+Build metastore:
 ```
 root@server:~# bash build.sh /PATH/TO/INSTALLATION/DIR
 ---------------------------------------------------------------------------
@@ -59,11 +58,18 @@ Now you can start the service by calling '/PATH/TO/INSTALLATION/DIR/run.sh'
 ```
 It's recommended to use the postgres database. Therefore, you need to copy the appropriate settings to /PATH/TO/INSTALLATION/DIR/application.properties:
 ```
-user@server:~/indexing-service# cp settings/application-postgres.properties /PATH/TO/INSTALLATION/DIR/application.properties
+user@server:~/metastore# cp settings/application-postgres.properties /PATH/TO/INSTALLATION/DIR/application.properties
 ```
 Change to the installation directory to configure the service according to your needs. To do this, copy the new file with the default settings into the config directory. In the copied file, delete any lines with settings that do not need to be changed, and modify the remaining lines to suit your needs.
+
+--- 
+NOTE
+: You have to replace INSTALLATION_DIR by /PATH/TO/INSTALLATION/DIR choosen above. 
+
+--- 
+
 ```
-user@server:~/indexing-service# cd /PATH/TO/INSTALLATION/DIR
+user@server:~/metastore# cd /PATH/TO/INSTALLATION/DIR
 user@server:/PATH/.../DIR/# cp application.properties config/
 ```
 The edited file may look like this (config/application.properties):
