@@ -60,6 +60,13 @@ them against the schema.
             <p>In case you are interested in source-code, check out the <a href="https://github.com/kit-data-manager/metastore2">GitHub Repository of MetaStore</a>. There
             you can also open an <a href="https://github.com/kit-data-manager/metastore2/issues">Issue</a> to report a bug or to request a new feature.</p>
         </div>
+        <div class="w-full sm:w-1/2 md:w-1/3 flex-col p-3">
+            <h1 class="text-center"><i class="fa-brands fa-docker" aria-hidden="true"></i></h1>
+            <h3 class="text-center">Quickstart Framework (Linux only)</h3>
+            <p>In case you want to have a quick try of MetaStore framework without any configuration effort, check out our <a href="https://raw.githubusercontent.com/kit-data-manager/metastore2/main/docker-compose.yml">docker compose file</a>.
+                You'll get a pre-configured instance with a UI and support for search via elasticsearch. Take a look at this <a href="https://github.com/kit-data-manager/metastore2#build-framework-using-docker-linux-only">site</a> for further information. 
+            </p>
+        </div>
 </div>
 
 

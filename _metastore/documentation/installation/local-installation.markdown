@@ -14,7 +14,7 @@ navigation_id: metastore_instal
 In order to run this microservice you'll need:
 
 * Linux, MacOs, WSL (not tested) 
-* [Java SE Development Kit >=8 and <=17](https://openjdk.java.net/) 
+* [Java SE Development Kit >=11](https://openjdk.java.net/) (JDK 17 is recommended)
 * [git](https://git-scm.com/) 
 
 ## Installation
@@ -30,7 +30,7 @@ user@localhost:/home/user/metastore2$
 ### Build service 
 To build service just execute the build.sh script:
 ```
-user@localhost:/home/user/metastore2$bash build.sh /PATH/TO/EMPTY/INSTALLATION/DIRECTORY
+user@localhost:/home/user/metastore2$ bash build.sh /PATH/TO/EMPTY/INSTALLATION/DIRECTORY
 ---------------------------------------------------------------------------
 Build microservice of metastore2 at /PATH/TO/EMPTY/INSTALLATION/DIRECTORY
 ---------------------------------------------------------------------------

@@ -257,6 +257,8 @@ metastore_doc:
             url: metastore/documentation/api-docs.html
           - page: REST API
             url: metastore/documentation/REST/index.html
+          - page: Web Frontend
+            url: metastore/documentation/frontend/index.html
           - page: GUI
             external_url: https://kit-data-manager.github.io/metastore2
 metastore_instal:
