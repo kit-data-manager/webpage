@@ -157,7 +157,9 @@ metastore_index:
             url: metastore/news.html
       - title: Users 
         subfolderitems:
-        - page: GUI
+        - page: Web Frontend
+          url: metastore/documentation/frontend/index.html
+        - page: Embedded GUI
           external_url: https://kit-data-manager.github.io/metastore2
       - title: Developers
         subfolderitems:
@@ -259,7 +261,7 @@ metastore_doc:
             url: metastore/documentation/REST/index.html
           - page: Web Frontend
             url: metastore/documentation/frontend/index.html
-          - page: GUI
+          - page: Embedded GUI
             external_url: https://kit-data-manager.github.io/metastore2
 metastore_instal:
   - title: Installation & Setup
