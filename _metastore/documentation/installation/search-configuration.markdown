@@ -1,5 +1,5 @@
 ---
-breadcrumbs: /metastore/search-configuration
+breadcrumbs: /metastore/installation/search-configuration
 layout: default
 repository_url: https://github.com/kit-data-manager/metastore2
 repository_name: kit-data-manager/metastore2
@@ -7,7 +7,7 @@ documentation_url: https://kit-data-manager.github.io/
 description: A Research Data Repository Service for Managing Metadata Documents>
 categories: metastore general
 title:  "Configuration of Search Feature"
-navigation_id: metastore_doc
+navigation_id: metastore_instal
 ---
 
 # {{ page.title }}
