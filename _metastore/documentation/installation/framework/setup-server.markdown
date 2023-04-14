@@ -1,6 +1,6 @@
 ---
 title:  Setup MetaStore Framework (Debian)
-breadcrumbs: /metastore/documentation/installation
+breadcrumbs: /metastore/documentation/installation/framework/index
 layout: default
 description: A Research Data Repository Service for Managing Metadata Documents based on JSON or XML.
 repository_url: https://github.com/kit-data-manager/metastore2

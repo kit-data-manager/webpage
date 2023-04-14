@@ -299,9 +299,9 @@ metastore_instal:
       - title: Setup Framework & Administration
         subfolderitems:
           - page: Setup Framework
-            url: metastore/documentation/installation/setup-server.html
+            url: metastore/documentation/installation/framework/setup-server.html
           - page: Backup
-            url: metastore/documentation/installation/backup-metastore.html
+            url: metastore/documentation/installation/framework/backup-metastore.html
 fairdo-cookbook_index:
   - title:
     subfolderitems:

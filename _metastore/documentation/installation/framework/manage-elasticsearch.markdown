@@ -1,6 +1,6 @@
 ---
 title:  Manage Elasticsearch Instance
-breadcrumbs: /metastore/documentation/installation
+breadcrumbs: /metastore/documentation/installation/framework/Manage Elastic
 layout: default
 description: A Research Data Repository Service for Managing Metadata Documents based on JSON or XML.
 repository_url: https://github.com/kit-data-manager/metastore2
@@ -13,7 +13,7 @@ navigation_id: metastore_instal
 ## Customize Mapping for Index
 If there occur some errors during mapping it might be neccessary to customize the mapping for a specific index.
 ### Take a Snapshot
-[Take a Single Snapshot](#Take-a-Single-Snapshot) as described below.
+[Take a Single Snapshot](backup-metastore.html#take-a-single-snapshot) as described below.
 ### Save Current Mapping of Index
 
 ```

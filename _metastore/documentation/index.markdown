@@ -14,7 +14,7 @@ In this documentation, the basics of the MetaStore Service are described.
 It is splitted in six parts:
 ### Installation & Setup
 - [Installation MetaStore (Standalone)](installation/index.html)
-- [Installation & Setup MetaStore Framework](installation/setup-server.html)
+- [Installation & Setup MetaStore Framework](installation/framework/setup-server.html)
 
 ### Documentation & Manuals
 - [REST Documentation](REST/index.html)
