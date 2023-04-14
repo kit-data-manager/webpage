@@ -157,7 +157,9 @@ metastore_index:
             url: metastore/news.html
       - title: Users 
         subfolderitems:
-        - page: GUI
+        - page: Web Frontend
+          url: metastore/documentation/frontend/index.html
+        - page: Embedded GUI
           external_url: https://kit-data-manager.github.io/metastore2
       - title: Developers
         subfolderitems:
@@ -257,7 +259,9 @@ metastore_doc:
             url: metastore/documentation/api-docs.html
           - page: REST API
             url: metastore/documentation/REST/index.html
-          - page: GUI
+          - page: Web Frontend
+            url: metastore/documentation/frontend/index.html
+          - page: Embedded GUI
             external_url: https://kit-data-manager.github.io/metastore2
 metastore_instal:
   - title: Installation & Setup
@@ -283,7 +287,7 @@ metastore_instal:
           - page: Setup
             url: metastore/documentation/installation/setup-metastore.html
           - page: Setup Search
-            url: metastore/documentation/search-configuration.html
+            url: metastore/documentation/installation/search-configuration.html
       - title: Database
         subfolderitems:
           - page: Introduction
@@ -292,12 +296,12 @@ metastore_instal:
             url: metastore/documentation/installation/database/postgres-docker.html
           - page: PostGres (Ubuntu)
             url: metastore/documentation/installation/database/postgres.html
-      - title: Setup Server & Administration
+      - title: Setup Framework & Administration
         subfolderitems:
-          - page: Setup Server
-            url: metastore/documentation/installation/setup-server.html
+          - page: Setup Framework
+            url: metastore/documentation/installation/framework/setup-server.html
           - page: Backup
-            url: metastore/documentation/installation/backup-metastore.html
+            url: metastore/documentation/installation/framework/backup-metastore.html
 fairdo-cookbook_index:
   - title:
     subfolderitems:
