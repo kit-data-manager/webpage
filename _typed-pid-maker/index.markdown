@@ -31,16 +31,18 @@ The system follows the [RDA Recommendations on PID Information Types](https://rd
 
 ## Features
 
-* Create, update/maintain and resolve PIDs
-* Profile-based validation (implicit and explicit)
+* Create PIDs containing typed key-value-pairs for easy, fast, and automated decision-making
+* Maintain the information within these PIDs
+* Validate PIDs (Profile-based validation)
 * Resolve PIDs
-* Store created PIDs in a local database
+* Store the created PIDs in your database and query them
+* Build & use your own search index: Search for information stored within PIDs
 * Ease development by hiding complexity of PID Systems and Data Type Registries
 * Common technologies for easy, programming language independent development (REST and JSON)
 * Extendable to more PID Systems (currently only supports the Handle System)
 * (Optional) Sandboxed PID Systems for testing purposes (in-memory or database)
 * (Optional) Notification of other systems about changes on PIDs via RabbitMQ (AMQP Standard)
-* (Optional) JWT-based authentication and authorization via Keycloak
+* (Optional) Authentication via [JWT](https://jwt.io/introduction) or [KeyCloak](https://www.keycloak.org/)
 
 ## Roadmap
 
