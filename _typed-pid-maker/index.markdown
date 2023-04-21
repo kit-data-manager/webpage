@@ -40,6 +40,8 @@ The system follows the [RDA Recommendations on PID Information Types](https://rd
 * Ease development by hiding complexity of PID Systems and Data Type Registries
 * Common technologies for easy, programming language independent development (REST and JSON)
 * Extendable to more PID Systems (currently only supports the Handle System)
+* Bootstrap with existing PIDs in a PID Prefix
+* Extract all PIDs to a CSV file
 * (Optional) Sandboxed PID Systems for testing purposes (in-memory or database)
 * (Optional) Notification of other systems about changes on PIDs via RabbitMQ (AMQP Standard)
 * (Optional) Authentication via [JWT](https://jwt.io/introduction) or [KeyCloak](https://www.keycloak.org/)
