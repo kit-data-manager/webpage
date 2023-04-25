@@ -178,9 +178,9 @@ metastore_index:
           - page: Installation Database
             url: metastore/documentation/installation/database/index.html
           - page: Setup MetaStore Server
-            url: metastore/documentation/installation/setup-server.html
+            url: metastore/documentation/installation/framework/setup-server.html
           - page: Backup MetaStore Server
-            url: metastore/documentation/installation/backup-metastore.html
+            url: metastore/documentation/installation/framework/backup-metastore.html
 metastore_doc_rest:
   - title: 
     subfolderitems:
