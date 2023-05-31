@@ -139,6 +139,12 @@ To enable service via proxy an additional proxy file is needed:
         #################################################
         SSLEngine on
         SSLProxyEngine On
+        
+        # Required for the case that the identifier of a resource (metadata schema or document) 
+        # is a PID which is escaped in the request URL. If not set, Apache will return HTTP 404
+        # in such cases.
+        AllowEncodedSlashes On
+        
         ProxyPreserveHost On
         #################################################
         # Configure prefix for service 'SERVICE'
