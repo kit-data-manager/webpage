@@ -18,6 +18,46 @@ The Typed PID Maker offers a REST interface to use for other applications. The A
 
 We keep the [API documentation on our webpage](openapi.html) up-to-date, so it should always reflect the API of the newest version. Again, note some APIs might not be available depending on the configuration.
 
+### Search example
+
+The Typed PID Maker exposes the search interface of Elasticsearch through its REST interface, if it is configured to do so. For testing purposes, the search can also be executed via the provided swagger interface (default location: <http://localhost:8090/swagger-ui.html>). For example, with the following request body you will get all record information:
+
+```json
+{
+  "query": {
+    "regexp": {
+      "pid": {
+        "value": ".*",
+        "flags": "ALL",
+        "case_insensitive": true
+      }
+    }
+  }
+}
+```
+
+You can also use other http clients, like CURL. A CURL request (which may be provided by swagger) may look like this:
+
+```bash
+curl -X 'POST' \
+  'http://localhost:8090/api/v1/search?page=0&size=20' \
+  -H 'accept: application/hal+json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "query": {
+    "regexp": {
+      "pid": {
+        "value": ".*",
+        "flags": "ALL",
+        "case_insensitive": true
+      }
+    }
+  }
+}'
+```
+
+The records are stored in a search index called `typedpidmaker`. There is an extensive [documentation of the Elastic query language](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html).
+
 ## Suggestions and contributions to the Typed PID Maker
 
 The Typed PID Maker is developed openly on [our GitHub repository](https://github.com/kit-data-manager/pit-service). If you have a feature request or want to report a bug, please [open an issue](https://github.com/kit-data-manager/pit-service/issues/new/choose).
