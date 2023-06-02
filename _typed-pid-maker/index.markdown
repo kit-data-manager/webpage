@@ -45,6 +45,7 @@ The system follows the [RDA Recommendations on PID Information Types](https://rd
 * (Optional) Sandboxed PID Systems for testing purposes (in-memory or database)
 * (Optional) Notification of other systems about changes on PIDs via RabbitMQ (AMQP Standard)
 * (Optional) Authentication via [JWT](https://jwt.io/introduction) or [KeyCloak](https://www.keycloak.org/)
+* Make your PIDs distinguishable with a customizable branding-prefix and other customization options
 
 ## Roadmap
 
