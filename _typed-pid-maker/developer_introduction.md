@@ -16,7 +16,7 @@ This article targets developers and potential contributors. If you like to cite 
 
 The Typed PID Maker offers a REST interface to use for other applications. The API for a specific instance depends partially on its configuration details. Therefore, the best documentation is the one it offers at runtime (openAPI/swagger) at `$domain:$port/swagger-ui.html` (for example <http://localhost:8090/swagger-ui.html>).
 
-We keep the [API documentation on our webpage](openapi.html) up-to-date, so it should always reflect the API of the newest version. Again, note some APIs might not be available depending on the configuration.
+We keep the [API documentation on our webpage](openapi.html) up-to-date, so it should always reflect the API of the newest version. Again, note some APIs might not be available depending on the configuration. Also, some of the [deployment notes](deployment_notes.html) will be interesting to client developers alike.
 
 ### Search example
 
