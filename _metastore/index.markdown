@@ -12,11 +12,12 @@ tag-name: metastore
 
 # The MetaStore Service
 
-MetaStore is a metadata repository that greatly simplifies the management of 
+MetaStore is a metadata repository framework that greatly simplifies the management of 
 large volumes of metadata documents. Metadata documents are registered and given a 
 unique identifier, formally quality-controlled and persistently stored. 
-Furthermore, the stored metadata documents can be versioned, retrieved and searched. 
-Thus the management of metadata documents complies with FAIR principles.
+Furthermore, the stored metadata documents can be versioned, retrieved and searched
+via machine-actionable RESTful interfaces. By assigning PIDs (external tool), metadata 
+documents can be prepared for FAIR principles.
 
 The structure of each metadata document is formally described by a schema. 
 The internal schema registry manages the metadata schemas (currently XML and JSON) 
@@ -38,6 +39,7 @@ them against the schema.
 * (Optional) Messaging support via [RabbitMQ](https://www.rabbitmq.com/) to process repository events, e.g., resource creation or indexing.
 * (Optional) JWT-based authentication and authorization via Keycloak
 * (Optional) Elastic-based indexing and search seamlessly integrated and secured
+
 
 <div class="flex flex-wrap -m-3 inset-5px">
         <div class="w-full sm:w-1/2 md:w-1/3 flex-col p-3">
