@@ -360,16 +360,22 @@ typed_pid_maker_index:
             external_url: https://kit-data-manager.github.io/fairdo-cookbook/pids/create.html
       - title: Developers
         subfolderitems:
+          - page: Usage and contributions
+            url: typed-pid-maker/developer_introduction.html
           - page: OpenAPI definition
             url: typed-pid-maker/openapi.html
           - page: Source Code
             external_url: https://github.com/kit-data-manager/pit-service
+          - page: Issue Tracker
+            external_url: https://github.com/kit-data-manager/pit-service/issues
       - title: Administrators
         subfolderitems:
           - page: Installation
             url: typed-pid-maker/installation.html
           - page: Configuration
             url: typed-pid-maker/configuration.html
+          - page: Deployment Notes
+            url: typed-pid-maker/deployment_notes.html
 fair_do_lab_index:
   - title:
     subfolderitems:
