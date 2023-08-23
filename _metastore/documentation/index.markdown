@@ -15,6 +15,7 @@ It is splitted in six parts:
 ### Installation & Setup
 - [Installation MetaStore (Standalone)](installation/index.html)
 - [Installation & Setup MetaStore Framework](installation/framework/setup-server.html)
+- [Migration Guide](installation/migration-guide/migration-guide.html)
 
 ### Documentation & Manuals
 - [REST Documentation](REST/index.html)

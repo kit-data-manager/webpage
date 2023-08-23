@@ -302,6 +302,10 @@ metastore_instal:
             url: metastore/documentation/installation/framework/setup-server.html
           - page: Backup
             url: metastore/documentation/installation/framework/backup-metastore.html
+      - title: Migration Guide
+        subfolderitems:
+          - page: Migration from older version
+            url: metastore/documentation/installation/migration-guide/migration-guide.html
 fairdo-cookbook_index:
   - title:
     subfolderitems:
