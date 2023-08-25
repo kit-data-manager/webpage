@@ -181,6 +181,8 @@ metastore_index:
             url: metastore/documentation/installation/framework/setup-server.html
           - page: Backup MetaStore Server
             url: metastore/documentation/installation/framework/backup-metastore.html
+          - page: Migration from older version
+            url: metastore/documentation/installation/migration-guide/migration-guide.html
 metastore_doc_rest:
   - title: 
     subfolderitems:

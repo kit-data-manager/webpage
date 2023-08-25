@@ -1,5 +1,5 @@
 ---
-title:  MetaStore Migration Guide
+title:  MetaStore Migration/Update Guide 
 breadcrumbs: /metastore/documentation/installation/Migration Guide
 layout: default
 description: A Research Data Repository Service for Managing Metadata Documents based on JSON or XML.
@@ -10,9 +10,20 @@ navigation_id: metastore_instal
 
 # {{ page.title }} 
 
-## Migration Guide
+ATTENTION
+: Before updating please stop the service. 
+
 If you are migrating from an older version please look at all versions starting from the current version
 of your installation.
+If you are updating a local installation you have to copy the new jar file to the installation directory.
+For older versions (< 1.3.1) you also have to overwrite run.sh with the new version. For newer versions
+updating link of metastore2.jar to newest version should be sufficient.
+
+Before starting the new version you should check the migration guide for any changes.
+
+Add the new settings to 'application.properties' (if not recommended otherwise).
+If the values should not correspond to the default value, please add the adjusted values to 
+'config/application.properties'.
 
 ### Versions
 - [v1.3.0](#v130)
@@ -61,10 +72,12 @@ Default context path switched from '/' to '/metastore'
 In case of an update remove this line.
 ```
 ###############################################################################
-# Context Path
+# Context Path (Don't add or change once service contains documents.)
 ###############################################################################
 server.servlet.context-path=/metastore
 ```
+ATTENTION
+: This feature MUSTN'T change afterwards. 
 
 ### v1.2.3
 
