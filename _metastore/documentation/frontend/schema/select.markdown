@@ -149,7 +149,8 @@ This example results in the following schema using the first link given above:
 ```
 ***Note:*** The following JSON Schema specifications are supported by the library used:
 * Draft v7 
-* Draft v2019-09
+* Draft 2019-09
+* 2020-12
 
 ### Recommendations for JSON Schemas
 If the scientists will later use the web interface to store their metadata 
