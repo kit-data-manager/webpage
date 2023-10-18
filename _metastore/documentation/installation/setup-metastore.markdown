@@ -1,6 +1,6 @@
 ---
-title:  Setup MetaStore
-breadcrumbs: /metastore/documentation/installation/Setup MetaStore
+title:  Configuration MetaStore
+breadcrumbs: /metastore/documentation/installation/Configuration MetaStore
 layout: default
 description: A Research Data Repository Service for Managing Metadata Documents based on JSON or XML.
 repository_url: https://github.com/kit-data-manager/metastore2

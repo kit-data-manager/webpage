@@ -177,7 +177,7 @@ metastore_index:
             url: metastore/documentation/installation/index.html
           - page: Installation Database
             url: metastore/documentation/installation/database/index.html
-          - page: Setup MetaStore Server
+          - page: Configuration MetaStore Server
             url: metastore/documentation/installation/framework/setup-server.html
           - page: Backup MetaStore Server
             url: metastore/documentation/installation/framework/backup-metastore.html
@@ -286,10 +286,18 @@ metastore_instal:
             url: metastore/documentation/installation/build-docker-container.html
           - page: Local Installation
             url: metastore/documentation/installation/local-installation.html
-          - page: Setup
+          - page: Configuration
             url: metastore/documentation/installation/setup-metastore.html
-          - page: Setup Search
+          - page: Configuration (Search)
             url: metastore/documentation/installation/search-configuration.html
+          - page: Configuration (RabbitMQ)
+            url: metastore/documentation/installation/messaging/messaging-introduction.html
+      - title: Setup Framework & Administration
+        subfolderitems:
+          - page: Setup Framework
+            url: metastore/documentation/installation/framework/setup-server.html
+          - page: Backup
+            url: metastore/documentation/installation/framework/backup-metastore.html
       - title: Database
         subfolderitems:
           - page: Introduction
@@ -298,12 +306,6 @@ metastore_instal:
             url: metastore/documentation/installation/database/postgres-docker.html
           - page: PostGres (Ubuntu)
             url: metastore/documentation/installation/database/postgres.html
-      - title: Setup Framework & Administration
-        subfolderitems:
-          - page: Setup Framework
-            url: metastore/documentation/installation/framework/setup-server.html
-          - page: Backup
-            url: metastore/documentation/installation/framework/backup-metastore.html
       - title: Migration Guide
         subfolderitems:
           - page: Migration from older version
