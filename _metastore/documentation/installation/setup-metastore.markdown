@@ -144,23 +144,26 @@ repo.auth.jwtSecret: NOT+USED+RIGHT+NOW+YOU+MAY+CHANGE+IF+NECCESSARY
 ## Default should be OK. Only set to higher value if problems occur.
 # metastore.javers.scope: 20
 ```
-# RabbitMQ
+# [RabbitMQ](messaging/messaging-introduction.html)
 NOTE
 : In case you want to use the search functionality you have to enable the messaging.
 Messaging is used to inform indexing-service about new/updated metadata documents.
+: For further information please refer to [RabbitMQ introduction](messaging/messaging-introduction.html)
 
 ```
 ###############################################################################
 # Messaging - RabbitMQ
 ###############################################################################
-repo.schedule.rate:1000
 repo.messaging.enabled: false
 repo.messaging.hostname:localhost
 repo.messaging.port:5672
 repo.messaging.sender.exchange: metastore_events
-repo.messaging.receiver.exchange: metastore_events
-repo.messaging.receiver.queue: metastoreEventQueue
-repo.messaging.receiver.routingKeys: metadata.#
+# Settings for receivers.
+###############################################################################
+#repo.schedule.rate:1000
+#repo.messaging.receiver.exchange: metastore_events
+#repo.messaging.receiver.queue: metastoreEventQueue
+#repo.messaging.receiver.routingKeys: metadata.#
 ```
 # Elasticsearch
 NOTE
