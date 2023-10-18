@@ -9,7 +9,7 @@ navigation_id: metastore_instal
 ---
 
 # {{ page.title }} 
-Installation PostgreSQL
+This chapter explains how to set up a PostgreSQL database in a Docker container.
 
 ## Prerequisites
 - Docker version 18.06 or higher
@@ -48,7 +48,7 @@ For using this database the settings in 'application.properties' should look lik
 [...]
 #spring datasource settings
 spring.datasource.platform: postgres
-spring.datasource.url: jdbc:postgresql://localhost:5432/metastore
+spring.datasource.url: jdbc:postgresql://localhost:5555/metastore
 spring.datasource.username: metastore_admin
 spring.datasource.password: METASTORE_ADMIN_PASSWORD
 spring.datasource.driverClassName: org.postgresql.Driver
