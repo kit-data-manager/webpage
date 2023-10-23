@@ -257,16 +257,15 @@ ATTENTION
 spring.autoconfigure.exclude=org.keycloak.adapters.springboot.KeycloakAutoConfig
 uration,org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConf
 iguration
-#keycloakjwt.jwk-url=http://localhost:8080/auth/realms/myrealm/protocol/openid-c
-onnect/certs
-#keycloakjwt.resource=keycloak-angular
+#keycloakjwt.jwk-url=<keycloak-jwk-endpoint, e.g.: http://localhost:8080/auth/realms/<keycloak-realm>/protocol/openid-connect/certs>
+#keycloakjwt.resource=<client-identifier-in-realm>
 #keycloakjwt.jwt-claim=preferred_username
 ##keycloakjwt.connect-timeoutms=500 //optional
 ##keycloakjwt.read-timeoutms=500 // optional
 #
-#keycloak.realm = myrealm
-#keycloak.auth-server-url = http://localhost:8080/auth
-#keycloak.resource = keycloak-angular
+#keycloak.realm = <keycloak-realm>
+#keycloak.auth-server-url = <keycloak-auth-url, e.g.: http://localhost:8080/auth>
+#keycloak.resource =<client-identifier-in-realm> 
 ```
 After editing all relevant settings the service has to be restarted!
 
