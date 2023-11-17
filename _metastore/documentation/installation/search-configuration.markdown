@@ -24,7 +24,7 @@ Indexing and search is by default disabled, as it requires the installation of a
 If you like, also a dockerized Elastic instance can be used. 
 As soon as Elastic is running, you can enable search and indexing by setting 'repo.search.enabled' to 'true' and providing the proper 'repo.search.url'. From now on, all
 metadata documents and their records are also updated at the configured Elastic index if they are created, updated, or deleted. The Elastic index can either be 
-searched via Elastic tools, e.g., [Kibana](https://www.elastic.co/de/kibana/) or via base-repo directly. Therefor, a new endpoint is offered available at '/api/v1/search'.
+searched via Elastic tools, e.g., [Kibana](https://www.elastic.co/de/kibana/) or via base-repo directly. Therefor, a new endpoint is offered available at '/api/v1/metadata/search'.
 This endpoint accepts an Elastic query document and returns the query result in the official Elastic format. A sample call may look like: 
 
 ```bash

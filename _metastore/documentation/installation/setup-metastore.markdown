@@ -1,6 +1,6 @@
 ---
-title:  Setup MetaStore
-breadcrumbs: /metastore/documentation/installation/Setup MetaStore
+title:  Configuration MetaStore
+breadcrumbs: /metastore/documentation/installation/Configuration MetaStore
 layout: default
 description: A Research Data Repository Service for Managing Metadata Documents based on JSON or XML.
 repository_url: https://github.com/kit-data-manager/metastore2
@@ -144,23 +144,26 @@ repo.auth.jwtSecret: NOT+USED+RIGHT+NOW+YOU+MAY+CHANGE+IF+NECCESSARY
 ## Default should be OK. Only set to higher value if problems occur.
 # metastore.javers.scope: 20
 ```
-# RabbitMQ
+# [RabbitMQ](messaging/messaging-introduction.html)
 NOTE
 : In case you want to use the search functionality you have to enable the messaging.
 Messaging is used to inform indexing-service about new/updated metadata documents.
+: For further information please refer to [RabbitMQ introduction](messaging/messaging-introduction.html)
 
 ```
 ###############################################################################
 # Messaging - RabbitMQ
 ###############################################################################
-repo.schedule.rate:1000
 repo.messaging.enabled: false
 repo.messaging.hostname:localhost
 repo.messaging.port:5672
 repo.messaging.sender.exchange: metastore_events
-repo.messaging.receiver.exchange: metastore_events
-repo.messaging.receiver.queue: metastoreEventQueue
-repo.messaging.receiver.routingKeys: metadata.#
+# Settings for receivers.
+###############################################################################
+#repo.schedule.rate:1000
+#repo.messaging.receiver.exchange: metastore_events
+#repo.messaging.receiver.queue: metastoreEventQueue
+#repo.messaging.receiver.routingKeys: metadata.#
 ```
 # Elasticsearch
 NOTE
@@ -254,16 +257,15 @@ ATTENTION
 spring.autoconfigure.exclude=org.keycloak.adapters.springboot.KeycloakAutoConfig
 uration,org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConf
 iguration
-#keycloakjwt.jwk-url=http://localhost:8080/auth/realms/myrealm/protocol/openid-c
-onnect/certs
-#keycloakjwt.resource=keycloak-angular
+#keycloakjwt.jwk-url=<keycloak-jwk-endpoint, e.g.: http://localhost:8080/auth/realms/<keycloak-realm>/protocol/openid-connect/certs>
+#keycloakjwt.resource=<client-identifier-in-realm>
 #keycloakjwt.jwt-claim=preferred_username
 ##keycloakjwt.connect-timeoutms=500 //optional
 ##keycloakjwt.read-timeoutms=500 // optional
 #
-#keycloak.realm = myrealm
-#keycloak.auth-server-url = http://localhost:8080/auth
-#keycloak.resource = keycloak-angular
+#keycloak.realm = <keycloak-realm>
+#keycloak.auth-server-url = <keycloak-auth-url, e.g.: http://localhost:8080/auth>
+#keycloak.resource =<client-identifier-in-realm> 
 ```
 After editing all relevant settings the service has to be restarted!
 
