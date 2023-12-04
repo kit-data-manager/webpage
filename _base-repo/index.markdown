@@ -17,7 +17,7 @@ The base-repo is a generic, general purpose research data repository service off
 ## Features
 
 * Light-weight microservice based on [Spring Boot](https://spring.io/projects/spring-boot)
-* Easy installation, e.g., using available [Docker images](https://hub.docker.com/repository/docker/kitdm/base-repo)
+* Easy installation, e.g., using available [Docker images](https://hub.docker.com/r/kitdm/base-repo)
 * Full support of [DataCite Standard 4.0](https://schema.datacite.org/meta/kernel-4.0/)
 * Flexible organization of content in virtual folders
 * Configurable versioning of metadata and content, e.g., following the [OCFL specification](https://ocfl.io/)
