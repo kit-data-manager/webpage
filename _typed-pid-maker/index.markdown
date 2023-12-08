@@ -11,11 +11,11 @@ tag-name: typed-pid-maker
 
 # The {{ page.title }}
 
-The Typed PID Maker is an entry point to integrate digital resources into the FAIR Digital Object (FAIR DO) ecosystem.
+<p class="align-middle items-center">The Typed PID Maker is an entry point to integrate digital resources into the FAIR Digital Object (FAIR DO) ecosystem.
 It allows creating PIDs for resources and to provide them with the necessary metadata to ensure that the resources can be found and understood.
 As a result, a machine-readable representation of all kinds of research artifacts allows act on such FAIR Digital Objects 
 which present themselves as PID, e.g., <pid-component value='21.11152/6ea60288-d895-414e-80c0-26c9fdd662b2'></pid-component>, 
-but carry much more than just a pointer to a landing page.
+but carry much more than just a pointer to a landing page.</p>
 
 In order to do so, it requires write-access to a PID service (sometimes called a "Prefix").
 It will then abstract away the complexity of such systems and provide a simple, unified REST interface for applications.
