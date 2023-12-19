@@ -21,7 +21,7 @@ in the following table. Typically, no additional repository-specific configurati
 |repo.messaging.hostname|The hostname where the RabbitMQ instance is running at.|A valid hostname [localhost]
 |repo.messaging.port|The port on which the RabbitMQ instance is running at.|A numeric port number [5672]
 |repo.messaging.username| Credential for RabbitMQ (username)|A string identifying user [guest]
-|repo.messaging.password| Credemtial for RabbitMQ (password)|A string containing password for given user [guest]
+|repo.messaging.password| Credential for RabbitMQ (password)|A string containing password for given user [guest]
 |repo.messaging.sender.exchange|The RabbitMQ exchange to which all messages are sent.|A string uniquely identifying the exchange [metastore_events]
 | **The following settings** | **are only needed by** | **receivers** 
 |repo.messaging.receiver.exchange|The RabbitMQ exchange from where messages are received.|A string uniquely identifying the exchange [metastore_events]
