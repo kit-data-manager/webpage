@@ -1,7 +1,7 @@
 # The FAIR Data Commons Webpage Project
 
 This repository contains the Webpage of the department [Data Exploitation Methods](https://www.scc.kit.edu/ueberuns/15691.php#Anker3), which is part of 
-[Steinbuch Centre for Computing](https://www.scc.kit.edu/) at [Karlsruhe Institute of Technology](https://www.kit.edu/) and 
+[Scientific Computing Center](https://www.scc.kit.edu/) at [Karlsruhe Institute of Technology](https://www.kit.edu/) and 
 also in charge of coordinating [Working Package 2 - FAIR Data Commons](https://helmholtz-metadaten.de/en/fair-data-commons/overview)
 of the [Helmholtz Metadata Collaboration](https://helmholtz-metadaten.de/de). 
 
