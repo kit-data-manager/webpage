@@ -87,6 +87,32 @@ repo.plugin.storage.date.pathPattern:@{year}/@{year}_@{month}_@{day}_@{hour}_@{m
 ###############################################################################
 #metastore.metadata.schemaRegistries:http://localhost:8040/api/v1/
 ```
+# Landing Page (since v1.4.0)
+NOTE
+: If you use an external UI for MetaStore (e.g. frontend-collection) which also
+provides a landing page you may adopt the settings like explained above.
+
+```
+###############################################################################
+# Landing Page (Schema & Metadata Documents)
+#   Redirect to internal or external landing page.
+#   The string may contain two placeholders for substitution:
+#     - $(id) - Identifier of the digital object (mandatory)
+#     - $(version) - Version of the digital object (optional) 
+#
+#  e.g.: https://www.example.org/landingpage?id=$(id)&version=$(version)
+#
+#  For frontend-collection use metastore-landing-page.html?pid=$(id)
+#  e.g. https://HOSTNAME/metastore-landing-page.html?pid=$(id)&version=$(version)
+#
+#  Defaults: (internal landing page)
+#     - /schema-landing-page?schemaId=$(id)&version=$(version) (schema documents)
+#     - /metadata-landing-page?id=$(id)&version=$(version)     (metadata documents)
+###############################################################################
+metastore.schema.landingpage:/schema-landing-page?schemaId=$(id)&version=$(version)
+metastore.metadata.landingpage:/metadata-landing-page?id=$(id)&version=$(version)
+```
+
 # OAI PMH
 NOTE
 : Make sure that your service is accessible. Replace 'localhost' by the 
@@ -157,6 +183,8 @@ Messaging is used to inform indexing-service about new/updated metadata document
 repo.messaging.enabled: false
 repo.messaging.hostname:localhost
 repo.messaging.port:5672
+repo.messaging.username:guest
+repo.messaging.password:guest
 repo.messaging.sender.exchange: metastore_events
 # Settings for receivers.
 ###############################################################################

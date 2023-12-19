@@ -25,7 +25,8 @@ Add the new settings to 'application.properties' (if not recommended otherwise).
 If the values should not correspond to the default value, please add the adjusted values to 
 'config/application.properties'.
 
-### Versions
+## Versions
+- [v1.4.0](#v140)
 - [v1.3.0](#v130)
 - [v1.2.3](#v123)
 - [v1.2.2](#v122)
@@ -34,13 +35,67 @@ If the values should not correspond to the default value, please add the adjuste
 - [v1.1.0](#v110)
 - [v1.0.1](#v101)
 
-### v1.3.0
+## v1.4.0
+### Settings
+There are new configuration options inside the application.properties:
 
-#### System Requirements
+#### Configuration for proxy (search endpoints) (mandatory if search is enabled)
+
+Due to a new feature in proxy library the below property is ***REQUIRED*** for 
+the search endpoints to work properly:
+```
+###############################################################################
+# Due to bug in spring cloud gateway
+# https://github.com/spring-cloud/spring-cloud-gateway/issues/3154
+###############################################################################
+spring.cloud.gateway.proxy.sensitive=content-length
+```
+#### Configuration landing page (optional)
+
+It allows administrators to define an external landing page in case of an existing
+external WebUI:
+```
+###############################################################################
+# Landing Page (Schema & Metadata Documents)
+#   Redirect to internal or external landing page.
+#   The string may contain two placeholders for substitution:
+#     - $(id) - Identifier of the digital object (mandatory)
+#     - $(version) - Version of the digital object (optional) 
+#
+#  e.g.: https://www.example.org/landingpage?id=$(id)&version=$(version)
+#
+#  For frontend-collection use metastore-landing-page.html?pid=$(id)
+#  e.g. https://HOSTNAME/metastore-landing-page.html?pid=$(id)&version=$(version)
+#
+#  Defaults:
+#     - /schema-landing-page?schemaId=$(id)&version=$(version) (schema documents)
+#     - /metadata-landing-page?id=$(id)&version=$(version)     (metadata documents)
+###############################################################################
+metastore.schema.landingpage:/schema-landing-page?schemaId=$(id)&version=$(version)
+metastore.metadata.landingpage:/metadata-landing-page?id=$(id)&version=$(version)
+```
+#### Configuration credentials for RabbitMQ (optional)
+
+Set credentials for RabbitMQ in case of RabbitMQ is public available and therefore
+default credentials are not valid:
+```
+###############################################################################
+# Messaging - RabbitMQ
+###############################################################################
+repo.[...]
+repo.messaging.username:guest
+repo.messaging.password:guest
+repo.[...]
+```
+
+
+## v1.3.0
+
+### System Requirements
 ATTENTION
 : MetaStore requires Java 17 or later. Java 8 and 11 are no longer supported. 
 
-#### Database changes
+### Database changes
 ATTENTION
 : There is a minor change in the database structure due to the upgrade to SpringBoot 3.
 
@@ -66,7 +121,7 @@ DATABASE=# SELECT pg_catalog.setval('public.linked_metadata_record_seq', MAX_ID,
 ```
 Replace DATABASE and MAX_ID with the values you determined. 
 
-#### Settings
+### Settings
 There is a new configuration option inside the application.properties:
 Default context path switched from '/' to '/metastore'
 In case of an update remove this line.
@@ -79,10 +134,10 @@ server.servlet.context-path=/metastore
 ATTENTION
 : This feature MUSTN'T change afterwards. 
 
-### v1.2.3
+## v1.2.3
 
-#### Settings
-There are a new configuration options inside the application.properties:
+### Settings
+There are new configuration options inside the application.properties:
 It allows administrators to define directory structure while storing
 metadata/schema documents.
 ```
@@ -106,9 +161,9 @@ repo.plugin.storage.id.maxDepth:7
 # default: @{year}/@{month}
 repo.plugin.storage.date.pathPattern:@{year}/@{month}
 ```
-### v1.2.2
+## v1.2.2
 
-#### Settings
+### Settings
 There is a new configuration option inside the application.properties:
 It allows administrators to run MetaStore service behind a proxy.
 ```
@@ -118,12 +173,12 @@ It allows administrators to run MetaStore service behind a proxy.
 #server.forward-headers-strategy=framework
 ```
 
-### v1.2.1
+## v1.2.1
 Nothing to migrate.
 
-### v1.2.0
+## v1.2.0
 
-#### Settings
+### Settings
 There is a new configuration option inside the application.properties:
 Add actuators for info and health as default.
 ```
@@ -141,17 +196,17 @@ management.health.elasticsearch.enabled: false
 management.health.rabbit.enabled: false
 ```
 
-### v1.1.0
+## v1.1.0
 Nothing to migrate.
 
-### v1.0.1
+## v1.0.1
 
-#### Database changes
+### Database changes
 ATTENTION
 : Please migrate your database if you want to update MetaStore while using h2! 
 See: https://h2database.com/html/migration-to-v2.html
 
-### v1.0.0
+## v1.0.0
 First production ready version.
 
 
