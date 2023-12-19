@@ -26,6 +26,7 @@ If the values should not correspond to the default value, please add the adjuste
 'config/application.properties'.
 
 ### Versions
+- [v1.4.0](#v140)
 - [v1.3.0](#v130)
 - [v1.2.3](#v123)
 - [v1.2.2](#v122)
@@ -33,6 +34,60 @@ If the values should not correspond to the default value, please add the adjuste
 - [v1.2.0](#v120)
 - [v1.1.0](#v110)
 - [v1.0.1](#v101)
+
+### v1.4.0
+#### Settings
+There are new configuration options inside the application.properties:
+
+- Configuration for proxy (search endpoints) (mandatory if search is enabled)
+
+Due to a new feature in proxy library the below property is REQUIRED for 
+the search endpoints to work properly:
+```
+###############################################################################
+# Due to bug in spring cloud gateway
+# https://github.com/spring-cloud/spring-cloud-gateway/issues/3154
+###############################################################################
+spring.cloud.gateway.proxy.sensitive=content-length
+```
+ - Configuration landing page (optional)
+
+It allows administrators to define an external landing page in case of an existing
+external WebUI:
+```
+###############################################################################
+# Landing Page (Schema & Metadata Documents)
+#   Redirect to internal or external landing page.
+#   The string may contain two placeholders for substitution:
+#     - $(id) - Identifier of the digital object (mandatory)
+#     - $(version) - Version of the digital object (optional) 
+#
+#  e.g.: https://www.example.org/landingpage?id=$(id)&version=$(version)
+#
+#  For frontend-collection use metastore-landing-page.html?pid=$(id)
+#  e.g. https://HOSTNAME/metastore-landing-page.html?pid=$(id)&version=$(version)
+#
+#  Defaults:
+#     - /schema-landing-page?schemaId=$(id)&version=$(version) (schema documents)
+#     - /metadata-landing-page?id=$(id)&version=$(version)     (metadata documents)
+###############################################################################
+metastore.schema.landingpage:/schema-landing-page?schemaId=$(id)&version=$(version)
+metastore.metadata.landingpage:/metadata-landing-page?id=$(id)&version=$(version)
+```
+ - Configuration credentials for RabbitMQ (optional)
+
+Set credentials for RabbitMQ in case of RabbitMQ is public available and therefore
+default credentials are not valid:
+```
+###############################################################################
+# Messaging - RabbitMQ
+###############################################################################
+repo.[...]
+repo.messaging.username:guest
+repo.messaging.password:guest
+repo.[...]
+```
+
 
 ### v1.3.0
 
@@ -82,7 +137,7 @@ ATTENTION
 ### v1.2.3
 
 #### Settings
-There are a new configuration options inside the application.properties:
+There are new configuration options inside the application.properties:
 It allows administrators to define directory structure while storing
 metadata/schema documents.
 ```
