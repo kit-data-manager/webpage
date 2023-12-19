@@ -183,6 +183,8 @@ Messaging is used to inform indexing-service about new/updated metadata document
 repo.messaging.enabled: false
 repo.messaging.hostname:localhost
 repo.messaging.port:5672
+repo.messaging.username:guest
+repo.messaging.password:guest
 repo.messaging.sender.exchange: metastore_events
 # Settings for receivers.
 ###############################################################################
