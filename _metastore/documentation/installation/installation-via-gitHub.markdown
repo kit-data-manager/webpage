@@ -1,6 +1,6 @@
 ---
-title:  Installation via DockerHub
-breadcrumbs: /metastore/documentation/installation/Installation via DockerHub
+title:  Installation via GitHub Packages
+breadcrumbs: /metastore/documentation/installation/Installation via GitHub Packages
 layout: default
 description: A Research Data Repository Service for Managing Metadata Documents based on JSON or XML.
 repository_url: https://github.com/kit-data-manager/metastore2
@@ -15,7 +15,7 @@ In order to run this microservice via docker you'll need:
 * [Docker](https://www.docker.com/) 
 
 ## Installation
-Typically, there is no need for locally building images as all version are accessible via DockerHub.
+Typically, there is no need for locally building images as all version are accessible via GitHub Packages.
 Have a look of available images and their tags [here](https://github.com/orgs/kit-data-manager/packages?repo_name=metastore2) 
 
 ## Create Docker Container
