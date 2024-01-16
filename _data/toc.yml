@@ -152,7 +152,7 @@ metastore_index:
           - page: Documentation
             url: metastore/documentation/index.html
           - page: Docker Images
-            external_url: https://hub.docker.com/r/kitdm/metastore2/tags
+            external_url: https://github.com/orgs/kit-data-manager/packages?repo_name=metastore2
           - page: News Archive
             url: metastore/news.html
       - title: Users 
@@ -193,7 +193,7 @@ metastore_doc_rest:
           - page: Documentation
             url: metastore/documentation/index.html
           - page: Docker Images
-            external_url: https://hub.docker.com/r/kitdm/metastore2/tags
+            external_url: https://github.com/orgs/kit-data-manager/packages?repo_name=metastore2
           - page: News Archive
             url: metastore/news.html
       - title: Documentation (REST API)
@@ -250,7 +250,7 @@ metastore_doc:
           - page: Documentation
             url: metastore/documentation/index.html
           - page: Docker Images
-            external_url: https://hub.docker.com/r/kitdm/metastore2/tags
+            external_url: https://github.com/orgs/kit-data-manager/packages?repo_name=metastore2
           - page: News Archive
             url: metastore/news.html
       - title: Documentation MetaStore
@@ -275,13 +275,13 @@ metastore_instal:
           - page: Documentation
             url: metastore/documentation/index.html
           - page: Docker Images
-            external_url: https://hub.docker.com/r/kitdm/metastore2/tags
+            external_url: https://github.com/orgs/kit-data-manager/packages?repo_name=metastore2
           - page: News Archive
             url: metastore/news.html
       - title: MetaStore
         subfolderitems:
-          - page: Installation via DockerHub
-            url: metastore/documentation/installation/installation-via-dockerHub.html
+          - page: Installation via GitHub Packages
+            url: metastore/documentation/installation/installation-via-gitHub.html
           - page: Build your own Docker Container
             url: metastore/documentation/installation/build-docker-container.html
           - page: Local Installation

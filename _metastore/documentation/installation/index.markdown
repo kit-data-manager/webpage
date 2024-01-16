@@ -13,6 +13,6 @@ NOTE
 : Standalone service will only support simple search via administrative metadata.
 
 There are three ways to install MetaStore as a micorservice:
-- [Using](installation-via-dockerHub.html) the image available via [DockerHub](https://hub.docker.com/r/kitdm/) (***recommended***)
+- [Using](installation-via-gitHub.html) the image available via [DockerHub](https://github.com/orgs/kit-data-manager/packages?repo_name=metastore2) (***recommended***)
 - [Building](build-docker-container.html) docker image locally
 - [Building](local-installation.html) and running locally

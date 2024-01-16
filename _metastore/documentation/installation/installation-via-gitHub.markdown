@@ -16,7 +16,7 @@ In order to run this microservice via docker you'll need:
 
 ## Installation
 Typically, there is no need for locally building images as all version are accessible via DockerHub.
-Have a look of available images and their tags [here](https://hub.docker.com/r/kitdm/metastore2) 
+Have a look of available images and their tags [here](https://github.com/orgs/kit-data-manager/packages?repo_name=metastore2) 
 
 ## Create Docker Container
 After you have chosen a suitable tag (latest should be fine in most cases) you have to create and start a docker
