@@ -109,7 +109,7 @@ dce_index:
           - title: Users
             subfolderitems:
                 - page: NFDI4Ing Data Collections Explorer
-                  external_url: https://rxp.datamanager.kit.edu
+                  external_url: https://data-collections.nfdi4ing.de
 metadata_editor_index:
   - title:
     subfolderitems:
