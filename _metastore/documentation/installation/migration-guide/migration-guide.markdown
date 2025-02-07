@@ -28,6 +28,7 @@ If the values should not correspond to the default value, please add the adjuste
 'config/application.properties'.
 
 ## Versions
+- [v2.0.1](#v201)
 - [v2.0.0](#v200)
 - [v1.4.4](#v144)
 - [v1.4.3](#v143)
@@ -42,10 +43,10 @@ If the values should not correspond to the default value, please add the adjuste
 - [v1.1.0](#v110)
 - [v1.0.1](#v101)
 
-## v2.0.0
+## v2.0.1
 ### System Requirements
 ATTENTION
-: MetaStore requires Java 21 or later. Java 8 and 17 are no longer supported. 
+: MetaStore requires Java 21 or later. 
 
 ### Database changes
 ATTENTION
@@ -64,6 +65,20 @@ $ run.sh --migrate2DataCite
 Note
 : 'Spring is running' only appears if log level is set to 'INFO' at least!
 : We recommend to set LOG level at least to INFO to see if migration is finished.
+
+## v2.0.0
+### System Requirements
+ATTENTION
+: MetaStore requires Java 21 or later. Java 8 and 17 are no longer supported. 
+
+### Database changes
+ATTENTION
+: There are some minor changes in the database due to migration to DataCite.
+: You shoud backup at least your database before upgrading. (see [Backup](../framework/backup-metastore.html))
+
+ATTENTION
+: Due to a bug in migration code it could happen, that a part of the metadata records 
+: are not migrated fully. We recommend to switch directly to v2.0.1 for migration.
 
 ## v1.4.4
 Nothing to migrate.
