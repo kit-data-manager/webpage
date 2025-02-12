@@ -36,14 +36,16 @@ metadata-record4json.json:
       "relationType": "IS_METADATA_FOR"
     }
   ]
-}``` 
+}
+``` 
 
 ``` 
 metadata.json:
 {
   "title": "My first JSON document"
 }
-``` 
+```
+
 The schemaId used while registering metadata schema has to be used to link the metadata with the
 approbriate metadata schema.
 {% capture my_include %}{% include_relative snippets/ingest-json-metadata-document/curl-request.md %}{% endcapture %}
