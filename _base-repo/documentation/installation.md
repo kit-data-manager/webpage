@@ -38,7 +38,7 @@ libraries and finally build the base-repo microservice itself. As a result, a fa
 
 ## Setup
 Before you are able to start the repository microservice, you have to modify the file 'application.properties' according to your local setup.
-Therefor, copy the file 'settings/application.properties' to your project folder and customize it. Special attentioned should be payed to the datasource url as well as
+Therefor, copy the file 'config/application-default.properties' to your project folder and customize it. Special attentioned should be payed to the datasource url as well as
 to the repository base path. Also, the property 'repo.messaging.enabled' should be changed to 'true' in case you want to use the messaging feature of the repository.
 
 As soon as you finished modifying 'application.properties', you may start the repository microservice by executing the following command inside the project folder,
