@@ -152,7 +152,7 @@ NOTE
 logging.level.root: ERROR
 logging.level.edu.kit: WARN
 ```
-# Token Management
+# Authentication
 NOTE
 : jwtSecret has to be configured if you want to use the search functionality
 together with authentication. In that case the jwtSecret of MetaStore and 
@@ -160,10 +160,31 @@ indexing-service should contain the same value.
 
 ```
 ###############################################################################
-# KIT DM settings
+# KIT DM settings for authentication
 ###############################################################################
-repo.auth.jwtSecret: NOT+USED+RIGHT+NOW+YOU+MAY+CHANGE+IF+NECCESSARY
+# The authentication is disabled by default. If you want to enable it, please
+# uncomment the following lines and adapt them to your needs.
+#repo.auth.enabled:true
 
+# The jwtSecret is used to sign the JWT token. The secret must be the same as in
+# the indexing-service.
+# !!! The secret must be at least 43 characters long. !!!
+repo.auth.jwtSecret:add+your+long+secret+key+here.+Please+replace+this+with+your+own+secret+key
+
+# The following line is used to restrict creating documents to a given role.
+# If not set, everybody who is authenticated is authorized to create documents.
+# To restrict creating to a given role, please uncomment the following line and
+# adapt it to your needs.
+#metastore.postEnabledForRole:USER
+```
+Since 2.0.2 there is a new property to restrict the creation of documents to a given role.
+If not set, everybody who is authenticated is authorized to create documents.
+```
+# Example for restricting creating documents to a given role (USER)
+metastore.postEnabledForRole:USER
+``` 
+
+```
 ###############################################################################
 # KIT DM JaVers settings
 ###############################################################################
@@ -199,14 +220,43 @@ NOTE
 and provide a valid URL to elasticsearch. Otherwise the service will not start.
 
 ```
-################################################################################
+###############################################################################
 # Search - Elasticsearch
 # It's recommended to install elasticsearch behind a firewall with no direct 
 # access from clients.
 ###############################################################################
-repo.search.enabled = false
-repo.search.url = http://localhost:9200
+repo.search.enabled: false
+# Property defining the elasticsearch URL.
+repo.search.url: http://localhost:9200
+# Property defining (duplicated) http headers to be removed from the response before sending it to the client.
+# This is necessary because elasticsearch returns the header "Transfer-Encoding: chunked"
+# which is not allowed by some tools.
+# Default: Transfer-Encoding
+#repo.search.dedupHeaders: Transfer-Encoding
+# Property defining patterns for the endpoints to be used by the search proxy.
+# Multiple patterns can be defined by separating them with a comma.
+# The default pattern is: /[^/]+)?/api/v\d+(/[^/]+)?/_?search$
+# Examples: /context/api/v1/search, /context/api/v1/metadata/_search
+#repo.search.endpointPattern: (/[^/]+)?/api/v\d+(/[^/]+)?/_?search$
 ```
+Since 2.0.2 there is a new property to deduplicate headers which were created while executing search via proxy.
+If not set, the header "Transfer-Encoding: chunked" is returned twice which is not allowed by some tools.
+(e.g. traefik middleware)
+The default value is "Transfer-Encoding".
+
+The deduplication is only done for the search endpoints.
+Endpoints which are not matching the pattern defined in "repo.search.endpointPattern" are not affected.
+You can define multiple patterns by separating them with a comma.
+
+
+The default pattern is: /[^/]+)?/api/v\d+(/[^/]+)?/_?search$
+
+Examples: /context/api/v1/search, /context/api/v1/metadata/_search
+```
+# Example for deduplication of headers
+repo.search.dedupHeaders: Transfer-Encoding
+repo.search.endpointPattern: (/[^/]+)?/api/v\d+(/[^/]+)?/_?search$
+``` 
 # Database Settings
 ATTENTION
 : If you want to use another database please make sure, that the following lines
@@ -237,14 +287,19 @@ spring.data.rest.detection-strategy:annotated
 # Management Health Endpoint
 Use this [site](https://docs.spring.io/spring-boot/docs/2.1.7.RELEASE/reference/html/production-ready-endpoints.html#production-ready-health) to get a deeper insight.
 
+Since 2.0.2 the available endpoints are limited to info and health by default.
+For security reasons you may disable all endpoints but you ***shouldn't*** add additional
+ones.
 ```
 ###############################################################################
 # Management endpoint settings
 ###############################################################################
+management.endpoints.enabled-by-default: false
+management.endpoint.info.enabled: true
 management.endpoint.health.enabled: true
 management.endpoint.health.show-details: WHEN-AUTHORIZED
 management.endpoint.health.sensitive: false
-management.endpoints.web.exposure.include: *
+management.endpoints.web.exposure.include: info, health
 # Disable unused service
 # Remove or enable the corresponding lines if you want to check the health of 
 # dependent services as well.
