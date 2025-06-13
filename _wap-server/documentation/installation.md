@@ -10,18 +10,24 @@ navigation_id: wap-server_index
 
 # How to start
 
-On this page, installation and configuration of the Web Annotation Protocol Server are described. 
+On this page, installation and configuration of the Web Annotation Protocol Server are described.
 All information you can find here are also available in the [source code repository at GitHub](https://github.com/kit-data-manager/wap-server/tree/master/howtos).
 
-## Prerequisites
+## Build from source
+
+It is recommended to use gradle for the build, the maven build will be deprecated in the future.
+Therefore, this guide only describes usage of gradle.
+It is recommended to use the gradle version shipped with the code (gradle wrapper).
+In case of specific requirements like a very old java version you may need to use a different gradle versions. These cases are not tested.
+
+### Prerequisites
 
 * git
-* maven installed (tested 3.5.x)
-* OpenJDK 8+
+* Java (jdk 8 - 17)
 
-## Building the WAP Server
+### Building the WAP Server
 
-At first, you have to clone the software repository and change to the project folder: 
+At first, you have to clone the software repository and change to the project folder:
 
 ```
 user@localhost:/home/user/$ git clone https://github.com/kit-data-manager/wap-server.git
@@ -30,36 +36,41 @@ user@localhost:/home/user/$ cd wap-server
 user@localhost:/home/user/wap-server$
 ```
 
-The build can now be started via: 
+The build can now be started via:
 
 ```
-user@localhost:/home/user/wap-server$ mvn clean verify
+user@localhost:/home/user/wap-server$ ./gradlew clean build
 [...]
 ```
 
-Now, copy the final jar file from the *target/* folder to an empty folder in order to prepare the first start of the service.
+For Windows use `gradlew.bat` instead.
+
+Now, copy the final jar file from the *build/libs* folder to an empty folder in order to prepare the first start of the service.
 
 ```
 user@localhost:/home/user/wap-server$ mkdir /home/user/wap-instance
-user@localhost:/home/user/wap-server$ cp target/PSE-AA-0.0.1-SNAPSHOT.jar /home/user/wap-instance
+user@localhost:/home/user/wap-server$ cp build/libs/wap-server.jar /home/user/wap-instance
 [...]
 ```
 
+## Installation
+
 ---
+
 **NOTE**
-Please make sure, that the folder where you want to run the WAP Server from is empty. Otherwise, the installation procedure 
+Please make sure, that the folder where you want to run the WAP Server from is empty. Otherwise, the installation procedure
 automatically performed on first startup won't work and has to be started manually by providing the argument *--install*
- in the next step.
+in the next step.
 
 ---
 
-In order to start the service, change to the service folder and call: 
+In order to start the service, change to the service folder and call:
 
 ```
 user@localhost:/home/user/wap-server$ cd /home/user/wap-instance
-user@localhost:/home/user/wap-server$ java -jar PSE-AA-0.0.1-SNAPSHOT.jar
-Part found : PSE-AA-0.0.1-SNAPSHOT.jar!
-Part found : PSE-AA-0.0.1-SNAPSHOT.jar!
+user@localhost:/home/user/wap-server$ java -jar wap-server.jar
+Part found : wap-server.jar!
+Part found : wap-server.jar!
 #################################
 ### Starting installation
 #################################
@@ -67,39 +78,39 @@ Part found : PSE-AA-0.0.1-SNAPSHOT.jar!
 ```
 
 This will guide you through the installation of the service where you can initially configure your server. At the end of the process
-you can either directly start the server or end the installation to adapt certain configuration properties, which can be found in the 
+you can either directly start the server or end the installation to adapt certain configuration properties, which can be found in the
 file *application.properties*, which was created by the installation procedure.
 
 ### Configuration Properties
 
-| Property                              | Description                                                                                                                                                                                                                                                                                                                                                   | Default                         
-|---------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------
-| JsonLdCachedProfileValidityInMs       | The time in ms a cached JSON-LD profile is regarded up to date. If elapsed, the registry performs an update-download.                                                                                                                                                                                                                                         | 86400000                        
-| ShouldAppendStackTraceToErrorMessages | Should stack traces be appended to http error messages. Of great help during debugging.                                                                                                                                                                                                                                                                       | false                           
-| DataBasePath                          | The path where the database gets stored.                                                                                                                                                                                                                                                                                                                      | ./production_db                 
-| EnableMandatorySlugInContainerPost    | Is the Slug header mandatory when creating containers via POST.                                                                                                                                                                                                                                                                                               | false                           
-| EnableValidation                      | Is validation of Annotation and Container during POST active.                                                                                                                                                                                                                                                                                                 | true                            
-| WebClientFolder                       | The folder where the web client is located.                                                                                                                                                                                                                                                                                                                   | /webcontent                     
-| JsonLdProfileFolder                   | The folder where the JSON-LD profiles are locally cached.                                                                                                                                                                                                                                                                                                     | ./profiles                      
-| SparqlReadIp                          | The IP of the SPARQL read-only endpoint. Either a specific one (including localhost) or * for all                                                                                                                                                                                                                                                             | *                               
-| EnableContentNegotiation              | Is content negotiation active.                                                                                                                                                                                                                                                                                                                                | true                            
-| SparqlReadPort                        | The port of the SPARQL read-only endpoint. Use -1 to disable this endpoint.                                                                                                                                                                                                                                                                                   | 3330                            
-| FallbackValidation                    | Is fallback validation active. When posting elements in a format that has no specific validator implementation, the data is converted to JSON-LD and validated in this format before it gets posted.                                                                                                                                                          | true                            
-| Hostname                              | The hostname under which this server can be reached. It has to be translated to the IP set in WapIp by DNS. This setting has influence on the root IRI and cannot be changed after a database has been created. For details refers to the Root Container section later.                                                                                       | localhost                       
-| CorsAllowedOriginsPath                | The file where CORS allowed origins are stored. If the file does not exist on application startup, it is autocreated using the default setting to allow CORS for all origins. For details refers to the Cors section later.                                                                                                                                   | ./cors_allowed_origins.conf     
-| WapIp                                 | The IP of the WAP endpoint. Either a specific one (including localhost) or * for all.                                                                                                                                                                                                                                                                         | *                               
-| EnableMandatoryLabelInContainers      | Are labels mandatory when creating containers via POST.                                                                                                                                                                                                                                                                                                       | false                           
-| JavaDocFolder                         | The folder where the javadoc is stored.                                                                                                                                                                                                                                                                                                                       | ./doc                           
-| EnableHttps                           | Is HTTPS active. HTTPS has additional dependencies. This setting has influence on the root IRI and cannot be changed after a database has been created. For details refer so the SSL section later.                                                                                                                                                           | false                           
-| JsonLdFrameFolder                     | The folder where the JSON-LD frames are stored.                                                                                                                                                                                                                                                                                                               | ./profiles                      
-| JsonLdValidator_SchemaFolder          | The folder where the JSON-LD schemas are stored.                                                                                                                                                                                                                                                                                                              | ./schemas                       
-| SimpleFormatters                      | The string configuring simple formats. For details refer to the Formats section later.                                                                                                                                                                                                                                                                        | NTRIPLES\*application/n-triples &#124; RDF_JSON\*application/rdf+json
-| SparqlWritePort                       | The port of the SPARQL read-write endpoint. Use -1 to disable this endpoint.                                                                                                                                                                                                                                                                                  | 3331                            
-| SparqlWriteIp                         | The IP of the SPARQL read-write endpoint. Either a specific one (including localhost) or * for all.                                                                                                                                                                                                                                                           | localhost                       
-| PageSize                              | The count of annotations that lie within one PAGE in responses.                                                                                                                                                                                                                                                                                               | 20                              
-| MultipleAnnotationPost                | Is posting multiple annotations in one request possible.                                                                                                                                                                                                                                                                                                      | true                            
-| WapPort                               | The port under which the WAP service is reachable. This port is used for HTTP and HTTPS service. When 80 is set and a http service is used, the port is omitted. The same applies to HTTPS and port 443. This setting has influence on the root IRI and cannot be changed after a database has been created. For details refer to the Root Container section. | 80                              
-| RdfBackendImplementation              | The qualifier of the used RDF backend implementation. The default backend is 'jena'.                                                                                                                                                                                                                                                                          | jena                            
+| Property                              | Description                                                                                                                                                                                                                                                                                                                                                   | Default                                                               |
+|---------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
+| JsonLdCachedProfileValidityInMs       | The time in ms a cached JSON-LD profile is regarded up to date. If elapsed, the registry performs an update-download.                                                                                                                                                                                                                                         | 86400000                                                              |
+| ShouldAppendStackTraceToErrorMessages | Should stack traces be appended to http error messages. Of great help during debugging.                                                                                                                                                                                                                                                                       | false                                                                 |
+| DataBasePath                          | The path where the database gets stored.                                                                                                                                                                                                                                                                                                                      | ./production_db                                                       |
+| EnableMandatorySlugInContainerPost    | Is the Slug header mandatory when creating containers via POST.                                                                                                                                                                                                                                                                                               | false                                                                 |
+| EnableValidation                      | Is validation of Annotation and Container during POST active.                                                                                                                                                                                                                                                                                                 | true                                                                  |
+| WebClientFolder                       | The folder where the web client is located.                                                                                                                                                                                                                                                                                                                   | /webcontent                                                           |
+| JsonLdProfileFolder                   | The folder where the JSON-LD profiles are locally cached.                                                                                                                                                                                                                                                                                                     | ./profiles                                                            |
+| SparqlReadIp                          | The IP of the SPARQL read-only endpoint. Either a specific one (including localhost) or * for all                                                                                                                                                                                                                                                             | *                                                                     |
+| EnableContentNegotiation              | Is content negotiation active.                                                                                                                                                                                                                                                                                                                                | true                                                                  |
+| SparqlReadPort                        | The port of the SPARQL read-only endpoint. Use -1 to disable this endpoint.                                                                                                                                                                                                                                                                                   | 3330                                                                  |
+| FallbackValidation                    | Is fallback validation active. When posting elements in a format that has no specific validator implementation, the data is converted to JSON-LD and validated in this format before it gets posted.                                                                                                                                                          | true                                                                  |
+| Hostname                              | The hostname under which this server can be reached. It has to be translated to the IP set in WapIp by DNS. This setting has influence on the root IRI and cannot be changed after a database has been created. For details refers to the Root Container section later.                                                                                       | localhost                                                             |
+| CorsAllowedOriginsPath                | The file where CORS allowed origins are stored. If the file does not exist on application startup, it is autocreated using the default setting to allow CORS for all origins. For details refers to the Cors section later.                                                                                                                                   | ./cors_allowed_origins.conf                                           |
+| WapIp                                 | The IP of the WAP endpoint. Either a specific one (including localhost) or * for all.                                                                                                                                                                                                                                                                         | *                                                                     |
+| EnableMandatoryLabelInContainers      | Are labels mandatory when creating containers via POST.                                                                                                                                                                                                                                                                                                       | false                                                                 |
+| JavaDocFolder                         | The folder where the javadoc is stored.                                                                                                                                                                                                                                                                                                                       | ./doc                                                                 |
+| EnableHttps                           | Is HTTPS active. HTTPS has additional dependencies. This setting has influence on the root IRI and cannot be changed after a database has been created. For details refer so the SSL section later.                                                                                                                                                           | false                                                                 |
+| JsonLdFrameFolder                     | The folder where the JSON-LD frames are stored.                                                                                                                                                                                                                                                                                                               | ./profiles                                                            |
+| JsonLdValidator_SchemaFolder          | The folder where the JSON-LD schemas are stored.                                                                                                                                                                                                                                                                                                              | ./schemas                                                             |
+| SimpleFormatters                      | The string configuring simple formats. For details refer to the Formats section later.                                                                                                                                                                                                                                                                        | NTRIPLES\*application/n-triples &#124; RDF_JSON\*application/rdf+json |
+| SparqlWritePort                       | The port of the SPARQL read-write endpoint. Use -1 to disable this endpoint.                                                                                                                                                                                                                                                                                  | 3331                                                                  |
+| SparqlWriteIp                         | The IP of the SPARQL read-write endpoint. Either a specific one (including localhost) or * for all.                                                                                                                                                                                                                                                           | localhost                                                             |
+| PageSize                              | The count of annotations that lie within one PAGE in responses.                                                                                                                                                                                                                                                                                               | 20                                                                    |
+| MultipleAnnotationPost                | Is posting multiple annotations in one request possible.                                                                                                                                                                                                                                                                                                      | true                                                                  |
+| WapPort                               | The port under which the WAP service is reachable. This port is used for HTTP and HTTPS service. When 80 is set and a http service is used, the port is omitted. The same applies to HTTPS and port 443. This setting has influence on the root IRI and cannot be changed after a database has been created. For details refer to the Root Container section. | 80                                                                    |
+| RdfBackendImplementation              | The qualifier of the used RDF backend implementation. The default backend is 'jena'.                                                                                                                                                                                                                                                                          | jena                                                                  |
 
 ### Root Container
 
@@ -119,13 +130,13 @@ Example 1: Hostname=localhost, EnableHttps=false, WapPort=8080
 ===> root IRI = http://localhost:8080/wap/
 
 Example 2: Hostname=example.org, EnableHttps=false, WapPort=80
-===> root IRI = http://example.org/wap/   (port is omitted because it is the default for HTTP)
+===> root IRI = http://example.org/wap/ (port is omitted because it is the default for HTTP)
 
 Example 3: Hostname=localhost, EnableHttps=true, WapPort=1443
 ===> root IRI = https://localhost:1443/wap/
 
 Example 4: Hostname=host1.example.org, EnableHttps=true, WapPort=443
-===> root IRI = https://host1.example.org/wap/   (port is omitted because it is the default for HTTPS)
+===> root IRI = https://host1.example.org/wap/ (port is omitted because it is the default for HTTPS)
 
 When using the installer (via --install or by starting the jar in an empty folder) it asks for this base configuration
 and shows its consequences on the root container IRI.
@@ -134,6 +145,7 @@ If changing any of those parameters with an already running server is necessary,
 It gets recreated on first startup after the configuration has been changed.
 
 ---
+
 **NOTE**
 Using manual database manipulation, a conversion of the database to fit the new root container IRI can be achieved,
 but this is not implemented in the application. The easiest way to achieve this would be to have the database
@@ -168,10 +180,11 @@ The other parameters are all implemented in a fashion that is either explicitly 
   using these headers if the server has no idea what to do with them.
 
 The actual requests then will be answered by an 403 if either CORS is disabled or the origin not allowed.
-  
+
 ---
+
 **NOTE**
-The CORS configuration does not apply to direct SPARQL endpoints. Therefore, it is recommended not to make these endpoints publicly available.  
+The CORS configuration does not apply to direct SPARQL endpoints. Therefore, it is recommended not to make these endpoints publicly available.
 
 ---
 
