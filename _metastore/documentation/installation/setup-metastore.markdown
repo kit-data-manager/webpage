@@ -315,6 +315,48 @@ spring.main.allow-bean-definition-overriding:true
 ###############################################################################
 server.error.include-message=always
 ```
+# Management Prometheus Endpoint
+Since 2.1.0 the prometheus endpoint is available but disabled by default.
+To enable it, please uncomment the following line and adapt it to your needs.
+```
+###############################################################################
+# Monitoring
+###############################################################################
+# If you want to use the monitoring service, please uncomment the following
+# lines and adapt them to your needs.
+# Enable the monitoring service (Default: false)
+#metastore.monitoring.enabled: true
+###############################################################################
+# ATTENTION: Enable also management endpoint for monitoring if you want to use it
+###############################################################################
+#management.endpoint.prometheus.enabled: true
+#management.endpoints.web.exposure.include: prometheus
+###############################################################################
+# Configuration for Monitoring
+###############################################################################
+# Configure how often the monitoring service should check the status of the
+# repository. The default is once an hour. (0 3 * * * *)
+#   |-------------- second
+#   | |------------ minute
+#   | | |---------- hour
+#   | | | |-------- day of month
+#   | | | | |------ month
+#   | | | | | |---- day of week
+#   | | | | | |
+#   * * * * * *
+metastore.monitoring.cron4schedule: 0 3 * * * *
+# Configure how often the monitoring service should clean up the database
+# removing accessing hashes older than 'noOfDaysToKeep'.
+# The default is once a day at midnight. (0 0 0 * * *)
+metastore.monitoring.cron4cleanUp: 0 0 0 * * *
+# Configure how long the monitoring service should keep the data in the
+# database. The default is 28 days. (28)
+metastore.monitoring.noOfDaysToKeep: 28
+# Configure the maximum number of schemas for which the monitoring service
+# should collect the number of documents. The default is 10.
+metastore.monitoring.noOfSchemas: 10
+```
+
 # CSRF
 For accessing the service from a frontend the URL of the frontend has to be
 configured as allowed origin.
