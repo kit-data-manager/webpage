@@ -7,7 +7,7 @@ navigation_id: wap-server_index
 tag-name: wap-server
 ---
 
-# The Web Application Protocol Server
+# The Web Annotation Protocol Server
 
 This project provides a server for creating and managing annotations based on the [Web Annotation Data Model (WADM)](https://www.w3.org/TR/annotation-model/) 
 implementing the complete [Web Annotation Protocol (WAP)](https://www.w3.org/TR/annotation-protocol/). The service is realized as microservice using Spring Boot 
