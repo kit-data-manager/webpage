@@ -28,6 +28,7 @@ If the values should not correspond to the default value, please add the adjuste
 'config/application.properties'.
 
 ## Versions
+- [v2.1.1](#v211)
 - [v2.1.0](#v210)
 - [v2.0.2](#v202)
 - [v2.0.1](#v201)
@@ -45,6 +46,40 @@ If the values should not correspond to the default value, please add the adjuste
 - [v1.2.0](#v120)
 - [v1.1.0](#v110)
 - [v1.0.1](#v101)
+
+## v2.1.1
+### Database changes
+ATTENTION
+: There are some minor changes in the database due to migration to DataCite.
+: You shoud backup at least your database before upgrading. (see [Backup](../framework/backup-metastore.html))
+
+Please start the new version once with an additional parameter to migrate to
+the new database structure.
+This will also migrate the elasticsearch index (if available).
+
+```
+$ run.sh --migrate2DataCite
+[...]
+2024-11-25T10:04:55.670+01:00  INFO 54393 --- [           main] e.k.datamanager.metastore2.Application   : Spring is running!
+```
+Note
+: 'Spring is running' only appears if log level is set to 'INFO' at least!
+: We recommend to set LOG level at least to INFO to see if migration is finished.
+
+#### Database changes (Postgres) 
+ATTENTION
+: If you are using Postgres version 15 or newer, you have to run the following SQL commands to migrate the
+: database to the new structure.
+```
+\c metastore
+CREATE TABLE ip_monitoring (
+    ip_hash VARCHAR(255) NOT NULL,
+    last_visit TIMESTAMP WITH TIME ZONE NOT NULL,
+    PRIMARY KEY (ip_hash)
+);
+ALTER TABLE ip_monitoring OWNER TO METASTORE_DB_USER;
+GRANT CREATE, USAGE ON SCHEMA public TO METASTORE_DB_USER;
+```
 
 ## v2.1.0
 Nothing to migrate.
@@ -87,7 +122,7 @@ ATTENTION
 
 ATTENTION
 : Due to a bug in migration code it could happen, that a part of the metadata records 
-: are not migrated fully. We recommend to switch directly to v2.0.1 for migration.
+: are not migrated fully. We recommend to switch directly to v2.1.1 for migration.
 
 ## v1.4.5
 Nothing to migrate.
