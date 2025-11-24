@@ -93,23 +93,14 @@ Nothing to migrate.
 ATTENTION
 : MetaStore requires Java 21 or later. 
 
-### Database changes
+### Database changes while migrating from v1.x
 ATTENTION
 : There are some minor changes in the database due to migration to DataCite.
 : You shoud backup at least your database before upgrading. (see [Backup](../framework/backup-metastore.html))
 
-Please start the new version once with an additional parameter to migrate to
-the new database structure.
-This will also migrate the elasticsearch index (if available).
-
-```
-$ run.sh --migrate2DataCite
-[...]
-2024-11-25T10:04:55.670+01:00  INFO 54393 --- [           main] e.k.datamanager.metastore2.Application   : Spring is running!
-```
-Note
-: 'Spring is running' only appears if log level is set to 'INFO' at least!
-: We recommend to set LOG level at least to INFO to see if migration is finished.
+ATTENTION
+: Due to a bug in migration code it could happen, that a part of the metadata records 
+: are not migrated fully. We recommend to switch directly to v2.1.1 for migration.
 
 ## v2.0.0
 ### System Requirements
