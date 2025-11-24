@@ -33,6 +33,7 @@ If the values should not correspond to the default value, please add the adjuste
 - [v2.0.2](#v202)
 - [v2.0.1](#v201)
 - [v2.0.0](#v200)
+- [v1.4.6](#v146)
 - [v1.4.5](#v145)
 - [v1.4.4](#v144)
 - [v1.4.3](#v143)
@@ -123,6 +124,9 @@ ATTENTION
 ATTENTION
 : Due to a bug in migration code it could happen, that a part of the metadata records 
 : are not migrated fully. We recommend to switch directly to v2.1.1 for migration.
+
+## v1.4.6
+Nothing to migrate.
 
 ## v1.4.5
 Nothing to migrate.
