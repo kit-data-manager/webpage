@@ -28,6 +28,7 @@ If the values should not correspond to the default value, please add the adjuste
 'config/application.properties'.
 
 ## Versions
+- [v2.1.2](#v212)
 - [v2.1.1](#v211)
 - [v2.1.0](#v210)
 - [v2.0.2](#v202)
@@ -47,6 +48,9 @@ If the values should not correspond to the default value, please add the adjuste
 - [v1.2.0](#v120)
 - [v1.1.0](#v110)
 - [v1.0.1](#v101)
+
+## v2.1.2
+Nothing to migrate.
 
 ## v2.1.1
 ### Database changes
